@@ -1,0 +1,116 @@
+body {
+  font-family: "Plus Jakarta Sans";
+}
+:root {
+  --h7-line-height: 38px;
+  --fs-h7: 20px;
+
+  --blue-light: #175fe2;
+  --azul-primario: #072146;
+
+  --celeste-secundario: #73bdfa;
+  --color-font-principal: #063063;
+  --color-font-secondary: #227be1;
+  --blue-dark: #063063;
+
+  --background-ligth: #f7fbff;
+  --grey: #d5d5d5;
+  --grey-ligth: #f1f1f1;
+  --negro: #2b2b2b;
+  --blanco: #fff;
+  --green: #2d844a;
+}
+
+#crowdsourcing {
+  background-image: url("/assets/img/Crowdsourcing/cliente-misterioso/woman-surrounded-by-bags-pile 1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 401px;
+}
+
+.header {
+  gap: 36px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 167px;
+}
+
+.btn-start {
+  padding: 10px 50px;
+  color: white;
+  width: 100%;
+}
+
+.header-info-container {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  font-size: var(--fs-h7);
+}
+
+.header-info-container-1 {
+  line-height: var(--h7-line-height);
+  border: red;
+  padding-left: -10px;
+  padding-right: -10px;
+}
+
+.header-info-container-2 {
+  gap: 22px;
+  border: red;
+}
+
+#empresas {
+  background-color: var(--blue-light);
+  color: white;
+  margin-top: 80px;
+}
+
+.swiper {
+  width: 100%;
+  height: 484px;
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  position: absolute;
+
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Mantiene la imagen en su contenedor */
+}
+
+/* Estilos para los puntos de navegación */
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  background: var(--grey); /* Ajusta el color de los puntos según tu diseño */
+  width: 12px; /* Ajusta el tamaño del punto */
+  height: 12px; /* Ajusta el tamaño del punto */
+  border-radius: 50%; /* Asegura que los puntos sean redondos */
+  opacity: 0.7; /* Ajusta la opacidad del punto */
+  margin: 0 4px; /* Espacio entre los puntos */
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--blue-light); /* Color del punto activo */
+}
+
+.card {
+  height: fit-content;
+}

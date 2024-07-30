@@ -27,8 +27,7 @@ body {
   --fs-sm: 17px;
   --fs-md: 25px;
   --fs-bg: 34px;
-  
-  
+
   /* --paragraph-p3-regular-size: 16px;
   --pa-1-size: 18px;
   --font-size-29xl: 48px;
@@ -64,7 +63,7 @@ body {
   --home-title-header: #0176D3;
      */
 
-    /* opcion 2*/
+  /* opcion 2*/
   /* --color-font-principal: #063063;
   --color-font-secondary: #0176D3;
 
@@ -76,33 +75,32 @@ body {
   --home-title-header: #0176D3;
   --home-background: #fff; */
 
-      /* opcion 3*/
-      --blue-light: #175FE2;
-      --azul-primario: #072146;
+  /* opcion 3*/
+  --blue-light: #175fe2;
+  --azul-primario: #072146;
 
-      --celeste-secundario: #73BDFA;
-      --color-font-principal: #063063;
-      --color-font-secondary: #227be1;
-      --blue-dark: #063063;
-      
-      --background-ligth: #f7fbff;
-      --grey: #D5D5D5;
-      --grey-ligth: #F1F1F1;
-      --negro: #2b2b2b;  
-      --blanco: #fff;
-      --green: #2D844A;
+  --celeste-secundario: #73bdfa;
+  --color-font-principal: #063063;
+  --color-font-secondary: #227be1;
+  --blue-dark: #063063;
 
-    /* --blanco: #fff;
+  --background-ligth: #f7fbff;
+  --grey: #d5d5d5;
+  --grey-ligth: #f1f1f1;
+  --negro: #2b2b2b;
+  --blanco: #fff;
+  --green: #2d844a;
+
+  /* --blanco: #fff;
       --background-primario: #0176D3;
       --background-primario-font-color: #fff;
       --home-title: #fff;
       --home-title-header: #73bdfa;
       --home-background: #0176D3;
       --home-text: #fff; */
-    
-  
-       /* opcion 4*/
-      /* --color-font-principal: #063063;
+
+  /* opcion 4*/
+  /* --color-font-principal: #063063;
       --color-font-secondary: #0176D3;
       --blue-dark: #063063; 
       --azul-primario: #063063;
@@ -110,8 +108,7 @@ body {
       --background-primario-font-color: #fff;
        */
 
-
-/*   
+  /*   
   --background-ligth: #eff5ff;
 
   --celeste-secundario: #73bdfa;
