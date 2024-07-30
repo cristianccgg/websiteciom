@@ -121,7 +121,7 @@ body {
 #testimonials2 {
   padding: 80px 50px;
   display: flex;
-  height: 709px;
+  height: 800px;
 }
 
 .header-testimonials {
@@ -159,7 +159,7 @@ body {
 
 .card2 {
   width: 384px !important;
-  height: 376px !important;
+  height: 420px !important;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
