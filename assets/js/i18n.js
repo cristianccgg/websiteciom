@@ -361,8 +361,8 @@ document.addEventListener("DOMContentLoaded", function () {
         help1_description: "Estamos para solucionar sus dudas",
         help1_btn: "Preguntas frecuentes",
 
-        capitalize_title: "¿Listo para capitalizar tus oportunidades?"
-        capitalize_btn: "Empezá ahora"
+        capitalize_title: "¿Listo para capitalizar tus oportunidades?",
+        capitalize_btn: "Empezá ahora",
 
         mentions_title_sub: "CASOS DE EXITO",
         mentions_title: "Qué dijeron quienes usaron CIOM para mejorar",

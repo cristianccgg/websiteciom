@@ -182,3 +182,13 @@ body {
   display: flex;
   gap: 25px;
 }
+
+/* ------------Auditorias ------------------*/
+
+#auditorias {
+  background-image: url("/assets/img/Crowdsourcing/Auditorias-inspecciones/Auditorías/indian-man-customer-buyer-mobile-phone-store-choose-his-new-smartphone-south-asian-peoples-technologies-concept-cellphone-shop 1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 401px;
+}

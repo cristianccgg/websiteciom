@@ -357,6 +357,14 @@ li {
   }
 }
 
+@media (min-width: 1325px) and (max-width: 1406px) {
+  .navbar a,
+  .navbar a:focus,
+  .navbar a:hover {
+    font-size: 10px;
+  }
+}
+
 .mobile-nav-toggle {
   color: var(--color-font-principal);
   font-size: 28px;
