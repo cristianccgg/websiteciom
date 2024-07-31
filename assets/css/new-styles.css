@@ -21,7 +21,7 @@ body {
   --green: #2d844a;
 }
 
-#crowdsourcing {
+#cliente-misterioso {
   background-image: url("/assets/img/Crowdsourcing/cliente-misterioso/woman-surrounded-by-bags-pile 1.png");
   background-size: cover;
   background-position: center;
@@ -68,7 +68,8 @@ body {
   border: red;
 }
 
-#empresas {
+#empresas,
+#x5 {
   background-color: var(--blue-light);
   color: white;
   margin-top: 80px;
@@ -191,4 +192,77 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 401px;
+}
+
+/* ------------Monitore de competencia ------------------*/
+
+#monitoreo {
+  background-image: url("/assets/img/Crowdsourcing/Monitoreo/team-stockbrokers-are-having-conversation-dark-office-with-display-screens-analyzing-data-graphs-reports-investment-purposes-creative-teamwork-traders 2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 401px;
+}
+
+/* ------------Crowdsourcing------------------*/
+
+#crowdsourcing {
+  background-image: url("/assets/img/Crowdsourcing/image 88.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 401px;
+  position: relative;
+  overflow: hidden;
+}
+
+.capa-opaca {
+  background: rgba(23, 95, 226, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#crowdsourcing h1,
+#crowdsourcing .btn-start {
+  position: relative;
+  z-index: 2;
+}
+
+/* ------------Delegue------------------*/
+
+#delegue {
+  background-color: var(--blue-light);
+  color: white;
+}
+
+#delegue h1 {
+  font-size: 25px;
+}
+
+/* ------------Nosotros------------------*/
+
+#nosotros {
+  background-image: url("/assets/img/Crowdsourcing/Nosotros/close-up-detail-team-working-o-new-project-coworking-space-writing-ideas-looking-through-graphics-tablet-laptop-teamwork-business-concept 1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 401px;
+  position: relative;
+  overflow: hidden;
+}
+
+#pre-ronda h3 {
+  color: var(--blue-light);
+  margin-bottom: -20px;
+}
+
+.divider-inversionistas {
+  width: 50%;
+  color: var(--blue-light);
+  opacity: 100;
+  height: 2px !important;
 }

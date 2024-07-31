@@ -268,11 +268,13 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
+  padding: 10px 20px 10px 0px;
   color: var(--color-font-principal);
   font-weight: 500;
+  font-size: 0.5rem !important;
   white-space: nowrap;
   transition: 0.3s;
+
   /* font-size: var(--fs-btn); */
 }
 
@@ -354,14 +356,6 @@ li {
 
   .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
-  }
-}
-
-@media (min-width: 1325px) and (max-width: 1406px) {
-  .navbar a,
-  .navbar a:focus,
-  .navbar a:hover {
-    font-size: 10px;
   }
 }
 
