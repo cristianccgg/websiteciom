@@ -458,9 +458,10 @@ li {
   color: #004a99;
 }
 
-.navbar-mobile .dropdown ul {
-  position: static;
+.navbar-mobile .dropdown ul,
+.navbar-mobile .dropdown-2 ul {
   display: none;
+  height: fit-content;
   margin: 10px 20px;
   padding: 10px 0;
   z-index: 99;
@@ -1590,6 +1591,7 @@ section {
   padding: 30px 10px 30px 12px;
   gap: 24px;
   min-width: 288px;
+
   border: 0px solid var(--background-ligth);
   border-radius: 10px;
   /* box-shadow: 0 2px 8px -2px hsla(0,0%,9%,.08), 0 8px 12px -2px hsla(0,0%,9%,.16); */
@@ -1926,9 +1928,8 @@ section {
 }
 
 #footer p {
-  position: relative;
   line-height: 30px;
-  max-width: 500px;
+  height: 120px;
 }
 
 #footer a {
@@ -1937,7 +1938,7 @@ section {
 
 #footer b {
   color: var(--blanco);
-  position: relative;
+
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
@@ -1945,29 +1946,22 @@ section {
 
 #footer .logo-image {
   height: 33px;
-  position: relative;
   object-fit: contain;
   margin-bottom: 30px;
 }
 
-#footer .item-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 19px;
-  min-width: 115px;
-  font-size: 16px;
+#footer .item-content-1 {
+  height: 136px !important;
+}
+
+.footer-items-rigth {
+  gap: 91px;
 }
 
 #footer .divide {
-  align-self: stretch;
   height: 1px;
-  position: relative;
   border-top: 1px solid #eff5ff;
   box-sizing: border-box;
-  margin-top: 30px;
 }
 
 #footer .bottom {
@@ -1981,10 +1975,23 @@ section {
 #footer .legal-container {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-41xl);
+  align-items: center;
+  gap: 60px;
   max-width: 100%;
+}
+.icons-footer {
+  display: flex;
+  gap: 47px !important;
+}
+
+@media screen and (min-width: 768px) {
+  #footer {
+    height: 424px;
+  }
+
+  #footer p {
+    max-width: 342px;
+  }
 }
 
 @-webkit-keyframes animate-loading {
