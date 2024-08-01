@@ -271,7 +271,7 @@ li {
   padding: 10px 20px 10px 0px;
   color: var(--color-font-principal);
   font-weight: 500;
-  font-size: 0.5rem !important;
+  font-size: 1rem !important;
   white-space: nowrap;
   transition: 0.3s;
 
@@ -366,6 +366,7 @@ li {
   display: none;
   line-height: 0;
   transition: 0.5s;
+  z-index: 1000;
 }
 
 .mobile-nav-toggle.bi-x {
@@ -375,6 +376,7 @@ li {
 @media (max-width: 1325px) {
   .mobile-nav-toggle {
     display: block;
+    z-index: 1000;
   }
 
   .navbar ul {
@@ -590,7 +592,8 @@ li {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-#header {
+#header,
+#header-1 {
   height: 90px;
   z-index: 997;
   transition: all 0.5s;

@@ -34,20 +34,6 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch("navbar.html")
-          .then((response) => response.text())
-          .then((data) => {
-            const headerElement = document.querySelector("#header");
-            if (headerElement) {
-              headerElement.innerHTML = data;
-            } else {
-              document.body.insertAdjacentHTML("afterbegin", data);
-            }
-          });
-      });
-    </script>
 
     <title>Monitoreo</title>
   </head>
@@ -55,44 +41,52 @@
   <body>
     <div>
       <div id="monitoreo" class="header align-items-center text-white px-5">
-        <h1>Auditorias/Inspecciones</h1>
+        <h1>Monitoreo de competencia</h1>
         <button class="btn-start">Comenzar</button>
       </div>
       <div class="header-info-container d-flex flex-column p-5 gap-5">
-        <div class="header-info-container-1">
-          Consiste en observar las actividades, estrategias y desempeño de las
-          empresas que compiten con usted. Conocerá sus productos o servicios,
-          precios, ofertas, tácticas de marketing, etc.
-        </div>
-        <div class="header-info-container-2">
-          <ul>
-            <li class="d-flex align-items-center">
-              <img src="assets/img/Crowdsourcing/Vector.png" alt="check-icon" />
-              <h7>Mejora su propuesta de valor</h7>
-            </li>
-            <li class="d-flex align-items-center">
-              <img
-                src="assets/img/Crowdsourcing/Vector.png"
-                alt="check-icon"
-              /><h7>Incrementa su rentabilidad</h7>
-            </li>
-            <li class="d-flex align-items-center">
-              <img
-                src="assets/img/Crowdsourcing/Vector.png"
-                alt="check-icon"
-              /><h7>Acelera su crecimiento</h7>
-            </li>
-            <li class="d-flex align-items-center">
-              <img
-                src="assets/img/Crowdsourcing/Vector.png"
-                alt="check-icon"
-              /><h7>Eleva su competitividad</h7>
-            </li>
-          </ul>
+        <div class="row-container row align-items-center m-auto">
+          <div class="header-info-container-1 col-md d-flex align-items-center">
+            <p>
+              Consiste en observar las actividades, estrategias y desempeño de
+              las empresas que compiten con usted. Conocerá sus productos o
+              servicios, precios, ofertas, tácticas de marketing, etc.
+            </p>
+          </div>
+          <div class="header-info-container-2 col-md d-flex flex-column">
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-center">
+                <img
+                  src="assets/img/Crowdsourcing/Vector.png"
+                  alt="check-icon"
+                />
+                <h7>Mejora su propuesta de valor</h7>
+              </li>
+              <li class="d-flex align-items-center">
+                <img
+                  src="assets/img/Crowdsourcing/Vector.png"
+                  alt="check-icon"
+                /><h7>Incrementa su rentabilidad</h7>
+              </li>
+              <li class="d-flex align-items-center">
+                <img
+                  src="assets/img/Crowdsourcing/Vector.png"
+                  alt="check-icon"
+                /><h7>Acelera su crecimiento</h7>
+              </li>
+              <li class="d-flex align-items-center">
+                <img
+                  src="assets/img/Crowdsourcing/Vector.png"
+                  alt="check-icon"
+                /><h7>Eleva su competitividad</h7>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    <div class="swiper mySwiper mb-5">
+    <div class="swiper mySwiper">
+      <h1 class="text-center p-5 fs-3">Obtenga la ventaja que necesita</h1>
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img
@@ -125,40 +119,52 @@
           />
         </div>
       </div>
-      <div class="swiper-pagination"></div>
+      <div class="swiper-pagination mb-5"></div>
     </div>
 
     <section
-      id="empresas"
+      id="empresas-monitoreo"
       class="d-flex align-items-center flex-column text-center p-5"
     >
-      <div class="d-flex flex-column gap-4">
-        <div>
+      <div
+        class="d-flex flex-column justify-content-evenly gap-md-5 align-items-center"
+      >
+        <div class="empresas-2-title mb-5 mb-md-0">
           <h3>App móvil líder en la industria para Auditar e Inspeccionar</h3>
         </div>
-        <div class="d-flex flex-column gap-3 my-5">
-          <div class="d-flex flex-column align-items-center gap-3">
+        <div
+          class="icons-container-auditorias d-flex flex-column gap-3 my-5 my-md-0 flex-md-row"
+        >
+          <div
+            class="auditar-container d-flex flex-column align-items-center gap-3"
+          >
             <img
               src="assets/img/Crowdsourcing/Auditorias-inspecciones/Icons/Auditorías/carbon_location.png"
               alt="geo-icon"
             />
             <p>Geoposicionamiento</p>
           </div>
-          <div class="d-flex flex-column align-items-center gap-3">
+          <div
+            class="auditar-container d-flex flex-column align-items-center gap-3"
+          >
             <img
               src="assets/img/Crowdsourcing/Auditorias-inspecciones/Icons/Auditorías/carbon_location-1.png"
               alt="geo-icon"
             />
             <p>Trabajo sin Conexión</p>
           </div>
-          <div class="d-flex flex-column align-items-center gap-3">
+          <div
+            class="auditar-container d-flex flex-column align-items-center gap-3"
+          >
             <img
               src="assets/img/Crowdsourcing/Auditorias-inspecciones/Icons/Auditorías/carbon_location-2.png"
               alt="geo-icon"
             />
             <p>Respaldo Multimedia</p>
           </div>
-          <div class="d-flex flex-column align-items-center gap-3">
+          <div
+            class="auditar-container d-flex flex-column align-items-center gap-3"
+          >
             <img
               src="assets/img/Crowdsourcing/Auditorias-inspecciones/Icons/Auditorías/carbon_location-3.png"
               alt="geo-icon"
@@ -170,16 +176,14 @@
       </div>
     </section>
 
-    <section id="testimonials2" class="d-flex flex-column align-items-center">
+    <section id="testimonials-2" class="d-flex flex-column align-items-center">
       <div class="swiper2 mySwiper2">
-        <h1 class="testimonials-title text-center fw-semibold">
+        <h1 class="testimonials-title text-center mb-3 fw-semibold fs-2">
           Qué dijeron quienes usaron CIOM para mejorar
         </h1>
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper wrapper">
           <div class="swiper-slide">
-            <div
-              class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-            >
+            <div class="card2 rounded-3 d-flex flex-column gap-5 p-5 border">
               <div class="header-testimonials">
                 <div>
                   <img
@@ -541,11 +545,28 @@
       </div>
     </section>
 
-    <section class="d-flex flex-column gap-5 p-5 align-items-center">
+    <section
+      id="mejorar"
+      class="d-flex flex-column gap-5 p-5 align-items-center"
+    >
       <h1 class="text-center">Qué necesita para mejorar?</h1>
-      <button class="btn-start rounded">CLIENTE MISTERIOSO</button>
-      <button class="btn rounded">AUDITORIA/INSPECCION</button>
-      <button class="btn rounded">MONITOREO DE COMPETENCIA</button>
+      <div class="d-flex flex-column gap-5 flex-md-row gap-md-3">
+        <a href="cliente-misterioso.html">
+          <button class="btn btn-mejorar rounded fs-6">
+            CLIENTE MISTERIOSO
+          </button>
+        </a>
+        <a href="auditorias.html">
+          <button class="btn rounded fs-6 btn-mejorar">
+            AUDITORIA/INSPECCION
+          </button>
+        </a>
+        <a href="monitoreo.html">
+          <button class="btn-start rounded fs-6 text-nowrap btn-mejorar">
+            MONITOREO DE COMPETENCIA
+          </button>
+        </a>
+      </div>
     </section>
     <section id="help">
       <div class="container">
@@ -662,72 +683,6 @@
     <script src="assets/js/i18n.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Inicialización de Swiper
-        var swiper = new Swiper(".mySwiper", {
-          // Configuración general
-          loop: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-
-          breakpoints: {
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-            },
-          },
-        });
-
-        var swiper2 = new Swiper(".mySwiper2", {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          slidesPerGroup: 3,
-          pagination: {
-            el: ".swiper-pagination2",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-          breakpoints: {
-            320: {
-              slidesPerView: 1,
-              slidesPerGroup: 1,
-            },
-            768: {
-              slidesPerView: 3,
-              slidesPerGroup: 3,
-            },
-            1024: {
-              slidesPerView: 3,
-              slidesPerGroup: 3,
-            },
-          },
-        });
-
-        // Inicialización de AOS
-        AOS.init();
-      });
-    </script>
+    <script src="assets/js/newjs.js"></script>
   </body>
 </html>

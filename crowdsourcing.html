@@ -34,20 +34,6 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch("navbar.html")
-          .then((response) => response.text())
-          .then((data) => {
-            const headerElement = document.querySelector("#header");
-            if (headerElement) {
-              headerElement.innerHTML = data;
-            } else {
-              document.body.insertAdjacentHTML("afterbegin", data);
-            }
-          });
-      });
-    </script>
 
     <title>Crowdsourcing</title>
   </head>
@@ -60,40 +46,50 @@
         <button class="btn-start">Comenzar</button>
       </div>
       <div class="header-info-container d-flex flex-column p-5 gap-5">
-        <div class="header-info-container-1">
-          Son personas independientes que están dispuestas a realizar sus tareas
-          en calidad de prestadores de servicios independientes. Usted no tendrá
-          que gestionarlos, la app se encarga de todo.
-        </div>
-        <div class="header-info-container-2">
-          <ul>
-            <li class="d-flex align-items-center">
-              <img src="assets/img/Crowdsourcing/Vector.png" alt="check-icon" />
-              <h7>Imparciales</h7>
-            </li>
-            <li class="d-flex align-items-center">
-              <img
-                src="assets/img/Crowdsourcing/Vector.png"
-                alt="check-icon"
-              /><h7>Objetivos</h7>
-            </li>
-            <li class="d-flex align-items-center">
-              <img
-                src="assets/img/Crowdsourcing/Vector.png"
-                alt="check-icon"
-              /><h7>24 x 7 los 365 días</h7>
-            </li>
-            <li class="d-flex align-items-center">
-              <img
-                src="assets/img/Crowdsourcing/Vector.png"
-                alt="check-icon"
-              /><h7>100% a resultado</h7>
-            </li>
-          </ul>
+        <div class="row-container row align-items-center m-auto">
+          <div class="header-info-container-1 col-md d-flex align-items-center">
+            <p class="text-start">
+              Son personas independientes que están dispuestas a realizar sus
+              tareas en calidad de prestadores de servicios independientes.
+              Usted no tendrá que gestionarlos, la app se encarga de todo.
+            </p>
+          </div>
+          <div class="header-info-container-2 col-md d-flex flex-column">
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-center">
+                <img
+                  src="assets/img/Crowdsourcing/Vector.png"
+                  alt="check-icon"
+                />
+                <h7>Imparciales</h7>
+              </li>
+              <li class="d-flex align-items-center">
+                <img
+                  src="assets/img/Crowdsourcing/Vector.png"
+                  alt="check-icon"
+                /><h7>Objetivos</h7>
+              </li>
+              <li class="d-flex align-items-center">
+                <img
+                  src="assets/img/Crowdsourcing/Vector.png"
+                  alt="check-icon"
+                /><h7>24 x 7 los 365 días</h7>
+              </li>
+              <li class="d-flex align-items-center">
+                <img
+                  src="assets/img/Crowdsourcing/Vector.png"
+                  alt="check-icon"
+                /><h7>100% a resultado</h7>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    <div class="swiper mySwiper mb-5">
+    <div class="swiper mySwiper">
+      <h1 class="text-center p-5 fs-3">
+        Obtenga las manos que siempre quizo tener
+      </h1>
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img
@@ -120,7 +116,7 @@
           />
         </div>
       </div>
-      <div class="swiper-pagination"></div>
+      <div class="swiper-pagination mb-5"></div>
     </div>
 
     <section
@@ -134,34 +130,112 @@
       <button class="btn text-white border border-white">Comenzar</button>
     </section>
 
+    <section id="crowdsourcing-capacidad" class="p-5 d-flex flex-column gap-5">
+      <h1 class="text-center">
+        La capacidad operativa que cualquier negocio soñaría con tener
+      </h1>
+      <div>
+        <div
+          class="row row-cols-1 row-cols-md-2 g-4 cols-container justify-content-md-between"
+        >
+          <div class="col col-crowd">
+            <div class="container-grid">
+              <h3 class="crowdsourcing-titles">Alcance</h3>
+              <hr class="divider-crowdsourcing" />
+              <p>
+                Al disponibilizar sus tareas en el sistema ciom la red de
+                CIOMERS se irá nutriendo de personas interesadas en prestarle
+                los servicios que demanda en cada punto geográfico que lo
+                necesita. Al lograr la cobertura completa su compañía pasará a
+                tener una capacidad operativa bajo demanda nunca antes vista
+              </p>
+            </div>
+          </div>
+          <div class="col col-crowd">
+            <div class="container-grid">
+              <h3 class="crowdsourcing-titles">Control</h3>
+              <hr class="divider-crowdsourcing" />
+              <p>
+                Usando Ciom en todo momento usted tendrá el total y completo
+                control de todo. La información resultante será toda de su
+                propiedad. Podrá administrar fácilmente la ejecución (arrancar,
+                parar, modificar) así como también podrá saber el progreso y
+                evolución en tiempo real.
+              </p>
+            </div>
+          </div>
+          <div class="col col-crowd">
+            <div class="container-grid">
+              <h3 class="crowdsourcing-titles">Simplicidad</h3>
+              <hr class="divider-crowdsourcing" />
+              <p>
+                Usted y su equipo solo se enfocarán en trabajar sobre los
+                resultados que los prestadores de servicios generarán. No tendrá
+                que supervisar, gestionar o contactar personas. El sistema se
+                encarga de gestionar todas las tareas de forma automatiza,
+                ahorrándole horas de trabajo y problemas.
+              </p>
+            </div>
+          </div>
+          <div class="col col-crowd">
+            <div class="container-grid">
+              <h3 class="crowdsourcing-titles">Eficiencia</h3>
+              <hr class="divider-crowdsourcing" />
+              <p>
+                El modelo Ciom le permite a su compañía alcanzar la máxima
+                eficiencia en el uso de sus recursos ya que no admite costos
+                adicionales por parte del prestador de servicios y solo liberará
+                sus fondos si recibe la tarea solicitada de forma completa y
+                correcta. (Quality Assurance)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section
-      id="empresas"
-      class="d-flex align-items-center flex-column text-center p-5"
+      id="empresas-crowdsourcing"
+      class="d-flex align-items-center flex-column text-center p-5 mb-5"
     >
-      <div class="d-flex flex-column gap-4">
-        <div>
+      <div
+        class="empresas-crowdsourcing-inner d-flex flex-column justify-content-evenly gap-md-5 align-items-center"
+      >
+        <div class="empresas-2-title mb-5 mb-md-0">
           <h1>Sky is the limit</h1>
         </div>
-        <div class="d-flex flex-column gap-3 my-5">
-          <div class="d-flex flex-column align-items-center gap-3">
+        <div
+          class="icons-container-crowdsourcing d-flex flex-column gap-3 my-5 my-md-0 flex-md-row"
+        >
+          <div
+            class="sky-container d-flex flex-column align-items-center gap-3"
+          >
             <img
               src="assets/img/Crowdsourcing/Icons/carbon_location-1.png"
               alt="geo-icon"
             />
             <p class="d-flex flex-column fw-bold">
-              5X VECES <span class="fw-light">mas dinamico y veloz</span>
+              5X VECES <span class="fw-light">mas dinamico <br />y veloz</span>
             </p>
           </div>
-          <div class="d-flex flex-column align-items-center gap-3">
+          <div
+            class="sky-container d-flex flex-column align-items-center gap-3"
+          >
             <img
               src="assets/img/Crowdsourcing/Icons/carbon_location-1.png"
               alt="geo-icon"
             />
             <p class="d-flex flex-column fw-bold">
-              10X VECES <span class="fw-light">mas simple y eficiente</span>
+              10X VECES
+              <span class="fw-light"
+                >mas simple y <br />
+                eficiente</span
+              >
             </p>
           </div>
-          <div class="d-flex flex-column align-items-center gap-3">
+          <div
+            class="sky-container d-flex flex-column align-items-center gap-3"
+          >
             <img
               src="assets/img/Crowdsourcing/Icons/carbon_location-2.png"
               alt="geo-icon"
@@ -170,28 +244,35 @@
               19 PAISES<span class="fw-light">con cobertura y creciendo</span>
             </p>
           </div>
-          <div class="d-flex flex-column align-items-center gap-3">
+          <div
+            class="sky-container d-flex flex-column align-items-center gap-3"
+          >
             <img
               src="assets/img/Crowdsourcing/Icons/carbon_location-3.png"
               alt="geo-icon"
             />
             <p class="d-flex flex-column fw-bold">
-              27k CIOMERS<span class="fw-light">listos para ayudarle</span>
+              27k CIOMERS<span class="fw-light"
+                >listos para <br />
+                ayudarle</span
+              >
             </p>
           </div>
-          <div class="d-flex flex-column align-items-center gap-3">
+          <div
+            class="sky-container d-flex flex-column align-items-center gap-3"
+          >
             <img
               src="assets/img/Crowdsourcing/Icons/carbon_location-4.png"
               alt="geo-icon"
             />
-            <p class="d-flex flex-column fw-bold">
+            <p class="d-flex flex-column fw-bold text-nowrap">
               100% CUSTOMIZABLE<span class="fw-light"
-                >para su compañia y necesidad</span
+                >para su compañia y <br />
+                necesidad</span
               >
             </p>
           </div>
         </div>
-        <button class="btn-start rounded border-white border">Comenzar</button>
       </div>
     </section>
 
@@ -310,72 +391,6 @@
     <script src="assets/js/i18n.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Inicialización de Swiper
-        var swiper = new Swiper(".mySwiper", {
-          // Configuración general
-          loop: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-
-          breakpoints: {
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-            },
-          },
-        });
-
-        var swiper2 = new Swiper(".mySwiper2", {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          slidesPerGroup: 3,
-          pagination: {
-            el: ".swiper-pagination2",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-          breakpoints: {
-            320: {
-              slidesPerView: 1,
-              slidesPerGroup: 1,
-            },
-            768: {
-              slidesPerView: 3,
-              slidesPerGroup: 3,
-            },
-            1024: {
-              slidesPerView: 3,
-              slidesPerGroup: 3,
-            },
-          },
-        });
-
-        // Inicialización de AOS
-        AOS.init();
-      });
-    </script>
+    <script src="assets/js/newjs.js"></script>
   </body>
 </html>

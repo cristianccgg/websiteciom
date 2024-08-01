@@ -40,6 +40,7 @@ body {
   padding: 10px 50px;
   color: white !important;
   width: 100%;
+  border-radius: 4px;
 }
 
 .btn {
@@ -47,20 +48,38 @@ body {
   color: var(--blue-light);
   width: 100%;
   border: #175fe2 1px solid;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-start {
+    padding: 10px 50px;
+    color: white !important;
+    width: fit-content;
+    border-radius: 4px;
+  }
+
+  .btn {
+    padding: 10px 50px;
+    color: var(--blue-light);
+    width: fit-content;
+    border: #175fe2 1px solid;
+    border-radius: 4px;
+  }
 }
 
 .header-info-container {
   padding-left: 15px;
   padding-right: 15px;
-
   font-size: var(--fs-h7);
 }
 
 .header-info-container-1 {
-  line-height: var(--h7-line-height);
+  line-height: 38px;
   border: red;
   padding-left: -10px;
   padding-right: -10px;
+  max-width: 536px !important;
 }
 
 .header-info-container-2 {
@@ -68,17 +87,37 @@ body {
   border: red;
 }
 
+@media screen and (min-width: 768px) {
+  .header-info-container {
+    height: 460px;
+    max-height: 460px;
+    padding: 150px 187px;
+  }
+
+  .row-container {
+    gap: 120px;
+  }
+
+  .header-info-container {
+    padding: 0px;
+  }
+
+  .header-info-container-1 {
+    padding: 0px;
+  }
+}
+
 #empresas,
 #x5 {
   background-color: var(--blue-light);
   color: white;
-  margin-top: 80px;
 }
 
 .swiper {
   width: 100%;
-  height: 484px;
+  height: 600px;
   position: relative;
+  background-color: #f7faff;
 }
 
 .swiper-slide {
@@ -88,18 +127,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 295px;
 }
 
 .swiper-slide img {
   position: absolute;
-
   display: block;
   width: 100%;
-  height: auto;
-  object-fit: cover; /* Mantiene la imagen en su contenedor */
+  height: 295px;
+  max-height: 295px;
+  object-fit: cover;
 }
 
-/* Estilos para los puntos de navegación */
 .swiper-pagination {
   display: flex;
   justify-content: center;
@@ -107,40 +146,90 @@ body {
 }
 
 .swiper-pagination-bullet {
-  background: var(--grey); /* Ajusta el color de los puntos según tu diseño */
-  width: 12px; /* Ajusta el tamaño del punto */
-  height: 12px; /* Ajusta el tamaño del punto */
-  border-radius: 50%; /* Asegura que los puntos sean redondos */
-  opacity: 0.7; /* Ajusta la opacidad del punto */
-  margin: 0 4px; /* Espacio entre los puntos */
+  background: var(--grey);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0.7;
+  margin: 0 4px;
 }
 
 .swiper-pagination-bullet-active {
   background: var(--blue-light); /* Color del punto activo */
 }
 
+@media screen and (min-width: 768px) {
+  .swiper {
+    height: 739px;
+  }
+  .swiper-pagination {
+    margin-bottom: 107px !important;
+  }
+  .swiper-wrapper {
+    padding-left: 92px;
+  }
+  .swiper-ciomers {
+    height: 690px !important;
+  }
+}
+
 #testimonials2 {
-  padding: 80px 50px;
+  padding: 50px 50px;
   display: flex;
-  height: 800px;
+  height: 700px;
+}
+
+#empresas-cliente-misterioso,
+#empresas-auditorias,
+#empresas-monitoreo,
+#empresas-crowdsourcing {
+  background-color: var(--blue-light);
+  color: white;
+}
+
+.span {
+  font-weight: 400 !important;
+}
+
+.inner-text-empresas-2 {
+  font-weight: 600 !important;
+}
+
+.empresas-2-title {
+  font-size: 36px !important;
+}
+
+@media screen and (min-width: 796px) {
+  #empresas2 {
+    height: 470px;
+    justify-content: space-evenly;
+  }
+}
+
+/* -----------------Testimonials ------------*/
+
+#testimonials-2 {
+  height: 600px;
+  padding: 20px 25px !important;
+  margin-top: 30px;
 }
 
 .header-testimonials {
   display: flex !important;
-  min-width: 100%;
+  width: 100%;
   gap: 80px;
-}
-
-.testimonials-title {
-  font-size: 35px;
 }
 
 .swiper2 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 800px;
+  height: 600px;
   overflow: hidden;
+}
+
+.wrapper {
+  margin-top: 80px;
 }
 
 .swiper-slide2 {
@@ -164,6 +253,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 20px !important;
 }
 
 .client-name {
@@ -184,6 +274,31 @@ body {
   gap: 25px;
 }
 
+@media screen and (min-width: 768px) {
+  #testimonials-2 {
+    height: 709px !important;
+    padding-top: 100px !important;
+    padding-bottom: 72px !important;
+    margin-top: 0px;
+  }
+  .testimonials-title {
+    margin-bottom: 42px;
+  }
+  .swiper2 {
+    height: 537px;
+    width: 1233px;
+  }
+  .swiper-pagination2 {
+    margin-top: 25px !important;
+  }
+  .card2 {
+    height: 376px !important;
+  }
+}
+/* ------------Mejorar ------------------*/
+.btn-mejorar {
+  width: 336px;
+}
 /* ------------Auditorias ------------------*/
 
 #auditorias {
@@ -192,6 +307,16 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 401px;
+}
+
+.auditar-container {
+  width: 315px;
+}
+
+@media screen and (min-width: 768px) {
+  .icons-container-auditorias {
+    gap: 13px;
+  }
 }
 
 /* ------------Monitore de competencia ------------------*/
@@ -207,7 +332,7 @@ body {
 /* ------------Crowdsourcing------------------*/
 
 #crowdsourcing {
-  background-image: url("/assets/img/Crowdsourcing/image 88.png");
+  background-image: url("/assets/img/Crowdsourcing/hero-crowd.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -216,8 +341,26 @@ body {
   overflow: hidden;
 }
 
+.sky-container,
+.herramientas-container {
+  width: 190px;
+  gap: 22px !important;
+  line-height: 30px;
+}
+
+.sky-container p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .icons-container-crowdsourcing {
+    gap: 65px !important;
+  }
+}
+
 .capa-opaca {
-  background: rgba(23, 95, 226, 0.3);
+  background: rgba(23, 95, 226, 0.5);
   position: absolute;
   top: 0;
   left: 0;
@@ -243,9 +386,104 @@ body {
   font-size: 25px;
 }
 
-/* ------------Nosotros------------------*/
+/* -----------------Crowdsourcing------------------ */
 
-#nosotros {
+.divider-inversionistas {
+  width: 50%;
+  color: var(--blue-light);
+  opacity: 100;
+  height: 2px !important;
+}
+
+.divider-crowdsourcing {
+  width: 30%;
+  color: var(--blue-light);
+  opacity: 100;
+  height: 2px !important;
+}
+
+.crowdsourcing-titles {
+  color: var(--blue-light);
+  margin-bottom: 18px;
+}
+
+#crowdsourcing-capacidad p {
+  line-height: 26px;
+}
+
+.cols-container {
+  justify-content: space-between;
+  max-width: 1212px;
+}
+
+@media screen and (min-width: 768px) {
+  #crowdsourcing-capacidad {
+    margin: auto;
+    align-items: center !important;
+  }
+  .cols-container {
+    justify-content: space-between;
+    max-width: 1212px;
+    row-gap: 45px;
+  }
+  .col-crowd {
+    max-width: 570px;
+  }
+  #empresas-crowdsourcing {
+    height: 488px;
+  }
+  .empresas-crowdsourcing-inner {
+    padding: 65px 90px 100px 90px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #crowdsourcing-capacidad {
+    padding: 86px 114px !important;
+    max-height: 774px;
+    margin: auto;
+    align-items: center !important;
+  }
+}
+
+/* -------------Ciomers------------ */
+
+#ciomers-header {
+  background-image: url("/assets/img/Crowdsourcing/Ciomers/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 401px;
+  position: relative;
+  overflow: hidden;
+}
+
+#ciomers-header h1 {
+  position: relative;
+  z-index: 2;
+}
+
+.app-img {
+  width: 356px;
+  height: 466px;
+}
+
+.ciomer-quienes {
+  max-width: 1212px;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .icons-container-ciomers {
+    gap: 65px !important;
+  }
+}
+
+/* -------------Nosotros------------ */
+
+#nosotros,
+#inversionistas,
+#ayuda {
   background-image: url("/assets/img/Crowdsourcing/Nosotros/close-up-detail-team-working-o-new-project-coworking-space-writing-ideas-looking-through-graphics-tablet-laptop-teamwork-business-concept 1.png");
   background-size: cover;
   background-position: center;
@@ -255,14 +493,45 @@ body {
   overflow: hidden;
 }
 
+.header-info-container-nosotros {
+  line-height: 38px;
+  border: red;
+  padding-left: -10px;
+  padding-right: -10px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-main-container-nosotros {
+    padding: 150px 187px;
+    max-width: 1212px;
+    margin: auto;
+  }
+}
+
+/* ----------Pre-ronda------------ */
+
+#x5 {
+  border-radius: 30px;
+}
+
 #pre-ronda h3 {
   color: var(--blue-light);
   margin-bottom: -20px;
 }
 
-.divider-inversionistas {
-  width: 50%;
-  color: var(--blue-light);
-  opacity: 100;
-  height: 2px !important;
+.pre-ronda-items {
+  gap: 100px !important;
+}
+
+@media screen and (min-width: 768px) {
+  #pre-ronda {
+    height: 564px;
+    max-width: 1212px;
+    margin: auto;
+    justify-content: center;
+  }
+  #pre-ronda h3 {
+    font-size: 20px;
+    text-wrap: nowrap;
+  }
 }

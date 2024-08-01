@@ -34,20 +34,6 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch("navbar.html")
-          .then((response) => response.text())
-          .then((data) => {
-            const headerElement = document.querySelector("#header");
-            if (headerElement) {
-              headerElement.innerHTML = data;
-            } else {
-              document.body.insertAdjacentHTML("afterbegin", data);
-            }
-          });
-      });
-    </script>
 
     <title>Nosotros</title>
   </head>
@@ -61,23 +47,23 @@
         <h1>Queremos contribuir a la mejora de su negocio</h1>
         <button class="btn-start">Comencemos</button>
       </div>
-      <div class="header-info-container d-flex flex-column p-5 gap-5">
+      <div class="header-main-container-nosotros d-flex flex-column p-5 gap-4">
         <h3>Qué y Cómo</h3>
         <div>
-          <p class="header-info-container-1">
+          <p class="header-info-container-nosotros">
             Somos una compañía que está revolucionando la forma de medir y
             visualizar indicadores de performance de las compañías y negocios
             (KPIs). Operamos en 19 países y contamos con un equipo de
             profesionales con amplia trayectoria y experiencia en la materia que
             quiere cambiar el mundo.
           </p>
-          <p class="header-info-container-1">
+          <p class="header-info-container-nosotros">
             CIOM es una plataforma innovadora, única en el mercado, basada en
             software de desarrollo propio, que permite a sus clientes recopilar
             información valiosa de forma muy simple y eficiente para visualizar
             e identificar en tiempo real oportunidades de mejora.
           </p>
-          <p class="header-info-container-1">
+          <p class="header-info-container-nosotros">
             La plataforma permite a sus clientes realizar las mediciones con su
             app personalizada, a través de sus colaboradores o los de sus
             proveedores, así como también pedir ayuda a una fuerza de
@@ -103,46 +89,51 @@
     </section>
     <section class="d-flex flex-column p-5 gap-5 align-items-center">
       <h1 class="text-center">This is us</h1>
-      <div class="d-flex flex-column gap-5">
-        <div class="d-flex flex-column gap-2">
-          <img
-            src="assets/img/Crowdsourcing/Nosotros/Testimonial.png"
-            alt="avatar-1"
-          />
-          <h2 class="fw-bold">Mercedes Fortin</h2>
-          <h2>CHO</h2>
+      <div class="d-flex flex-column align-items-center gap-5">
+        <div class="d-flex flex-column flex-md-row gap-5">
+          <div class="d-flex flex-column gap-2">
+            <img
+              src="assets/img/Crowdsourcing/Nosotros/Testimonial.png"
+              alt="avatar-1"
+            />
+            <h2 class="fw-bold">Mercedes Fortin</h2>
+            <h2>CHO</h2>
+          </div>
+          <div class="d-flex flex-column gap-2">
+            <img
+              src="assets/img/Crowdsourcing/Nosotros/Rectangle 1055.png"
+              alt="avatar-2"
+            />
+            <h2 class="fw-bold">Miguel Baez</h2>
+            <h2>CTO</h2>
+          </div>
+          <div class="d-flex flex-column gap-2">
+            <img
+              src="assets/img/Crowdsourcing/Nosotros/Testimonial-1.png"
+              alt="avatar-3"
+            />
+            <h2 class="fw-bold">Pedro de Ojeda</h2>
+            <h2>COO</h2>
+          </div>
         </div>
-        <div class="d-flex flex-column gap-2">
-          <img
-            src="assets/img/Crowdsourcing/Nosotros/Rectangle 1055.png"
-            alt="avatar-2"
-          />
-          <h2 class="fw-bold">Miguel Baez</h2>
-          <h2>CTO</h2>
-        </div>
-        <div class="d-flex flex-column gap-2">
-          <img
-            src="assets/img/Crowdsourcing/Nosotros/Testimonial-1.png"
-            alt="avatar-3"
-          />
-          <h2 class="fw-bold">Pedro de Ojeda</h2>
-          <h2>COO</h2>
-        </div>
-        <div class="d-flex flex-column gap-2">
-          <img
-            src="assets/img/Crowdsourcing/Nosotros/Testimonial-2.png"
-            alt="avatar-4"
-          />
-          <h2 class="fw-bold">Guillermo Sierra</h2>
-          <h2>CFO</h2>
-        </div>
-        <div class="d-flex flex-column gap-2">
-          <img
-            src="assets/img/Crowdsourcing/Nosotros/Testimonial-3.png"
-            alt="avatar-5"
-          />
-          <h2 class="fw-bold">Mercedes Fortin</h2>
-          <h2>CHO</h2>
+
+        <div class="d-flex flex-column flex-md-row gap-5">
+          <div class="d-flex flex-column gap-2">
+            <img
+              src="assets/img/Crowdsourcing/Nosotros/Testimonial-2.png"
+              alt="avatar-4"
+            />
+            <h2 class="fw-bold">Guillermo Sierra</h2>
+            <h2>CFO</h2>
+          </div>
+          <div class="d-flex flex-column gap-2">
+            <img
+              src="assets/img/Crowdsourcing/Nosotros/Testimonial-3.png"
+              alt="avatar-5"
+            />
+            <h2 class="fw-bold">Mercedes Fortin</h2>
+            <h2>CHO</h2>
+          </div>
         </div>
       </div>
     </section>
@@ -236,72 +227,6 @@
     <script src="assets/js/i18n.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Inicialización de Swiper
-        var swiper = new Swiper(".mySwiper", {
-          // Configuración general
-          loop: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-
-          breakpoints: {
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-            },
-          },
-        });
-
-        var swiper2 = new Swiper(".mySwiper2", {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          slidesPerGroup: 3,
-          pagination: {
-            el: ".swiper-pagination2",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-          breakpoints: {
-            320: {
-              slidesPerView: 1,
-              slidesPerGroup: 1,
-            },
-            768: {
-              slidesPerView: 3,
-              slidesPerGroup: 3,
-            },
-            1024: {
-              slidesPerView: 3,
-              slidesPerGroup: 3,
-            },
-          },
-        });
-
-        // Inicialización de AOS
-        AOS.init();
-      });
-    </script>
+    <script src="assets/js/newjs.js"></script>
   </body>
 </html>

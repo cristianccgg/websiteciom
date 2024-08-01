@@ -34,20 +34,6 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch("navbar.html")
-          .then((response) => response.text())
-          .then((data) => {
-            const headerElement = document.querySelector("#header");
-            if (headerElement) {
-              headerElement.innerHTML = data;
-            } else {
-              document.body.insertAdjacentHTML("afterbegin", data);
-            }
-          });
-      });
-    </script>
 
     <title>Ciomers</title>
   </head>
@@ -58,29 +44,48 @@
         id="ciomers-header"
         class="header align-items-center text-white px-5"
       >
-        <img src="assets/img/Crowdsourcing/Ciomers/foto.png" alt="app-img" />
+        <div class="capa-opaca"></div>
+        <h1 class="text-center">
+          Descubre la libertad de generar ingresos a tu propio ritmo
+        </h1>
       </div>
-      <div class="header-info-container d-flex flex-column p-5 gap-5">
-        <h1>Quiero ser Ciomer</h1>
-        <div class="header-info-container-1">
-          Personas que deciden actuar como contratistas (prestadores de
-          servicios independientes) para realizar tareas simples de terceros en
-          sus tiempos libres en base a sus habilidades y experiencia.
+
+      <div class="ciomer-quienes row g-5 align-items-md-center pb-5 px-3">
+        <div class="col-12 col-md-6 order-md-2">
+          <img
+            class="app-img mx-auto d-block"
+            src="assets/img/Crowdsourcing/Ciomers/foto.png"
+            alt="app-img"
+          />
         </div>
-        <div class="header-info-container-2">
-          <h3>Requisitos</h3>
-          <ul>
-            <li class="d-flex align-items-center">
-              <img src="assets/img/Crowdsourcing/Vector.png" alt="check-icon" />
-              <h7>Ser mayor de edad</h7>
-            </li>
-            <li class="d-flex align-items-center">
-              <img
-                src="assets/img/Crowdsourcing/Vector.png"
-                alt="check-icon"
-              /><h7>Mantener una calidad mayor al 95%</h7>
-            </li>
-          </ul>
+        <div class="col-12 col-md-6">
+          <h1 class="text-center text-md-start">Quienes pueden ser Ciomer</h1>
+          <div class="header-info-container-1 mt-3">
+            <p>
+              Personas que deciden actuar como contratistas (prestadores de
+              servicios independientes) para realizar tareas simples de terceros
+              en sus tiempos libres en base a sus habilidades y experiencia.
+            </p>
+          </div>
+          <div class="header-info-container-2 mt-5">
+            <h3>Requisitos</h3>
+            <ul>
+              <li class="d-flex align-items-center">
+                <img
+                  src="assets/img/Crowdsourcing/Vector.png"
+                  alt="check-icon"
+                />
+                <h7>Ser mayor de edad</h7>
+              </li>
+              <li class="d-flex align-items-center">
+                <img
+                  src="assets/img/Crowdsourcing/Vector.png"
+                  alt="check-icon"
+                />
+                <h7>Mantener una calidad mayor al 95%</h7>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -92,23 +97,127 @@
       <div class="d-flex flex-column gap-4">
         <div>
           <h3>
-            Libera tu potencial y conquista tu propio destino Conviértete en tu
-            propio jefe y descubre la libertad de ganar a tu ritmo
+            Libera tu potencial y conquista tu propio destino <br />Conviértete
+            en tu propio jefe y descubre la libertad de ganar a tu ritmo
           </h3>
         </div>
       </div>
     </section>
 
-    <section id="testimonials2" class="d-flex flex-column align-items-center">
+    <section
+      id="herramientas"
+      class="d-flex align-items-center flex-column text-center p-5"
+    >
+      <div
+        class="d-flex flex-column justify-content-evenly gap-md-5 align-items-center"
+      >
+        <div class="empresas-2-title mb-5 mb-md-0">
+          <h3 class="empresas-2-title">La herramienta que estabas buscando</h3>
+        </div>
+        <div
+          class="icons-container-ciomers d-flex flex-column gap-3 my-5 my-md-0 flex-md-row"
+        >
+          <div
+            class="herramientas-container d-flex flex-column align-items-center gap-3"
+          >
+            <img
+              src="assets/img/Crowdsourcing/Ciomers/carbon_location.png"
+              alt="geo-icon"
+            />
+            <p class="d-flex flex-column fw-bold">
+              Satisfacción<span class="fw-light"
+                >Mantenemos una línea abierta para ayudarte con tus primeros
+                servicios</span
+              >
+            </p>
+          </div>
+          <div
+            class="herramientas-container d-flex flex-column align-items-center gap-3"
+          >
+            <img
+              src="assets/img/Crowdsourcing/Inversionistas/carbon_location-1.png"
+              alt="geo-icon"
+            />
+            <p class="d-flex flex-column fw-bold">
+              Sin fronteras<span class="fw-light"
+                >En el país o ciudad que encuentres un servicio puedes
+                prestarlo</span
+              >
+            </p>
+          </div>
+          <div
+            class="herramientas-container d-flex flex-column align-items-center gap-3"
+          >
+            <img
+              src="assets/img/Crowdsourcing/Inversionistas/carbon_location-3.png"
+              alt="geo-icon"
+            />
+            <p class="d-flex flex-column fw-bold">
+              Transferencias<span class="fw-light"
+                >1 vez al mes te llegará el dinero de todos los servicios
+                prestados exitosamente</span
+              >
+            </p>
+          </div>
+          <div
+            class="herramientas-container d-flex flex-column align-items-center gap-3"
+          >
+            <img
+              src="assets/img/Crowdsourcing/Inversionistas/carbon_location-4.png"
+              alt="geo-icon"
+            />
+            <p class="d-flex flex-column fw-bold">
+              Ingresos<span class="fw-light"
+                >Podrá aumentarlos a su ritmo media vez haya servicios para
+                realizar en su zona</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="swiper mySwiper swiper-ciomers">
+      <h1 class="text-center p-5 fs-3">
+        Tareas simples que podrás aprender facilmente
+      </h1>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="assets/img/Crowdsourcing/image 89.png"
+            alt="adults-eating-img"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="assets/img/Crowdsourcing/image 90.png"
+            alt="supermaket-img"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="assets/img/Crowdsourcing/two-young-pretty-girls-looking-dresses-try-it-while-choosing-shop 2.png"
+            alt="kid-icecream-img"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="assets/img/Crowdsourcing/image 91.png"
+            alt="woman-hairdresser-img"
+          />
+        </div>
+      </div>
+      <div class="swiper-pagination mb-5"></div>
+    </div>
+
+    <section id="testimonials-2" class="d-flex flex-column align-items-center">
       <div class="swiper2 mySwiper2">
-        <h1 class="testimonials-title text-center fw-semibold">
-          Qué dijeron quienes usaron CIOM para mejorar
+        <h1 class="testimonials-title text-center mb-3 fw-semibold fs-2">
+          Que opinan quienes ya prestan sus servicios a través de CIOM
         </h1>
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper wrapper">
           <div class="swiper-slide">
-            <div
-              class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-            >
+            <div class="card2 rounded-3 d-flex flex-column gap-5 p-5 border">
               <div class="header-testimonials">
                 <div>
                   <img
@@ -466,7 +575,7 @@
             </div>
           </div>
         </div>
-        <div class="swiper-pagination2 mt-3"></div>
+        <div class="swiper-pagination2"></div>
       </div>
     </section>
 
@@ -559,72 +668,6 @@
     <script src="assets/js/i18n.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Inicialización de Swiper
-        var swiper = new Swiper(".mySwiper", {
-          // Configuración general
-          loop: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-
-          breakpoints: {
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-            },
-          },
-        });
-
-        var swiper2 = new Swiper(".mySwiper2", {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          slidesPerGroup: 3,
-          pagination: {
-            el: ".swiper-pagination2",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-          breakpoints: {
-            320: {
-              slidesPerView: 1,
-              slidesPerGroup: 1,
-            },
-            768: {
-              slidesPerView: 3,
-              slidesPerGroup: 3,
-            },
-            1024: {
-              slidesPerView: 3,
-              slidesPerGroup: 3,
-            },
-          },
-        });
-
-        // Inicialización de AOS
-        AOS.init();
-      });
-    </script>
+    <script src="assets/js/newjs.js"></script>
   </body>
 </html>

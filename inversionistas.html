@@ -34,20 +34,7 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch("navbar.html")
-          .then((response) => response.text())
-          .then((data) => {
-            const headerElement = document.querySelector("#header");
-            if (headerElement) {
-              headerElement.innerHTML = data;
-            } else {
-              document.body.insertAdjacentHTML("afterbegin", data);
-            }
-          });
-      });
-    </script>
+    
 
     <title>Inversionistas</title>
   </head>
@@ -55,7 +42,7 @@
   <body>
     
       <div
-        id="nosotros"
+        id="inversionistas"
         class="header align-items-center text-white px-5 text-center"
       >
         <h3>
@@ -68,12 +55,18 @@
         id="victorinox"
         class="d-flex align-items-center flex-column text-center p-5"
       >
-        <div class="d-flex flex-column gap-4">
-          <div>
-            <h1>Somos la victorinox de las compañías</h1>
+      <div
+      class="d-flex flex-column justify-content-evenly gap-md-5 align-items-center"
+    >
+    <div class="empresas-2-title mb-5 mb-md-0">
+      <h3 class="empresas-2-title">Somos la victorinox de las compañías</h3>
           </div>
-          <div class="d-flex flex-column gap-3 my-5">
-            <div class="d-flex flex-column align-items-center gap-3">
+          <div
+          class="icons-container-ciomers d-flex flex-column gap-3 my-5 my-md-0 flex-md-row"
+        >
+        <div
+        class="herramientas-container d-flex flex-column align-items-center gap-3"
+      >
               <img
                 src="assets/img/Crowdsourcing/Inversionistas/carbon_location.png"
                 alt="geo-icon"
@@ -82,7 +75,9 @@
                 4.6<span class="fw-light">Reviews</span>
               </p>
             </div>
-            <div class="d-flex flex-column align-items-center gap-3">
+            <div
+            class="herramientas-container d-flex flex-column align-items-center gap-3"
+          >
               <img
                 src="assets/img/Crowdsourcing/Inversionistas/carbon_location-1.png"
                 alt="geo-icon"
@@ -91,7 +86,9 @@
                 19<span class="fw-light">Paises</span>
               </p>
             </div>
-            <div class="d-flex flex-column align-items-center gap-3">
+            <div
+            class="herramientas-container d-flex flex-column align-items-center gap-3"
+          >
               <img
                 src="assets/img/Crowdsourcing/Inversionistas/carbon_location-2.png"
                 alt="geo-icon"
@@ -100,7 +97,9 @@
                 150k+<span class="fw-light">Descargas</span>
               </p>
             </div>
-            <div class="d-flex flex-column align-items-center gap-3">
+            <div
+            class="herramientas-container d-flex flex-column align-items-center gap-3"
+          >
               <img
                 src="assets/img/Crowdsourcing/Inversionistas/carbon_location-3.png"
                 alt="geo-icon"
@@ -109,7 +108,9 @@
                 1.5M<span class="fw-light">Vendido 2024</span>
               </p>
             </div>
-            <div class="d-flex flex-column align-items-center gap-3">
+            <div
+            class="herramientas-container d-flex flex-column align-items-center gap-3"
+          >
               <img
                 src="assets/img/Crowdsourcing/Inversionistas/carbon_location-4.png"
                 alt="geo-icon"
@@ -141,52 +142,52 @@
         class="d-flex align-items-center flex-column text-center p-5"
       >
         <div class="d-flex flex-column gap-4">
-          <div>
-            <h1>Pre - Ronda A CIOM
+          <div class="mb-md-5">
+            <h1>Pre - Ronda A CIOM <br>
                 U$ 750,000.00</h1>
           </div>
-          <div class="d-flex flex-column gap-3 my-5">
-            <div class="d-flex flex-column align-items-center gap-3">
+          <div class="pre-ronda-items d-flex flex-column gap-3 my-5 flex-md-row ">
+            <div class="d-flex flex-column align-items-center align-items-md-start gap-3 text-md-start">
               <img
                 src="assets/img/Crowdsourcing/Inversionistas/Pre-ronda/nimbus_marketing.png"
                 alt="geo-icon"
               />
-              <h3>Use of founds</h3>
+              <h3 >Use of founds</h3>
               <hr class="divider-inversionistas"/>
-              <p class="d-flex flex-column px-5">
+              <p class="d-flex flex-column px-5 px-md-0">
                 Estamos en una etapa de aceleración via marketing
               </p>
             </div>
-            <div class="d-flex flex-column align-items-center gap-3">
+            <div class="d-flex flex-column align-items-center align-items-md-start gap-3 text-md-start">
               <img
                 src="assets/img/Crowdsourcing/Inversionistas/Pre-ronda/Group 427320623.png"
                 alt="geo-icon"
               />
               <h3>Pre - Ronda A 750k</h3>
               <hr class="divider-inversionistas"/>
-              <p class="d-flex flex-column px-5">
+              <p class="d-flex flex-column px-5 px-md-0">
                 Llevamos levantado mas del 40%.
               </p>
             </div>
-            <div class="d-flex flex-column align-items-center gap-3">
+            <div class="d-flex flex-column align-items-center align-items-md-start gap-3 text-md-start">
               <img
                 src="assets/img/Crowdsourcing/Inversionistas/Pre-ronda/Vector.png"
                 alt="geo-icon"
               />
               <h3>Founders Equity</h3>
               <hr class="divider-inversionistas"/>
-              <p class="d-flex flex-column px-5">
+              <p class="d-flex flex-column px-5 px-md-0">
                 Un equipo altamente motivado.
               </p>
             </div>
-            <div class="d-flex flex-column align-items-center gap-3">
+            <div class="d-flex flex-column align-items-center align-items-md-start gap-3 text-md-start">
               <img
                 src="assets/img/Crowdsourcing/Inversionistas/Pre-ronda/Vector-1.png"
                 alt="geo-icon"
               />
               <h3>Vehicle</h3>
               <hr class="divider-inversionistas"/>
-              <p class="d-flex flex-column px-5">
+              <p class="d-flex flex-column px-5 px-md-0">
                 SAFE para su tranquilidad. Con un CAP de 15M.
               </p>
             </div>
@@ -195,7 +196,7 @@
         </div>
       </section>
 
-    <div id="x5" class="p-5 d-flex flex-column align-items-center gap-5 mx-5 mt-0 rounded rounded-5 ">
+    <div id="x5" class="p-5 d-flex flex-column align-items-center gap-5 mx-5 mt-0">
         <div class="d-flex flex-column align-items-center text-center">
             <h1>Hagamos un x 5 en 2025</h1>
             <h2>Ticket:  U$25,500.00</h2>
@@ -292,72 +293,6 @@
     <script src="assets/js/i18n.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Inicialización de Swiper
-        var swiper = new Swiper(".mySwiper", {
-          // Configuración general
-          loop: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-
-          breakpoints: {
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-            },
-          },
-        });
-
-        var swiper2 = new Swiper(".mySwiper2", {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          slidesPerGroup: 3,
-          pagination: {
-            el: ".swiper-pagination2",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-          breakpoints: {
-            320: {
-              slidesPerView: 1,
-              slidesPerGroup: 1,
-            },
-            768: {
-              slidesPerView: 3,
-              slidesPerGroup: 3,
-            },
-            1024: {
-              slidesPerView: 3,
-              slidesPerGroup: 3,
-            },
-          },
-        });
-
-        // Inicialización de AOS
-        AOS.init();
-      });
-    </script>
+    <script src="assets/js/newjs.js"></script>
   </body>
 </html>
