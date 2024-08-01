@@ -13,6 +13,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("footer.html")
+    .then((response) => response.text())
+    .then((data) => {
+      const footerElement = document.querySelector("#footer");
+      if (footerElement) {
+        footerElement.innerHTML = data;
+      } else {
+        document.body.insertAdjacentHTML("afterbegin", data);
+      }
+    })
+    .catch((error) => console.error("Error al cargar el footer:", error));
+});
+
 function initializeNavbar() {
   const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
   const navbar = document.getElementById("navbar-2");

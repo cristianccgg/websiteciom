@@ -310,6 +310,10 @@ body {
   height: 401px;
 }
 
+#auditorias .title {
+  font-size: 24px;
+}
+
 .auditar-container {
   width: 315px;
 }
@@ -317,6 +321,10 @@ body {
 @media screen and (min-width: 768px) {
   .icons-container-auditorias {
     gap: 13px;
+  }
+
+  #auditorias .title {
+    font-size: 40px;
   }
 }
 
@@ -542,11 +550,19 @@ header-info-container-apps {
   padding-right: -10px;
 }
 
+#inversionistas .title {
+  font-size: 20px;
+}
+
 @media screen and (min-width: 768px) {
   .header-main-container-nosotros {
     padding: 150px 187px;
     max-width: 1212px;
     margin: auto;
+  }
+
+  #inversionistas .title {
+    font-size: 32px;
   }
 }
 
