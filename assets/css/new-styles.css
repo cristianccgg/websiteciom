@@ -165,7 +165,7 @@ body {
   .swiper-pagination {
     margin-bottom: 107px !important;
   }
-  .swiper-wrapper {
+  .swiper-wrapper-imgs {
     padding-left: 92px;
   }
   .swiper-ciomers {
@@ -206,7 +206,7 @@ body {
   }
 }
 
-/* -----------------Testimonials ------------*/
+/* -----------------Testimonials 2 ------------*/
 
 #testimonials-2 {
   height: 600px;
@@ -218,6 +218,7 @@ body {
   display: flex !important;
   width: 100%;
   gap: 80px;
+  overflow: hidden;
 }
 
 .swiper2 {
@@ -237,7 +238,6 @@ body {
   font-size: 18px;
   background: #fff;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -248,7 +248,7 @@ body {
 }
 
 .card2 {
-  width: 384px !important;
+  width: 375px !important;
   height: 420px !important;
   display: flex;
   flex-direction: column;
@@ -292,6 +292,7 @@ body {
     margin-top: 25px !important;
   }
   .card2 {
+    width: 384px !important;
     height: 376px !important;
   }
 }
@@ -454,8 +455,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 401px;
-  position: relative;
-  overflow: hidden;
 }
 
 #ciomers-header h1 {
@@ -471,6 +470,49 @@ body {
 .ciomer-quienes {
   max-width: 1212px;
   margin: auto;
+}
+
+header-info-container-apps {
+  gap: 95px !important;
+}
+
+#testimonials-3 {
+  height: 507px;
+  padding: 20px 25px !important;
+  margin-top: 30px;
+}
+
+.testimonials-title-3 {
+  margin-bottom: 0px;
+}
+
+.card3 {
+  width: 320px !important;
+  height: 194px !important;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.swiper-pagination-ciomers {
+  margin-bottom: 51px;
+}
+
+.stars-container3 img.star {
+  width: 24px;
+  height: auto;
+}
+
+.stars-container3 {
+  display: flex;
+  gap: 25px;
+  padding: 0px;
+
+  height: 24px;
+  width: 128px;
 }
 
 @media screen and (min-width: 768px) {
