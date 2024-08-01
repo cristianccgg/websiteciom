@@ -1976,8 +1976,9 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 60px;
+  gap: 15px;
   max-width: 100%;
+  margin-bottom: 25px;
 }
 .icons-footer {
   display: flex;
@@ -1996,6 +1997,11 @@ section {
   .footer-items-rigth {
     margin-top: 0px;
     gap: 97px;
+  }
+
+  #footer .legal-container {
+    gap: 60px;
+    margin-bottom: 0px;
   }
 }
 
