@@ -66,6 +66,10 @@ body {
     border: #175fe2 1px solid;
     border-radius: 4px;
   }
+
+  #empresas-cliente-misterioso .datos {
+    gap: 130px !important;
+  }
 }
 
 .header-info-container {
@@ -314,17 +318,13 @@ body {
   font-size: 24px;
 }
 
-.auditar-container {
-  width: 315px;
-}
-
 @media screen and (min-width: 768px) {
-  .icons-container-auditorias {
-    gap: 13px;
-  }
-
   #auditorias .title {
     font-size: 40px;
+  }
+
+  .icons-container-auditorias {
+    gap: 160px !important;
   }
 }
 
@@ -362,7 +362,7 @@ body {
   font-weight: 700;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 990px) {
   .icons-container-crowdsourcing {
     gap: 65px !important;
   }
@@ -523,7 +523,7 @@ header-info-container-apps {
   width: 128px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 990px) {
   .icons-container-ciomers {
     gap: 65px !important;
   }
