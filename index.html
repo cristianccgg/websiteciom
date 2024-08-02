@@ -10,32 +10,46 @@
   <meta name="description" content="mystery shopper services">
   
   <link rel="icon" type="image/x-icon" href="assets/img/ciom_tiny.png">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> 
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/css/global.css" rel="stylesheet" />
-  <link href="assets/css/style.css" rel="stylesheet">
-   
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-   <!-- Vendor JS Files -->
-   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-   <script src="assets/vendor/aos/aos.js"></script>
-   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>  
- 
-   <!-- Template Main JS File -->
-   <script src="assets/js/main.js"></script>
-   <script type="text/javascript"> _linkedin_partner_id = "5668329"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id); </script><script type="text/javascript"> (function(l) { if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])}; window.lintrk.q=[]} var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(window.lintrk); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=5668329&fmt=gif" /> </noscript> 
-    <!-- Internalization -->
-    <script src="https://unpkg.com/i18next@latest/i18next.min.js"></script>
-    <script src="https://unpkg.com/i18next-http-backend@latest/i18nextHttpBackend.min.js"></script>
-    <script src="https://unpkg.com/i18next-browser-languagedetector@latest/i18nextBrowserLanguageDetector.min.js"></script>
-    <script src="assets/js/i18n.js"></script>
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> 
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/css/global.css" rel="stylesheet" />
+<link href="assets/css/style.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>  
+
+<script src="assets/js/navbar.js"></script>
+
+<!-- Template Main JS File -->   
+<script>
+  // Function to load navbar
+  function loadNavbar() {
+    fetch("navbar.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.querySelector("body").insertAdjacentHTML("afterbegin", data);
+        // Ensure navbar script runs after navbar HTML is loaded
+        const script = document.createElement('script');
+        script.src = 'assets/js/navbar.js';
+        document.body.appendChild(script);
+      })
+      .catch((error) => console.error("Error loading the navbar:", error));
+  }
+
+  // Call the function on page load
+  window.addEventListener("DOMContentLoaded", loadNavbar);
+</script>
+
 
 
 
@@ -195,81 +209,7 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
 
 <body>
 
- <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container">
-      <div class="row d-flex align-items-center" >
-        
-        <div class="col d-flex align-items-center" style="max-width: 120px;" >        
-          <a href="index.html"  style="padding: 0px;"><img src="./assets/img/logo_header.png" alt="CIOM" class="logo"></a>
-        </div>
-
-        <div class="col d-flex justify-content-start align-items-center" >        
-          <nav id="navbar" class="navbar" style="padding: 0px;">
-            <i class="bi bi-list mobile-nav-toggle" ></i>
-            <ul>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Principales Indicadores
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="cliente-misterioso.html">Cliente Misterioso</a></li>
-                  <li><a class="dropdown-item" href="auditorias.html">Auditorias/Inspecciones</a></li>
-                  <li><a class="dropdown-item" href="monitoreo.html">Monitoreo de competencia</a></li>
-                </ul>
-              </li>
-              <li><a id="header_menu_additional_service" href="crowdsourcing.html" class="nav-link scrollto">Crowdsourcing</a></li> 
-              <li><a id="header_menu_additional_service" href="ciomers.html" class="nav-link scrollto">Quiero ser CIOMER</a></li> 
-              <li><a id="header_menu_prices" href="#prices" class="nav-link scrollto">Precios</a></li>
-              <li><a id="header_menu_mentions" href="nosotros.html" class="nav-link scrollto">Nosotros</a></li>
-              <li><a id="header_menu_investors" href="inversionistas.html" class="nav-link scrollto">Inversionistas</a></li>
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li> -->
-            </ul>
-          </nav>  
-          
-        </div>
-
-        <div class="col d-flex justify-content-end align-items-center pl-0">
-          <div class="language-selector">
-            <button class="dropbtn">
-              <i class="bi bi-globe"></i>
-              <!-- <i class="arrow down"></i> -->
-            </button>
-            <div class="dropdown-content">
-              <a href="#" onclick="changeLanguage('en')">English</a>
-              <a href="#" onclick="changeLanguage('es')">Español</a>
-              <a href="#" onclick="changeLanguage('pt')">Português</a>
-              <a href="#" onclick="changeLanguage('fr')">Français</a>              
-            </div>
-          </div>
-
-          <a href="http://web.ciom.tech/login" target="_blank" rel="noopener noreferrer" >
-            <i class="bi bi-person-fill login-icon"></i>      
-          </a>  
-          <!-- <a href="http://web.ciom.tech/login"  id="header_login" target="_blank" rel="noopener noreferrer" class="btn btn-login">
-            Log in
-          </a> -->
-
-          <a href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="btn btn-header"
-          id="header_btn"
-        >Comenzar</a>
-        </div>
-
-      </div>
-    </div>
-  
-  </header> 
+  <div id="navbar-container"></div>
 
   <main id="main">
 
@@ -1750,9 +1690,7 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
 
       <div class="divide mt-5 mb-5"></div>
 
-      <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
-    
-        
+      <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">     
           <div class="legal-container">
             <a  id="footer_conditions" href="https://web.ciom.tech/terminosycondicionesdeuso"  target="_blank" rel="noopener noreferrer" >Terminos y condiciones</a>
             <div>Aviso de privacidad</div>
@@ -1761,13 +1699,9 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
           <div class="d-flex icons-footer"> 
             <div><a href="https://www.linkedin.com/company/circle-complete-group/about/"  target="_blank" rel="noopener noreferrer" ><img alt="" src="/assets/img/Crowdsourcing/icon-Facebook.png" /></a></div>
             <div><a href="https://www.linkedin.com/company/circle-complete-group/about/"  target="_blank" rel="noopener noreferrer" ><img alt="" src="./assets/img/linkedin.svg" /></a></div>
-          </div>
-        
-
+          </div>      
       </div>
-
     </div>
-
   </footer>  
 
 <!-- <div class="cookie-banner">
@@ -1779,18 +1713,9 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
    
     <i class="bi bi-whatsapp my-float"></i>
     </a> -->
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>  
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script type="text/javascript"> _linkedin_partner_id = "5668329"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id); </script><script type="text/javascript"> (function(l) { if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])}; window.lintrk.q=[]} var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(window.lintrk); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=5668329&fmt=gif" /> </noscript> 
 
+  
 </body>
 
 </html>

@@ -1,19 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("navbar.html")
-    .then((response) => response.text())
-    .then((data) => {
-      const headerElement = document.querySelector("#header");
-      if (headerElement) {
-        headerElement.innerHTML = data;
-        initializeNavbar();
-      } else {
-        document.body.insertAdjacentHTML("afterbegin", data);
-        initializeNavbar();
-      }
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
   fetch("footer.html")
     .then((response) => response.text())
     .then((data) => {
