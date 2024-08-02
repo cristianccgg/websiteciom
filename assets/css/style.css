@@ -75,20 +75,19 @@ li {
 }
 
 /* Ajustes específicos para el dropdown en móviles */
-@media (max-width: 768px) {
-  .navbar-mobile .dropdown-menu {
-    display: block; /* Asegura que el dropdown se muestre debajo del botón */
-    position: absolute; /* Cambia a absolute para controlar mejor la posición */
-    width: fit-content; /* Ocupa todo el ancho disponible */
-    margin-top: 0; /* Ajusta el margen si es necesario */
-    box-shadow: none; /* Opcional: ajusta la sombra si no la necesitas */
-    z-index: 1000; /* Asegura que el dropdown se muestre encima de otros elementos */
-  }
 
-  /* Asegúrate de que los elementos siguientes se muestren debajo del dropdown */
-  .navbar-mobile li {
-    clear: both; /* Asegura que los elementos siguientes no se alineen al lado del dropdown */
-  }
+.navbar-mobile .dropdown-menu {
+  display: block; /* Asegura que el dropdown se muestre debajo del botón */
+  position: absolute; /* Cambia a absolute para controlar mejor la posición */
+  width: fit-content; /* Ocupa todo el ancho disponible */
+  margin-top: 0; /* Ajusta el margen si es necesario */
+  box-shadow: none; /* Opcional: ajusta la sombra si no la necesitas */
+  z-index: 1000; /* Asegura que el dropdown se muestre encima de otros elementos */
+}
+
+/* Asegúrate de que los elementos siguientes se muestren debajo del dropdown */
+.navbar-mobile li {
+  clear: both; /* Asegura que los elementos siguientes no se alineen al lado del dropdown */
 }
 
 /*--------------------------------------------------------------
