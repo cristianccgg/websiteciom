@@ -685,6 +685,10 @@ li {
 }
 
 @media (max-width: 1000px) {
+  .navbar {
+    margin-left: -20px;
+  }
+
   #header .container {
     gap: 0px;
     padding-left: 15px;
@@ -699,6 +703,7 @@ li {
   #header img {
     max-width: 80px;
   }
+
   .iniciar-sesion {
     text-wrap: wrap;
   }
