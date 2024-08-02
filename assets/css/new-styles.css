@@ -352,6 +352,8 @@ body {
   height: 401px;
   position: relative;
   overflow: hidden;
+  gap: 36px;
+  padding-top: 148px;
 }
 
 .sky-container,
@@ -468,6 +470,7 @@ body {
   background-repeat: no-repeat;
   height: 401px;
   margin-bottom: 0px;
+  padding-top: 191px;
 }
 
 #ciomers-header h1 {
@@ -618,6 +621,12 @@ header-info-container-apps {
   height: 401px;
   position: relative;
   overflow: hidden;
+  padding-top: 172px;
+}
+
+#ayuda h1 {
+  font-size: 40px;
+  font-weight: 600;
 }
 
 #inversionistas {
@@ -628,6 +637,8 @@ header-info-container-apps {
   height: 401px;
   position: relative;
   overflow: hidden;
+  padding-top: 102px;
+  gap: 36px;
 }
 
 .app {
@@ -650,14 +661,16 @@ header-info-container-apps {
   align-items: center !important;
   background-color: transparent !important;
   border: none !important; /* Eliminar todos los bordes */
-  border-bottom: 2px solid var(--blue-light) !important; /* Borde inferior del color del texto */
+  border-bottom: 2px solid rgba(0, 46, 138, 1) !important; /* Borde inferior del color del texto */
   padding: 10px !important;
+  font-weight: 700;
+  font-size: 20px !important;
   text-align: left !important;
   cursor: pointer !important;
   width: 100% !important;
   outline: none !important;
   font-size: 16px !important;
-  color: var(--blue-light) !important; /* Color del texto */
+  color: rgba(0, 46, 138, 1);
 }
 
 /* Estilos para el contenido del acordeón */
@@ -681,6 +694,11 @@ header-info-container-apps {
 .custom-accordion-container p,
 .custom-accordion-container li {
   padding-top: 15px;
-  color: var(--blue-light);
+  color: rgba(0, 46, 138, 1);
   line-height: 30px;
+}
+
+.custom-accordion-container {
+  max-width: 936px;
+  margin-top: 44px;
 }

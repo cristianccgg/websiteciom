@@ -2077,3 +2077,16 @@ section {
 .cookie-banner button {
   margin: 10px;
 }
+
+.plans-divider {
+  width: 100%;
+  border: rgba(43, 43, 43, 0.1) 1px solid;
+}
+
+.methodology {
+  line-height: 32px;
+}
+.methodology-group {
+  margin-top: 42px;
+  margin-bottom: 37px;
+}
