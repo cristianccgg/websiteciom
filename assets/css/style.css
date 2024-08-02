@@ -279,6 +279,9 @@ li {
   display: flex;
   list-style: none;
   align-items: center;
+  gap: 22px;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .navbar li {
@@ -290,7 +293,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px 10px 0px;
+  padding: 0px;
   color: var(--color-font-principal);
   font-weight: 500;
   font-size: 1rem !important;
@@ -534,10 +537,14 @@ li {
   display: inline-block;
 }
 
+.iniciar-sesion {
+  font-size: 16px;
+  font-weight: 600 !important;
+}
+
 .dropbtn {
   color: var(--color-font-principal);
   background-color: transparent;
-  padding-right: 26px;
   border: none;
   cursor: pointer;
 }
@@ -631,21 +638,38 @@ li {
   color: var(--azul-primario);
 }
 
-#header .container,
-#header-1 .container {
+#header .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
   max-width: 100% !important;
-  padding-left: 10%;
-  padding-right: 3%;
+  padding-left: 87px;
+  padding-right: 42px;
 }
 
-#header img,
-#header-1 img {
+#header img {
   max-width: 110px;
 }
 
-#header.header-scrolled,
-#header-1.header-scrolled {
+#header.header-scrolled {
   height: 80px;
+}
+
+.navbar-right-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Ajusta el espacio entre los elementos si es necesario */
+}
+
+.language-selector,
+.navbar-right-icons > div {
+  display: flex;
+  align-items: center;
+}
+
+.iniciar-sesion {
+  text-wrap: nowrap;
+  margin: 0; /* Asegúrate de que no haya márgenes que desalineen el elemento */
 }
 
 /* #header a {
@@ -653,7 +677,6 @@ li {
 } */
 
 .login-icon {
-  margin-right: 5px;
   color: var(--color-font-principal);
 }
 
@@ -662,24 +685,24 @@ li {
 }
 
 @media (max-width: 1000px) {
-  #header .container,
-  #header-1 .container {
-    padding-left: 3%;
-    padding-right: 3%;
+  #header .container {
+    gap: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
-  #header img,
-  #header-1 img {
+  .navbar-right-icons {
+    gap: 5px !important;
+    align-items: center !important;
+  }
+
+  #header img {
     max-width: 80px;
   }
-
-  .btn-header {
-    margin-left: 5px;
-    font-size: 12px;
-    min-width: 95px;
+  .iniciar-sesion {
+    text-wrap: wrap;
   }
 }
-
 /*--------------------------------------------------------------
 # Main
 --------------------------------------------------------------*/
