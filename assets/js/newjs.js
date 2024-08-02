@@ -103,3 +103,32 @@ document.addEventListener("DOMContentLoaded", function () {
   // Inicialización de AOS
   AOS.init();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const accordionButtons = document.querySelectorAll(
+    ".custom-accordion-button"
+  );
+
+  accordionButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const content = this.nextElementSibling;
+
+      if (content.style.display === "block") {
+        content.style.display = "none";
+        this.classList.remove("active");
+      } else {
+        document
+          .querySelectorAll(".custom-accordion-content")
+          .forEach((item) => {
+            if (item !== content) {
+              item.style.display = "none";
+              item.previousElementSibling.classList.remove("active");
+            }
+          });
+
+        content.style.display = "block";
+        this.classList.add("active");
+      }
+    });
+  });
+});

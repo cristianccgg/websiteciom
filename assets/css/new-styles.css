@@ -21,6 +21,10 @@ body {
   --green: #2d844a;
 }
 
+#top-section {
+  margin-top: 90px;
+}
+
 #cliente-misterioso {
   background-image: url("/assets/img/Crowdsourcing/cliente-misterioso/woman-surrounded-by-bags-pile 1.png");
   background-size: cover;
@@ -463,21 +467,35 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 401px;
+  margin-bottom: 0px;
 }
 
 #ciomers-header h1 {
-  position: relative;
   z-index: 2;
 }
 
 .app-img {
   width: 356px;
-  height: 466px;
+  max-width: 466px;
 }
 
-.ciomer-quienes {
+.ciomer-quienes,
+.ciomer-quienes-2 {
   max-width: 1212px;
-  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .ciomer-quienes-2 {
+    display: flex;
+    align-items: center;
+    height: 595px;
+    align-items: center;
+
+    margin-top: 0px;
+  }
+
+  .quienes-text {
+  }
 }
 
 header-info-container-apps {
@@ -610,4 +628,59 @@ header-info-container-apps {
   height: 401px;
   position: relative;
   overflow: hidden;
+}
+
+.app {
+  width: 120px;
+  height: 40px;
+}
+
+.app-google {
+  width: 133px;
+  height: 60px;
+}
+
+.custom-accordion {
+  background-color: transparent !important;
+}
+
+.custom-accordion-button {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  background-color: transparent !important;
+  border: none !important; /* Eliminar todos los bordes */
+  border-bottom: 2px solid var(--blue-light) !important; /* Borde inferior del color del texto */
+  padding: 10px !important;
+  text-align: left !important;
+  cursor: pointer !important;
+  width: 100% !important;
+  outline: none !important;
+  font-size: 16px !important;
+  color: var(--blue-light) !important; /* Color del texto */
+}
+
+/* Estilos para el contenido del acordeón */
+.custom-accordion-content {
+  display: none;
+  background-color: transparent !important;
+  padding: 10px !important;
+  padding-bottom: 0px;
+}
+
+/* Estilos para el icono de rotación */
+.custom-accordion-icon {
+  transition: transform 0.3s ease !important;
+}
+
+/* Rotación del icono cuando el acordeón está abierto */
+.custom-accordion-button.active .custom-accordion-icon {
+  transform: rotate(180deg) !important;
+}
+
+.custom-accordion-container p,
+.custom-accordion-container li {
+  padding-top: 15px;
+  color: var(--blue-light);
+  line-height: 30px;
 }

@@ -30,7 +30,7 @@
   </head>
 
   <body>
-    <div>
+    <div id="top-section">
       <div
         id="ciomers-header"
         data-aos="fade-up"
@@ -42,40 +42,39 @@
         </h1>
       </div>
 
-      <div class="ciomer-quienes row g-5 align-items-md-center pb-5 px-3">
+      <section class="ciomer-quienes-2 mx-auto row g-5 gap-md-0 pb-5 md-pb-0">
         <div
-          class="col-12 col-md-6 order-md-2"
-          data-aos="fade-left"
-          data-aos-anchor-placement="top-bottom"
+          class="col-12 col-md-6 order-md-2 d-flex flex-column align-items-center justify-content-center"
+          data-aos="fade-right"
           data-aos-duration="2000"
         >
           <a
             href="https://drive.google.com/file/d/1k0nayUcUecu84KKCpdSpMpw6_BegSUIa/view?usp=sharing"
           >
             <img
-              class="app-img mx-auto d-block"
-              src="assets/img/Crowdsourcing/Ciomers/foto.png"
+              class="app-img mb-2 md-mb-0"
+              src="/assets/img/Crowdsourcing/Ciomers/foto.png"
               alt="app-img"
             />
           </a>
         </div>
+
         <div
-          class="col-12 col-md-6"
-          data-aos="fade-right"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-duration="3000"
+          class="quienes-text col-12 col-md-6 d-flex flex-column px-5 align-items-md-start justify-content-center"
+          data-aos="fade-left"
+          data-aos-duration="2000"
         >
-          <h1 class="text-center text-md-start">Quienes pueden ser Ciomer</h1>
-          <div class="header-info-container-1 mt-3">
+          <h1 class="text-start">Quienes pueden ser Ciomer</h1>
+          <div class="header-info-container-1 mt-3 text-start">
             <p>
-              Personas que deciden actuar como contratistas (prestadores de
+              Las personas que deciden actuar como contratistas (prestadores de
               servicios independientes) para realizar tareas simples de terceros
               en sus tiempos libres en base a sus habilidades y experiencia.
             </p>
           </div>
-          <div class="header-info-container-2 mt-5">
+          <div class="header-info-container-2 mt-5 text-start">
             <h3>Requisitos</h3>
-            <ul>
+            <ul class="list-unstyled">
               <li class="d-flex align-items-center">
                 <img
                   src="assets/img/Crowdsourcing/Vector.png"
@@ -87,13 +86,12 @@
                 <img
                   src="assets/img/Crowdsourcing/Vector.png"
                   alt="check-icon"
-                />
-                <h7>Mantener una calidad mayor al 95%</h7>
+                /><h7>Mantener una calidad mayor al 95%</h7>
               </li>
             </ul>
           </div>
         </div>
-      </div>
+      </section>
     </div>
 
     <section
@@ -492,46 +490,54 @@
       </div>
     </section>
 
-    <div class="ciomer-quienes row g-5 align-items-center pb-5 px-3">
+    <section class="ciomer-quienes mx-auto row g-5 pb-5">
       <div
-        class="col-12 col-md-6 text-center"
+        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center"
         data-aos="fade-right"
         data-aos-duration="2000"
       >
         <img
-          class="app-img mx-auto d-block"
+          class="app-img mb-2"
           src="/assets/img/Crowdsourcing/Ciomers/img.png"
           alt="app-img"
         />
         <img src="assets/img/Crowdsourcing/Ciomers/Vector.png" alt="vector" />
       </div>
+
       <div
-        class="col-12 col-md-6"
+        class="col-12 col-md-6 d-flex flex-column px-5 align-items-center align-items-md-start justify-content-center"
         data-aos="fade-left"
         data-aos-duration="2000"
       >
         <h1 class="text-center text-md-start">
           Descarga la app para empezar a disfrutar de los beneficios
         </h1>
-        <div class="header-info-container-1 mt-3">
+        <div class="header-info-container-1 mt-3 text-center text-md-start">
           <p>
             Puedes encontrarla con el nombre CIOM en los app stores o hacer
             click en el logo de tu app store
           </p>
         </div>
         <div class="header-info-container-2 mt-5 text-center text-md-start">
-          <img
-            src="/assets/img/Crowdsourcing/Ciomers/GooglePlay.png"
-            alt="googleplay"
-          />
-          <img
-            class="ms-md-5"
-            src="/assets/img/Crowdsourcing/Ciomers/Appstore.png"
-            alt="appstore"
-          />
+          <a
+            href="https://play.google.com/store/apps/details?id=circlecomplete.ciom&hl=es_AR&gl=US"
+          >
+            <img
+              src="/assets/img/Crowdsourcing/Ciomers/GooglePlay.png"
+              alt="googleplay"
+              class="app-google"
+            />
+          </a>
+          <a href="https://apps.apple.com/pa/app/ciom/id1236893642">
+            <img
+              class="ms-md-5 app"
+              src="/assets/img/Crowdsourcing/Ciomers/Appstore.png"
+              alt="appstore"
+            />
+          </a>
         </div>
       </div>
-    </div>
+    </section>
 
     <footer id="footer"></footer>
 
