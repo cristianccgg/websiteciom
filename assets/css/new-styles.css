@@ -531,9 +531,7 @@ header-info-container-apps {
 
 /* -------------Nosotros------------ */
 
-#nosotros,
-#inversionistas,
-#ayuda {
+#nosotros {
   background-image: url("/assets/img/Crowdsourcing/Nosotros/close-up-detail-team-working-o-new-project-coworking-space-writing-ideas-looking-through-graphics-tablet-laptop-teamwork-business-concept 1.png");
   background-size: cover;
   background-position: center;
@@ -592,4 +590,24 @@ header-info-container-apps {
     font-size: 20px;
     text-wrap: nowrap;
   }
+}
+
+#ayuda {
+  background-image: url("/assets/img/Crowdsourcing/PQR/Hero PQR.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 401px;
+  position: relative;
+  overflow: hidden;
+}
+
+#inversionistas {
+  background-image: url("/assets/img/Crowdsourcing/Inversionistas/hero inversionistas.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 401px;
+  position: relative;
+  overflow: hidden;
 }
