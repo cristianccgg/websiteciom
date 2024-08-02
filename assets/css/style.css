@@ -65,29 +65,25 @@ li {
 }
 
 .navbar-mobile li {
-  display: block; /* Cambia a block para que el dropdown se muestre correctamente en móviles */
-  flex-direction: column; /* Cambia la dirección del flexbox */
+  display: block;
+  flex-direction: column;
 }
 
-/* Asegúrate de que el contenedor del dropdown esté configurado correctamente */
 .navbar-mobile .dropdown {
   position: relative;
 }
 
-/* Ajustes específicos para el dropdown en móviles */
-
 .navbar-mobile .dropdown-menu {
-  display: block; /* Asegura que el dropdown se muestre debajo del botón */
-  position: absolute; /* Cambia a absolute para controlar mejor la posición */
-  width: fit-content; /* Ocupa todo el ancho disponible */
-  margin-top: 0; /* Ajusta el margen si es necesario */
-  box-shadow: none; /* Opcional: ajusta la sombra si no la necesitas */
-  z-index: 1000; /* Asegura que el dropdown se muestre encima de otros elementos */
+  display: block;
+  position: absolute;
+  width: fit-content;
+  margin-top: 0;
+  box-shadow: none;
+  z-index: 1000;
 }
 
-/* Asegúrate de que los elementos siguientes se muestren debajo del dropdown */
 .navbar-mobile li {
-  clear: both; /* Asegura que los elementos siguientes no se alineen al lado del dropdown */
+  clear: both;
 }
 
 /*--------------------------------------------------------------
