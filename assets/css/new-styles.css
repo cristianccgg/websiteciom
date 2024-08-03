@@ -716,17 +716,94 @@ header-info-container-apps {
   font-size: 20px;
 }
 
+#nosotros p {
+  font-size: 18px;
+}
+
+.header-main-container-nosotros h3 {
+  font-size: 20px !important;
+  font-weight: 700;
+  line-height: 30px;
+}
+.header-main-container-nosotros p {
+  font-size: 18px !important;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.header-main-container-nosotros h2 {
+  font-size: 16px !important;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.this-is-us h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
 @media screen and (min-width: 768px) {
-  .header-main-container-nosotros {
-    padding: 150px 187px;
-    max-width: 1212px;
-    margin: auto;
+  .this-is-us {
+    height: 930px;
   }
 
-  #inversionistas .title {
-    font-size: 32px;
+  .header-main-container-nosotros {
+    padding: 150px 187px;
+    max-width: 1212px !important;
+    margin: auto;
+    height: 596px;
   }
 }
+
+/* ----------Inversionistas--------- */
+
+#inversionistas {
+  background-image: url("/assets/img/Crowdsourcing/Inversionistas/hero inversionistas.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 401px;
+  position: relative;
+  overflow: hidden;
+  gap: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#inversionistas .title {
+  font-size: 28px !important;
+  font-weight: 600;
+}
+
+#victorinox {
+  justify-content: center;
+}
+
+#victorinox .victorinox-title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+#victorinox p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+@media screen and (min-width: 768px) {
+  #inversionistas .title {
+    font-size: 40px !important;
+    font-weight: 600;
+  }
+
+  #victorinox {
+    height: 431px;
+  }
+}
+
+/* ----------Ayuda--------- */
 
 #ayuda {
   background-image: url("/assets/img/Crowdsourcing/PQR/Hero PQR.png");
@@ -742,18 +819,6 @@ header-info-container-apps {
 #ayuda h1 {
   font-size: 40px;
   font-weight: 600;
-}
-
-#inversionistas {
-  background-image: url("/assets/img/Crowdsourcing/Inversionistas/hero inversionistas.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 401px;
-  position: relative;
-  overflow: hidden;
-  padding-top: 102px;
-  gap: 36px;
 }
 
 .app {
