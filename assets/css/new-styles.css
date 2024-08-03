@@ -33,11 +33,31 @@ body {
   height: 401px;
 }
 
+#cliente-misterioso h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#empresas-cliente-misterioso .datos,
+#empresas-monitoreo .datos {
+  gap: 50px !important;
+}
+
 .header {
   gap: 36px;
   display: flex;
   flex-direction: column;
   padding-top: 167px;
+}
+
+.datos-inner h3 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.datos-inner p {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .btn-start {
@@ -71,15 +91,17 @@ body {
     border-radius: 4px;
   }
 
-  #empresas-cliente-misterioso .datos {
-    gap: 130px !important;
+  #empresas-cliente-misterioso .datos,
+  #empresas-monitoreo .datos {
+    gap: 13px !important;
   }
 }
 
 .header-info-container {
   padding-left: 15px;
   padding-right: 15px;
-  font-size: var(--fs-h7);
+  font-size: 22px;
+  line-height: 38px;
 }
 
 .header-info-container-1 {
@@ -102,7 +124,7 @@ body {
     padding: 150px 187px;
   }
 
-  .row-container {
+  .header-row-container {
     gap: 120px;
   }
 
@@ -123,7 +145,7 @@ body {
 
 .swiper {
   width: 100%;
-  height: 600px;
+  height: 680px !important;
   position: relative;
   background-color: #f7faff;
 }
@@ -168,7 +190,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .swiper {
-    height: 739px;
+    height: 739px !important;
   }
   .swiper-pagination {
     margin-bottom: 107px !important;
@@ -199,9 +221,14 @@ body {
 
 .empresas-2-title {
   font-size: 36px !important;
+  font-weight: 600;
+  line-height: 50px;
 }
 
-@media screen and (min-width: 796px) {
+@media screen and (min-width: 900px) {
+  .datos-inner {
+    width: 315px;
+  }
   #empresas2 {
     height: 470px;
     justify-content: space-evenly;
@@ -213,6 +240,11 @@ body {
 #testimonials-2 {
   height: 709px;
   padding: 20px 25px !important;
+}
+
+#testimonials-2 h1 {
+  font-size: 36px;
+  font-weight: 600;
 }
 
 .header-testimonials {
@@ -300,10 +332,33 @@ body {
     height: 376px !important;
   }
 }
-/* ------------Mejorar ------------------*/
+/* ------------Testimonials Mejorar ------------------*/
+
+#mejorar h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
 .btn-mejorar {
   width: 336px;
 }
+
+/* ------------------Help----------- */
+
+.capitalize-title {
+  font-size: 22px !important;
+  font-weight: 600;
+  line-height: 54px;
+}
+
+@media screen and (min-width: 900px) {
+  .capitalize-title {
+    font-size: 42px !important;
+    font-weight: 600;
+    line-height: 54px;
+  }
+}
+
 /* ------------Auditorias ------------------*/
 
 #auditorias {
@@ -315,16 +370,16 @@ body {
 }
 
 #auditorias .title {
-  font-size: 24px;
+  font-size: 28px;
+}
+
+.swiper h1 {
+  font-size: 36px;
 }
 
 @media screen and (min-width: 768px) {
   #auditorias .title {
     font-size: 40px;
-  }
-
-  .icons-container-auditorias {
-    gap: 160px !important;
   }
 }
 
@@ -336,6 +391,21 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 401px;
+  padding-top: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+#monitoreo .datos {
+  margin-top: 50px !important;
+}
+
+@media screen and (min-width: 517px) {
+  #monitoreo {
+    padding-top: 167px;
+  }
 }
 
 /* ------------Crowdsourcing------------------*/
@@ -394,9 +464,17 @@ body {
 }
 
 #delegue h1 {
-  font-size: 25px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40.32px;
 }
 
+@media screen and (min-width: 768px) {
+  #delegue {
+    max-height: 314px;
+    padding-top: 77px;
+  }
+}
 /* -----------------Crowdsourcing------------------ */
 
 .divider-inversionistas {
@@ -414,11 +492,14 @@ body {
 }
 
 .crowdsourcing-titles {
-  color: var(--blue-light);
+  color: var(--blue-light) !important;
   margin-bottom: 18px;
+  font-size: 20px;
 }
 
 #crowdsourcing-capacidad p {
+  font-size: 16px;
+  font-weight: 500;
   line-height: 26px;
 }
 
@@ -427,11 +508,15 @@ body {
   max-width: 1212px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
+  #crowdsourcing-capacidad {
+    height: 774px;
+  }
   #crowdsourcing-capacidad {
     margin: auto;
     align-items: center !important;
   }
+
   .cols-container {
     justify-content: space-between;
     max-width: 1212px;
@@ -479,6 +564,12 @@ body {
   max-width: 466px;
 }
 
+.quienes-text h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
 .ciomer-quienes,
 .ciomer-quienes-2 {
   max-width: 1212px;
@@ -488,6 +579,49 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+}
+
+#libera {
+  background-color: var(--blue-light);
+  color: white;
+  font-size: 32px !important;
+  font-weight: 400 !important;
+}
+
+/* ----------Pre-ronda------------ */
+
+#x5 {
+  border-radius: 30px;
+}
+
+#pre-ronda h3 {
+  color: var(--blue-light);
+  margin-bottom: -20px;
+  font-size: 20px;
+}
+
+#pre-ronda p {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.pre-ronda-items {
+  gap: 100px !important;
+}
+
+@media screen and (min-width: 768px) {
+  #pre-ronda {
+    height: 564px;
+    max-width: 1212px;
+    margin: auto;
+    justify-content: center;
+  }
+  #pre-ronda h3 {
+    font-size: 20px;
+    text-wrap: nowrap;
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -591,34 +725,6 @@ header-info-container-apps {
 
   #inversionistas .title {
     font-size: 32px;
-  }
-}
-
-/* ----------Pre-ronda------------ */
-
-#x5 {
-  border-radius: 30px;
-}
-
-#pre-ronda h3 {
-  color: var(--blue-light);
-  margin-bottom: -20px;
-}
-
-.pre-ronda-items {
-  gap: 100px !important;
-}
-
-@media screen and (min-width: 768px) {
-  #pre-ronda {
-    height: 564px;
-    max-width: 1212px;
-    margin: auto;
-    justify-content: center;
-  }
-  #pre-ronda h3 {
-    font-size: 20px;
-    text-wrap: nowrap;
   }
 }
 

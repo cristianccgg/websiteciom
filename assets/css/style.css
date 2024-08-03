@@ -899,6 +899,7 @@ section {
   position: relative;
   color: var(--azul-primario);
   font-weight: 600;
+  font-size: 36px;
 }
 
 #webApp h4 {
@@ -1188,9 +1189,24 @@ section {
 }
 
 #statistics h1 {
+  font-size: 36px;
   text-align: center;
   font-weight: 600;
-  padding: 35px 0px;
+}
+
+.statistics-data-container {
+  margin-top: 55px !important;
+  gap: 50px;
+}
+
+#statistics .statistics-data {
+  width: 315px;
+}
+
+#statistics .statistics-data p {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 400;
 }
 
 #statistics .mb-3 {
@@ -1219,6 +1235,11 @@ section {
   background-color: var(--blue-light);
   padding: 8px 40px;
   line-height: 28px;
+}
+@media screen and (min-width: 1000px) {
+  .statistics-data-container {
+    gap: 110px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -2115,6 +2136,7 @@ section {
   line-height: 32px;
 }
 .methodology-group {
+  max-width: 500px;
   margin-top: 42px;
   margin-bottom: 37px;
 }
@@ -2210,6 +2232,12 @@ section {
   height: 600px;
   position: relative;
   background-color: #f7faff;
+}
+
+.swiper h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 50px;
 }
 
 .swiper-slide {

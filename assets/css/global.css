@@ -15,14 +15,15 @@ body {
   /* font sizes */
   --fs: 18px;
   --fs-h1-home: 40px;
-  --fs-h1: 36px;
+  --FS-h1-home-lower: 36;
+  --fs-h1: 32px;
   --fs-h2: 18px;
   --fs-h3: 25px;
-  --fs-h4: 23px;
+  --fs-h4: 22px;
   --fs-h6: 18px;
   --fs-i: 24px;
   --fs-btn: 16px;
-  --fs-li: 18px;
+  --fs-li: 20px;
   --fs-li-sm: 15px;
   --fs-sm: 17px;
   --fs-md: 25px;

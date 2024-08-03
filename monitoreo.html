@@ -32,17 +32,20 @@
 
   <body>
     <div id="top-section">
-      <div id="monitoreo" class="header align-items-center text-white px-5">
+      <div id="monitoreo" class="align-items-center text-white px-5">
         <h1 class="text-center">Monitoreo de competencia</h1>
         <a
           href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
           ><button class="btn-start">Comenzar</button></a
         >
       </div>
-      <div class="header-info-container d-flex flex-column p-5 gap-5">
-        <div class="row-container row align-items-center m-auto">
+      <div
+        id="cliente-misterioso-description"
+        class="header-info-container d-flex flex-column p-5 gap-5"
+      >
+        <div class="header-row-container row align-items-center m-auto">
           <div class="header-info-container-1 col-md d-flex align-items-center">
-            <p>
+            <p class="text-start">
               Consiste en observar las actividades, estrategias y desempeño de
               las empresas que compiten con usted. Conocerá sus productos o
               servicios, precios, ofertas, tácticas de marketing, etc.
@@ -81,8 +84,8 @@
       </div>
     </div>
     <div class="swiper mySwiper">
-      <h1 class="text-center p-5 fs-3">Obtenga la ventaja que necesita</h1>
-      <div class="swiper-wrapper">
+      <h1 class="text-center p-5">Obtenga la ventaja que necesita</h1>
+      <div class="swiper-wrapper swiper-wrapper-imgs">
         <div class="swiper-slide">
           <img
             src="assets/img/Crowdsourcing/Monitoreo/medium-shot-man-eating 1.png"
@@ -124,42 +127,34 @@
       <div
         class="d-flex flex-column justify-content-evenly gap-md-5 align-items-center"
       >
-        <div class="empresas-2-title mb-5 mb-md-0">
-          <h3>App móvil líder en la industria para Auditar e Inspeccionar</h3>
+        <div class="mb-5 mb-md-0">
+          <h3 class="empresas-2-title">
+            App móvil líder en la industria para Auditar e Inspeccionar
+          </h3>
         </div>
-        <div
-          class="icons-container-auditorias d-flex flex-column gap-3 my-5 my-md-0 flex-md-row"
-        >
-          <div
-            class="auditar-container d-flex flex-column align-items-center gap-3"
-          >
+        <div class="datos d-flex flex-column gap-3 my-5 my-md-0 flex-md-row">
+          <div class="datos-inner d-flex flex-column align-items-center gap-3">
             <img
               src="assets/img/Crowdsourcing/Auditorias-inspecciones/Icons/Auditorías/carbon_location.png"
               alt="geo-icon"
             />
             <p>Geoposicionamiento</p>
           </div>
-          <div
-            class="auditar-container d-flex flex-column align-items-center gap-3"
-          >
+          <div class="datos-inner d-flex flex-column align-items-center gap-3">
             <img
               src="assets/img/Crowdsourcing/Auditorias-inspecciones/Icons/Auditorías/carbon_location-1.png"
               alt="geo-icon"
             />
             <p>Trabajo sin Conexión</p>
           </div>
-          <div
-            class="auditar-container d-flex flex-column align-items-center gap-3"
-          >
+          <div class="datos-inner d-flex flex-column align-items-center gap-3">
             <img
               src="assets/img/Crowdsourcing/Auditorias-inspecciones/Icons/Auditorías/carbon_location-2.png"
               alt="geo-icon"
             />
             <p>Respaldo Multimedia</p>
           </div>
-          <div
-            class="auditar-container d-flex flex-column align-items-center gap-3"
-          >
+          <div class="datos-inner d-flex flex-column align-items-center gap-3">
             <img
               src="assets/img/Crowdsourcing/Auditorias-inspecciones/Icons/Auditorías/carbon_location-3.png"
               alt="geo-icon"
@@ -185,7 +180,7 @@
       <h1 class="text-center">Qué necesita para mejorar?</h1>
       <div class="d-flex flex-column gap-5 flex-md-row gap-md-3">
         <a href="cliente-misterioso.html">
-          <button class="btn btn-mejorar rounded fs-6">
+          <button class="btn-start btn-mejorar rounded fs-6">
             CLIENTE MISTERIOSO
           </button>
         </a>
@@ -195,7 +190,7 @@
           </button>
         </a>
         <a href="monitoreo.html">
-          <button class="btn-start rounded fs-6 text-nowrap btn-mejorar">
+          <button class="btn rounded fs-6 text-nowrap btn-mejorar">
             MONITOREO DE COMPETENCIA
           </button>
         </a>
@@ -209,7 +204,7 @@
               <div class="prompt">
                 <img loading="lazy" alt="" src="assets/img/price.svg" />
                 <div class="body">
-                  <h1 id="capitalize-title">
+                  <h1 id="capitalize-title" class="capitalize-title">
                     ¿Listo para capitalizar tus oportunidades?
                   </h1>
                 </div>
@@ -227,6 +222,7 @@
         </div>
       </div>
     </section>
+
     <footer id="footer"></footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
