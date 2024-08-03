@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Cargar el footer
   fetch("footer.html")
     .then((response) => response.text())
     .then((data) => {
@@ -10,38 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     })
     .catch((error) => console.error("Error al cargar el footer:", error));
-});
 
-function initializeNavbar() {
-  const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
-  const navbar = document.getElementById("navbar-2");
-
-  if (mobileNavToggle && navbar) {
-    mobileNavToggle.addEventListener("click", function () {
-      navbar.classList.toggle("navbar-mobile");
-      this.classList.toggle("bi-list");
-      this.classList.toggle("bi-x");
-    });
-
-    document.addEventListener("click", function (event) {
-      if (
-        !navbar.contains(event.target) &&
-        !mobileNavToggle.contains(event.target) &&
-        !dropdownToggle.contains(event.target)
-      ) {
-        navbar.classList.remove("navbar-mobile");
-        mobileNavToggle.classList.remove("bi-x");
-        mobileNavToggle.classList.add("bi-list");
-        dropdownMenu.classList.remove("show");
-      }
-    });
-  } else {
-    console.error("Elementos de navbar no encontrados.");
-  }
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-  // Inicialización de Swiper
+  // Inicialización de Swiper para el slider principal
   var swiper = new Swiper(".mySwiper", {
     loop: true,
     pagination: {
@@ -68,47 +39,90 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  var swiper2 = new Swiper(".mySwiper2", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    slidesPerGroup: 3,
-    pagination: {
-      el: ".swiper-pagination2",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-      },
-      768: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-      },
-      1024: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-      },
-    },
-  });
+  // Cargar el primer bloque de testimonios y inicializar Swiper
+  fetch("testimonios.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("testimonials-2").innerHTML = data;
 
-  // Inicialización de AOS
-  AOS.init();
-});
+      // Inicializar Swiper para testimonios después de cargar el contenido
+      var swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        pagination: {
+          el: ".swiper-pagination2",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+          },
+          768: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+          },
+          1024: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+          },
+        },
+      });
 
-document.addEventListener("DOMContentLoaded", function () {
+      // Inicialización de AOS
+      AOS.init();
+    })
+    .catch((error) => console.error("Error al cargar testimonios:", error));
+
+  // Cargar el segundo bloque de testimonios y inicializar Swiper
+  fetch("testimonios-ciomers.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("testimonials-3").innerHTML = data;
+
+      var swiper3 = new Swiper(".mySwiper3", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        pagination: {
+          el: ".swiper-pagination2",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+          },
+          768: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+          },
+          1024: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+          },
+        },
+      });
+
+      AOS.init();
+    })
+    .catch((error) =>
+      console.error("Error al cargar testimonios de clientes:", error)
+    );
+
+  // Inicialización del acordeón
   const accordionButtons = document.querySelectorAll(
     ".custom-accordion-button"
   );
-
   accordionButtons.forEach((button) => {
     button.addEventListener("click", function () {
       const content = this.nextElementSibling;

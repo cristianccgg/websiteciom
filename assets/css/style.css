@@ -2118,3 +2118,166 @@ section {
   margin-top: 42px;
   margin-bottom: 37px;
 }
+
+/* -----------------Testimonials 2 ------------*/
+
+#testimonials-2 {
+  height: 709px;
+  padding: 20px 25px !important;
+}
+
+.header-testimonials {
+  display: flex !important;
+  width: 100%;
+  gap: 80px;
+  overflow: hidden;
+}
+
+.swiper2 {
+  margin-top: 50px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.wrapper {
+  margin-top: 80px;
+  display: flex;
+  align-items: center !important;
+  margin: auto;
+}
+
+.swiper-slide2 {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-pagination2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card2 {
+  width: 375px !important;
+  height: 420px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px !important;
+}
+
+.client-name {
+  font-weight: 600 !important;
+}
+
+.company-icon2 {
+  width: 67px !important;
+  height: auto !important;
+}
+
+.stars-container img.star {
+  width: 24px;
+  height: auto;
+}
+.stars-container {
+  display: flex;
+  gap: 25px;
+}
+
+.swiper {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background-color: #f7faff;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 295px;
+}
+
+.swiper-slide img {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 295px;
+  max-height: 295px;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  background: var(--grey);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0.7;
+  margin: 0 4px;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--blue-light); /* Color del punto activo */
+}
+
+@media screen and (min-width: 768px) {
+  .swiper {
+    height: 739px;
+  }
+  .swiper-pagination {
+    margin-bottom: 107px !important;
+  }
+  .swiper-wrapper-imgs {
+    padding-left: 92px;
+  }
+  .swiper-ciomers {
+    height: 690px !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #testimonials-2 {
+    height: 709px !important;
+    padding-top: 100px !important;
+    padding-bottom: 72px !important;
+    margin-top: 0px !important;
+  }
+
+  .wrapper {
+    display: flex;
+    width: 1233px;
+  }
+
+  .testimonials-title {
+    margin-bottom: 42px;
+  }
+  .swiper2 {
+    margin-top: 0px !important;
+    height: 537px;
+    width: 1212px;
+  }
+  .swiper-pagination2 {
+    margin-top: 25px !important;
+  }
+  .card2 {
+    width: 384px !important;
+    height: 376px !important;
+  }
+}

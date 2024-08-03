@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="assets/img/ciom_tiny.png" />
     <link
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
       rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -35,8 +35,6 @@
     <div id="top-section">
       <div
         id="cliente-misterioso"
-        data-aos="fade-up"
-        data-aos-duration="2000"
         class="header align-items-center text-white px-5"
       >
         <h1 class="text-center">Cliente Misterioso</h1>
@@ -46,12 +44,7 @@
         >
       </div>
 
-      <div
-        class="header-info-container d-flex flex-column p-5 gap-5"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-duration="3000"
-      >
+      <div class="header-info-container d-flex flex-column p-5 gap-5">
         <div class="row-container row align-items-center m-auto">
           <div class="header-info-container-1 col-md d-flex align-items-center">
             <p class="text-start">
@@ -99,12 +92,7 @@
         </div>
       </div>
     </div>
-    <div
-      class="swiper mySwiper"
-      data-aos="fade-up"
-      data-aos-anchor-placement="top-center"
-    >
-      >
+    <div class="swiper mySwiper">
       <h1 class="text-center p-5 fs-3">Obtenga la ventaja que necesita</h1>
       <div class="swiper-wrapper swiper-wrapper-imgs">
         <div class="swiper-slide">
@@ -168,8 +156,6 @@
     <section
       id="empresas-cliente-misterioso"
       class="d-flex align-items-center flex-column text-center p-5"
-      data-aos="fade-up"
-      data-aos-anchor-placement="top-center"
     >
       <div class="d-flex flex-column gap-4 gap-md-5 align-items-center">
         <div>
@@ -204,401 +190,13 @@
       </div>
     </section>
 
-    <section
-      id="testimonials-2"
-      class="d-flex flex-column align-items-center"
-      data-aos="fade-zoom-in"
-      data-aos-easing="ease-in-back"
-      data-aos-delay="1000"
-      data-aos-offset="0"
-    >
-      <div class="swiper2 mySwiper2">
-        <h1
-          class="testimonials-title text-center mb-3 fw-semibold fs-2"
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-          data-aos-delay="1200"
-        >
-          Qué dijeron quienes usaron CIOM para mejorar
-        </h1>
-        <div class="swiper-wrapper wrapper">
-          <div class="swiper-slide">
-            <div class="card2 rounded-3 d-flex flex-column gap-5 p-5 border">
-              <div class="header-testimonials">
-                <div>
-                  <img
-                    class="company-icon2"
-                    alt="company-icon"
-                    src="./assets/img/testimonial-gsk.png"
-                  />
-                </div>
-                <div class="client-content2 text-start">
-                  <h2 class="client-name">Adriana Pérez</h2>
-                  <div class="company-name2">Manager</div>
-                </div>
-              </div>
-              <p class="description2 text-start">
-                <b>“...Tecnología en su máxima expresión...”</b>
-                Permite ver cosas que antes no veíamos.
-              </p>
-              <div class="stars-container">
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-              class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-            >
-              <div class="header-testimonials">
-                <div>
-                  <img
-                    class="company-icon2"
-                    alt="company-icon"
-                    src="./assets/img/testimonial-chevron.png"
-                  />
-                </div>
-                <div class="client-content2 text-start">
-                  <h2 class="client-name">Alberto Fields</h2>
-                  <div class="company-name2">Consultant</div>
-                </div>
-              </div>
-              <p class="description2 text-start">
-                <b>“...Muy simple de usar...” </b>
-                Consolidamos todas las mediciones
-              </p>
-              <div class="stars-container">
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-              class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-            >
-              <div class="header-testimonials">
-                <div>
-                  <img
-                    class="company-icon2"
-                    alt="company-icon"
-                    src="./assets/img/testimonial-walmart.png"
-                  />
-                </div>
-                <div class="client-content2 text-start">
-                  <h2 class="client-name">Martin Carbonelli</h2>
-                  <div class="company-name2">Walmart</div>
-                </div>
-              </div>
-              <p class="description2 text-start">
-                <b>“...Ideal para relevar en competidores..”</b>
-                Podemos generar la data que necesitamos
-              </p>
-              <div class="stars-container">
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-              class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-            >
-              <div class="header-testimonials">
-                <div>
-                  <img
-                    class="company-icon2"
-                    alt="company-icon"
-                    src="./assets/img/testimonial-novey.png"
-                  />
-                </div>
-                <div class="client-content2 text-start">
-                  <h2 class="client-name">Alvaro Valiente</h2>
-                  <div class="company-name2">CHRO Novey</div>
-                </div>
-              </div>
-              <p class="description2 text-start">
-                <b>“...Aplicamos mejora continua...”</b>
-                Medir, Corregir, Mejorar hecho simple
-              </p>
-              <div class="stars-container">
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-              class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-            >
-              <div class="header-testimonials">
-                <div>
-                  <img
-                    class="company-icon2"
-                    alt="company-icon"
-                    src="./assets/img/testimonial-rey.png"
-                  />
-                </div>
-                <div class="client-content2 text-start">
-                  <h2 class="client-name">Sonia Madrid</h2>
-                  <div class="company-name2">VP Operaciones</div>
-                </div>
-              </div>
-              <p class="description2 text-start">
-                <b>“...Tecnología en su máxima expresión...”</b>
-                Permite ver cosas que antes no veíamos.
-              </p>
-              <div class="stars-container">
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-              class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-            >
-              <div class="header-testimonials">
-                <div>
-                  <img
-                    class="company-icon2"
-                    alt="company-icon"
-                    src="./assets/img/testimonial-exxon.png"
-                  />
-                </div>
-                <div class="client-content2 text-start">
-                  <h2 class="client-name">Cintia Salgado</h2>
-                  <div class="company-name2">Procurment Latam</div>
-                </div>
-              </div>
-              <p class="description2 text-start">
-                <b>“...Estandaricé todo el caribe...”</b>
-                Una sola herramienta para toda una región
-              </p>
-              <div class="stars-container">
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-              class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-            >
-              <div class="header-testimonials">
-                <div>
-                  <img
-                    class="company-icon2"
-                    alt="company-icon"
-                    src="./assets/img/testimonial-company1.png"
-                  />
-                </div>
-                <div class="client-content2 text-start">
-                  <h2 class="client-name">Aldo Mangravita</h2>
-                  <div class="company-name2">Director General</div>
-                </div>
-              </div>
-              <p class="description2 text-start">
-                <b>“...Estandarizamos la Imagen de la cadena...”</b>
-                Un nuevo logro para nuestro equipo
-              </p>
-              <div class="stars-container">
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-              class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-            >
-              <div class="header-testimonials">
-                <div>
-                  <img
-                    class="company-icon2"
-                    alt="company-icon"
-                    src="./assets/img/testimonial-company2.png   "
-                  />
-                </div>
-                <div class="client-content2 text-start">
-                  <h2 class="client-name">Ramón Lencina</h2>
-                  <div class="company-name2">Director General</div>
-                </div>
-              </div>
-              <p class="description2 text-start">
-                <b>“...Opero como una multinacional...”</b>
-                Tengo indicadores simples para accionar
-              </p>
-              <div class="stars-container">
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-              class="card2 rounded-3 d-flex flex-column gap-5 p-5 border rounded"
-            >
-              <div class="header-testimonials">
-                <div>
-                  <img
-                    class="company-icon2"
-                    alt="company-icon"
-                    src="./assets/img/testimonial-texaco.png"
-                  />
-                </div>
-                <div class="client-content2 text-start">
-                  <h2 class="client-name">Pedro Seguí</h2>
-                  <div class="company-name2">Country Manager</div>
-                </div>
-              </div>
-              <p class="description2 text-start">
-                <b>“...Logramos un cambio radical en 18 m..”</b>
-                Pasamos a ser el mejor país de la cadena
-              </p>
-              <div class="stars-container">
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-                <div>
-                  <img class="star" alt="star" src="./assets/img/star.svg" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination2"></div>
-      </div>
-    </section>
+    <section id="testimonials-2"></section>
 
     <section
       id="mejorar"
       class="d-flex flex-column gap-5 p-5 align-items-center"
-      data-aos="fade-up"
-      data-aos-anchor-placement="top-center"
     >
-      <h1
-        class="text-center"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-center"
-        data-aos-delay="500"
-      >
-        Qué necesita para mejorar?
-      </h1>
+      <h1 class="text-center">Qué necesita para mejorar?</h1>
       <div class="d-flex flex-column gap-5 flex-md-row gap-md-3">
         <a href="cliente-misterioso.html">
           <button class="btn-start btn-mejorar rounded fs-6">
@@ -619,11 +217,7 @@
     </section>
     <section id="help">
       <div class="container">
-        <div
-          class="row"
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-        >
+        <div class="row">
           <div class="col-md-12 custom-column">
             <div class="frame">
               <div class="prompt">
