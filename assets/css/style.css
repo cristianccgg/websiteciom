@@ -686,7 +686,7 @@ li {
 
 @media (max-width: 1000px) {
   .navbar {
-    margin-left: -20px;
+    margin-left: -10px;
   }
 
   #header .container {
