@@ -2144,7 +2144,19 @@ section {
   margin: auto;
 }
 
-.wrapper {
+.swiper3 {
+  margin-top: 50px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.wrapper,
+.wrapper3 {
   margin-top: 80px;
   display: flex;
   align-items: center !important;
@@ -2159,7 +2171,8 @@ section {
   align-items: center;
 }
 
-.swiper-pagination2 {
+.swiper-pagination2,
+.swiper-pagination3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2218,7 +2231,8 @@ section {
   object-fit: cover;
 }
 
-.swiper-pagination {
+.swiper-pagination,
+.swiper-pagination3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2241,7 +2255,8 @@ section {
   .swiper {
     height: 739px;
   }
-  .swiper-pagination {
+  .swiper-pagination,
+  .swiper-pagination3 {
     margin-bottom: 107px !important;
   }
   .swiper-wrapper-imgs {
@@ -2249,6 +2264,9 @@ section {
   }
   .swiper-ciomers {
     height: 690px !important;
+  }
+  .swiper3 {
+    height: 350px !important;
   }
 }
 
@@ -2260,7 +2278,8 @@ section {
     margin-top: 0px !important;
   }
 
-  .wrapper {
+  .wrapper,
+  .wrapper3 {
     display: flex;
     width: 1233px;
   }
@@ -2268,12 +2287,14 @@ section {
   .testimonials-title {
     margin-bottom: 42px;
   }
-  .swiper2 {
+  .swiper2,
+  .swiper3 {
     margin-top: 0px !important;
     height: 537px;
     width: 1212px;
   }
-  .swiper-pagination2 {
+  .swiper-pagination2,
+  .swiper-pagination3 {
     margin-top: 25px !important;
   }
   .card2 {
