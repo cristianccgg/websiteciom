@@ -25,6 +25,18 @@ document.addEventListener("DOMContentLoaded", function () {
       );
   }
 
+  const helpElement = document.querySelector("#help");
+  if (helpElement) {
+    fetch("ayuda.html")
+      .then((response) => response.text())
+      .then((data) => {
+        helpElement.innerHTML = data;
+      })
+      .catch((error) =>
+        console.error("Error al cargar el archivo ayuda.html:", error)
+      );
+  }
+
   // Inicialización de Swiper para el slider principal
   var swiper = new Swiper(".mySwiper", {
     loop: true,

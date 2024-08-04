@@ -224,6 +224,23 @@
     });
   });
 
-  // Initiate Pure Counter
-  new PureCounter();
+  // // Initiate Pure Counter
+  // new PureCounter();
+
+  // Function to load navbar
+  function loadNavbar() {
+    fetch("navbar.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.querySelector("body").insertAdjacentHTML("afterbegin", data);
+        // Asegurarse de que el script del navbar se ejecute después de cargar el HTML
+        const script = document.createElement("script");
+        script.src = "assets/js/navbar.js";
+        document.body.appendChild(script);
+      })
+      .catch((error) => console.error("Error loading the navbar:", error));
+  }
+
+  // Llamar a la función al cargar la página
+  window.addEventListener("DOMContentLoaded", loadNavbar);
 })();

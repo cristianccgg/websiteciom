@@ -243,29 +243,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+
+    <script src="assets/js/i18n-config.js"></script>
 
     <!-- Scripts específicos -->
     <script src="assets/js/newjs.js"></script>
     <script src="assets/js/main.js"></script>
-
-    <!-- Cargar el navbar -->
-    <script>
-      function loadNavbar() {
-        fetch("navbar.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document
-              .querySelector("body")
-              .insertAdjacentHTML("afterbegin", data);
-            // Reinitialize navbar functionality after inserting HTML
-            const script = document.createElement("script");
-            script.src = "assets/js/navbar.js";
-            document.body.appendChild(script);
-          })
-          .catch((error) => console.error("Error loading the navbar:", error));
-      }
-
-      window.addEventListener("DOMContentLoaded", loadNavbar);
-    </script>
+    <script src="assets/js/navbar.js"></script>
   </body>
 </html>

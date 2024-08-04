@@ -10,56 +10,33 @@
   <meta name="description" content="mystery shopper services">
   
   <link rel="icon" type="image/x-icon" href="assets/img/ciom_tiny.png">
-<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> 
-<link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-<link href="assets/css/global.css" rel="stylesheet" />
-<link href="assets/css/style.css" rel="stylesheet">
-
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- Vendor JS Files -->
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>  
-
-<script src="assets/js/navbar.js"></script>
-<script src="assets/js/newjs.js"></script>
-
-<!-- Template Main JS File -->   
-<script>
-  // Function to load navbar
-  function loadNavbar() {
-    fetch("navbar.html")
-      .then((response) => response.text())
-      .then((data) => {
-        document.querySelector("body").insertAdjacentHTML("afterbegin", data);
-        // Ensure navbar script runs after navbar HTML is loaded
-        const script = document.createElement('script');
-        script.src = 'assets/js/navbar.js';
-        document.body.appendChild(script);
-      })
-      .catch((error) => console.error("Error loading the navbar:", error));
-  }
-
-  // Call the function on page load
-  window.addEventListener("DOMContentLoaded", loadNavbar);
-</script>
-
-
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/global.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+ 
+  <script src="assets/js/i18n-config.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/newjs.js"></script>
+  
 
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      const monthly = document.getElementById('prices_btn-monthly');
-      const annual = document.getElementById('prices_btn-annual');
+      const monthly = document.getElementById('prices_btn_monthly');
+      const annual = document.getElementById('prices_btn_annual');
 
       monthly.addEventListener('click', function() {
           updatePricing('monthly');
@@ -72,8 +49,8 @@
 
       function updatePricing(type) {
         
-        const monthly = document.getElementById('prices_btn-monthly');
-        const annual = document.getElementById('prices_btn-annual');
+        const monthly = document.getElementById('prices_btn_monthly');
+        const annual = document.getElementById('prices_btn_annual');
         const basic = document.querySelectorAll('.basic-price');
         const advance = document.querySelectorAll('.advance-price');
         const profesional = document.querySelectorAll('.profesional-price');
@@ -671,8 +648,8 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
 
               <div>
                 <div class="price-switch">
-                  <button id="prices_btn-monthly" type="button" class="btn btn-secondary">Pago mensual</button>
-                  <button id="prices_btn-annual" type="button" class="btn btn-primary">Pago anual</button>
+                  <button id="prices_btn_monthly" type="button" class="btn btn-secondary">Pago mensual</button>
+                  <button id="prices_btn_annual" type="button" class="btn btn-primary">Pago anual</button>
                   <span id="prices_saving" class="price-switch-text">(Ahorre hasta un 25%)</span>
                 </div>       
                 
@@ -954,68 +931,11 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
         </div>
       </section>
 
-      <section id="help" >
-
-        <div class="container">
-          <div class="row" data-aos="fade-up">
-            <div class="col-md-12 custom-column">
-                <div class="frame">
-                  <div class="prompt">
-                    <img loading="lazy" alt="" src="./assets/img/question.svg" >
-                     <div class="body">
-                      <h1 id="help1_title">¿Necesitas ayuda?</h1>
-                      <p id="help1_description">Estamos para solucionar sus dudas.</p>
-                    </div>
-                    <!-- <a
-                    id="help1_btn"
-                    href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    class="btn btn-info"
-                    >Preguntas frecuentes</a> -->
-                    <a
-                    id="help1_btn"
-                    href="ayuda.html" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    class="btn btn-info"
-                    >Preguntas frecuentes</a>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
+      <section id="help"></section>
     
       <section id="testimonials-2"></section>
 
-      <section id="help">
-        <div class="container">
-          <div class="row" data-aos="fade-up">
-            <div class="col-md-12 custom-column">
-              <div class="frame">
-                <div class="prompt">
-                  <img loading="lazy" alt="" src="assets/img/price.svg" />
-                  <div class="body">
-                    <h1 id="capitalize-title">
-                      ¿Listo para capitalizar tus oportunidades?
-                    </h1>
-                  </div>
-                  <a
-                    id="help1_btn"
-                    href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn btn-info"
-                    >Empezá ahora</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section id="capitalize"></section>
 <!-- 
       <section id="help" >
 
@@ -1046,59 +966,7 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
 
   </main>
   
-  <footer id="footer">
-   
-    <div class="container mt-5 ">
-     
-      <div class="d-flex flex-column flex-md-row justify-content-md-between">
-    
-        <div>
-            <img class="logo-image" loading="lazy" alt="" src="./assets/img/logo2.png" />
-            <p id="footer_description">
-              Nos hemos posicionado como la empresa líder en mediciones para alimentar indicadores de mejora contínua. ¿Qué quieren mejorar?
-            </p>
-            
-        </div>
-        
-        <div class="footer-items-rigth d-flex flex-column flex-md-row justify-content-between">          
-          <div class="item-content-1 d-flex flex-column justify-content-between">
-                <b id="footer_menu_title">Menu</b>
-                <a id="footer_menu_prices" href="#prices">Precios</a>
-                <a id="footer_menu_mentions" href="inversionistas.html">Inversiones</a>
-          </div>          
-          
-            <div class="item-content-2 d-flex flex-column justify-content-between">
-              <b id="footer_item2_title">Contactenos</b>
-              <div style="display: grid;">
-                <strong id="footer_sales">Ventas:</strong>
-                <span>+573508647288</span>
-                <span>comercial@ciom.tech</span>
-              </div>
-              <div style="display: grid;">
-                <strong id="footer_support">Soporte:</strong>
-                <span>+5491136610332</span>
-                <span>soporte@ciom.tech</span>
-              </div>
-            </div>
-          
-        </div>
-      </div>
-
-      <div class="divide mt-5 mb-5"></div>
-
-      <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">     
-          <div class="legal-container">
-            <a  id="footer_conditions" href="https://web.ciom.tech/terminosycondicionesdeuso"  target="_blank" rel="noopener noreferrer" >Terminos y condiciones</a>
-            <div>Aviso de privacidad</div>
-            <div>©2024 CIOM</div>
-          </div>
-          <div class="d-flex icons-footer"> 
-            <div><a href="https://www.linkedin.com/company/circle-complete-group/about/"  target="_blank" rel="noopener noreferrer" ><img alt="" src="/assets/img/Crowdsourcing/icon-Facebook.png" /></a></div>
-            <div><a href="https://www.linkedin.com/company/circle-complete-group/about/"  target="_blank" rel="noopener noreferrer" ><img alt="" src="./assets/img/linkedin.svg" /></a></div>
-          </div>      
-      </div>
-    </div>
-  </footer>  
+  <footer id="footer"></footer>  
 
 <!-- <div class="cookie-banner">
   <span id="cookies_message">Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestra</span>
