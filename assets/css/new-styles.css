@@ -47,7 +47,7 @@ body {
   gap: 36px;
   display: flex;
   flex-direction: column;
-  padding-top: 167px;
+  justify-content: center;
 }
 
 .datos-inner h3 {
@@ -76,6 +76,13 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    gap: 36px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 167px;
+    justify-content: unset;
+  }
   .btn-start {
     padding: 10px 50px;
     color: white !important;
