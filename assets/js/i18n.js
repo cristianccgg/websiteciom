@@ -192,8 +192,12 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     es: {
       translation: {
-        header_menu_measures: "Principales Indicadores",
-        header_menu_additional_service: "Crowdsourcing",
+        navbarDropdownMenuLink: "Principales Indicadores",
+        dropdown_item_1: "Cliente Misterioso",
+        dropdown_item_2: "Auditorias/Inspecciones",
+        dropdown_item_3: "Monitoreo de competencia",
+        header_menu_crowdsourcing: "Crowdsourcing",
+        header_menu_ciomers: "Quiero ser CIOMER",
         header_menu_prices: "Precios",
         header_menu_mentions: "Nostros",
         header_menu_investors: "Inversionistas",
@@ -240,17 +244,17 @@ document.addEventListener("DOMContentLoaded", function () {
           "Pensada para simplificar el trabajo de medición en el PDV",
 
         webApp3_title: "Simplicidad y poder en una sola aplicación web",
-        webApp3_item_1_title: "Mejora su negocio",
+        webApp3_item_1_title: "Mejorará su negocio",
         webApp3_item_1_description: "Se automatiza la gestion de sus equipos",
         webApp3_item_2_title: "Cuenta con mas ayuda",
         webApp3_item_2_description:
           "Informará customizadamente a toda la organización",
-        webApp3_item_3_title: "Independiza por completo",
+        webApp3_item_3_title: "Se independizará por completo",
         webApp3_item_3_description:
           "Podrá crear y administrar sus indicadores facilmente",
         webApp3_item_4_title: "Acelera su camino al crecimiento",
         webApp3_item_4_description:
-          "Será muy simple identificar mas y mejores oportunidades",
+          "Será muy simple identificar más y mejores oportunidades",
 
         statistics_title:
           "Los riesgos que podría evitar con buenos indicadores",
@@ -260,16 +264,11 @@ document.addEventListener("DOMContentLoaded", function () {
           "de clientes elegirán otra marca si su producto no está",
         statistics_item_3:
           "de los consumidores prefieren una marca bien estandarizada",
-        statistics_item_4:
-          "de clientes elegirán otra marca ante un mejor ofrecimiento",
-        statistics_item_5:
-          "de productos no encontrados fue por problemas operativos en el PDV",
-        statistics_btn: "Comenzar",
 
         measures_title_sub: "TOP 5",
         measures_title: "Tipos de Medición para mejorar su rentabilidad",
         measures_item_1_title: "EVALUACIONES",
-        measures_item_1_1: "Cliente Misterioso",
+        measures_item_1_1: "Servicios",
         measures_item_1_2: "Ventas",
         measures_item_1_3: "Conocimientos",
         measures_item_2_title: "AUDITORIAS",
@@ -291,7 +290,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         methodology_title: "La metodología empleada por las empresas exitosas",
         methodology_item_1:
-          "Al enfocar a su compañía a procesos de mejora continua usted va a conseguir Resultados Tangibles.",
+          "Al enfocar a su compañía a procesos de mejora continua a través de indicadores de gestión usted va a conseguir Resultados Tangibles.",
         methodology_item_2:
           "Al medir y corregir evita desperdicios y optimiza sus recursos, lo que lo hace más ágil y competitivo.",
         methodology_item_3:
@@ -316,7 +315,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "prices_btn-monthly": "Pago mensual",
         "prices_btn-annual": "Pago anual",
         prices_saving: "(Ahorre hasta un 25%)",
-        prices_item_basic_title: "BASICO",
+        prices_item_basic_title: "FAMILIAR",
         prices_item_basic_description:
           "Elimina todas las disputas al poder acompañar las decisiones con datos objetivos",
         prices_item_basic_item_info_1: "Facturación anual",
@@ -373,15 +372,92 @@ document.addEventListener("DOMContentLoaded", function () {
         footer_description:
           "Nos hemos posicionado como la empresa líder en mediciones para alimentar indicadores de mejora contínua. ¿Qué quieren mejorar?",
         footer_menu_title: "Menu",
-        footer_menu_measures: "Mediciones",
-        footer_menu_additional_service: "Servicios adicionales ",
         footer_menu_prices: "Precios",
-        footer_menu_mentions: "Casos de éxito",
+        footer_menu_investments: "Inversiones",
         footer_item2_title: "Contactenos",
         footer_sales: "Ventas",
         footer_support: "Soporte",
         footer_conditions: "Terminos y condiciones",
         footer_privacy: "Aviso de privacidad",
+
+        // Cliente Misterioso
+
+        cliente_misterioso_title: "Cliente Misterioso",
+        cliente_btn_start: "Comenzar",
+        cliente_misterioso_description:
+          "Técnica altamente efectiva en donde una persona preparada experimenta su servicio y le transmite información objetiva y clara que le permitirá identificar oportunidades de mejora.",
+        cliente_misterioso_description_item: "Mejora la atención al cliente.",
+        cliente_misterioso_description_item_1:
+          "Aumenta la satisfacción del cliente.",
+        cliente_misterioso_description_item_2:
+          "Incrementa la fidelización a su marca.",
+        cliente_misterioso_description_item_3:
+          "Eleva el ofrecimiento de ofertas.",
+        cliente_misterioso_swiper_title:
+          "La felicidad del cliente es el verdadero activo de su empresa",
+        cliente_misterioso_empresas_title:
+          "Empresa #1 a nivel Latinoamérica para Cliente Misterioso",
+        cliente_misterioso_empresas_item: "Industrias Diferentes",
+        cliente_misterioso_empresas_item_1: "Paises Cubiertos",
+        cliente_misterioso_empresas_item_2: "Clientes misteriosos",
+        cliente_misterioso_empresas_item_3: "Visitas mensuales",
+        empresas_btn: "Comenzar",
+        mejorar_title: "Qué necesita para mejorar?",
+        mejorar_cliente_btn: "CLIENTE MISTERIOSO",
+        mejorar_auditoria_btn: "AUDITORIA/INSPECCION",
+        mejorar_monitoreo_btn: "MONITOREO DE COMPETENCIA",
+
+        // Auditorias
+
+        auditorias_title: "Auditorias/Inspecciones",
+        auditorias_btn_start: "Comenzar",
+        auditorias_description:
+          "Son dos tipos de evaluaciones simples en donde se observa o revisa el cumplimiento de prácticas, procesos, normas o estándares de su negocio para identificar oportunidades de mejora.",
+        auditorias_description_item: "Aumenta la estandarización.",
+        auditorias_description_item_1: "Mejora la seguridad.",
+        auditorias_description_item_2: "Incrementa la vida útil de equipos.",
+        auditorias_description_item_3: "Acelera su crecimiento.",
+        auditorias_swiper_title:
+          "Auditoría e Inspecciones,una garantía de éxito",
+        auditorias_empresas_title:
+          "App móvil líder en la industria para Auditar e Inspeccionar",
+        auditorias_empresas_item: "Geoposicionamiento",
+        auditorias_empresas_item_1: "Trabajo sin Conexión",
+        auditorias_empresas_item_2: "Respaldo Multimedia",
+        auditorias_empresas_item_3: "Tiempo Real",
+        auditorias_empresas_btn: "Comenzar",
+        auditorias_mejorar_title: "Qué necesita para mejorar?",
+        auditorias_mejorar_cliente_btn: "CLIENTE MISTERIOSO",
+        auditorias_mejorar_auditoria_btn: "AUDITORIA/INSPECCION",
+        auditorias_mejorar_monitoreo_btn: "MONITOREO DE COMPETENCIA",
+
+        // Monitoreo
+
+        monitoreo_title: "Monitoreo de competencia",
+        monitoreo_btn_start: "Comenzar",
+        monitoreo_description:
+          "Consiste en observar las actividades, estrategias y desempeño de las empresas que compiten con usted. Conocerá sus productos o servicios, precios, ofertas, tácticas de marketing, etc.",
+        monitoreo_description_item: "Mejora su propuesta de valor",
+        monitoreo_description_item_1: "Incrementa su rentabilidad",
+        monitoreo_description_item_2: "Acelera su crecimiento",
+        monitoreo_description_item_3: "Eleva su competitividad",
+        monitoreo_swiper_title: "Obtenga la ventaja que necesita",
+        monitoreo_empresas_title:
+          "App móvil líder para monitoreo de sus competidores",
+        monitoreo_empresas_item: "Geoposicionamiento",
+        monitoreo_empresas_item_1: "Trabajo sin Conexión",
+        monitoreo_empresas_item_2: "Respaldo Multimedia",
+        monitoreo_empresas_item_3: "Tiempo Real",
+        auditoria_empresas_btn: "Comenzar",
+        monitoreo_mejorar_title: "Qué necesita para mejorar?",
+        monitoreo_mejorar_cliente_btn: "CLIENTE MISTERIOSO",
+        monitoreo_mejorar_auditoria_btn: "AUDITORIA/INSPECCION",
+        monitoreo_mejorar_monitoreo_btn: "MONITOREO DE COMPETENCIA",
+
+        // capitalize
+
+        capitalize_title: "¿Listo para capitalizar tus oportunidades?",
+        capitalize_btn: "Empezá ahora",
 
         // "cookies_message" : "Al hacer clic en 'Aceptar', usted acepta que las cookies se guarden en su dispositivo para mejorar la navegación del sitio y analizar el uso del mismo.",
         // "cookies_accept" :"Aceptar"

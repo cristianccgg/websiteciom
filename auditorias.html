@@ -33,16 +33,18 @@
   <body>
     <div id="top-section">
       <div id="auditorias" class="header align-items-center text-white px-5">
-        <h1 class="title">Auditorias/Inspecciones</h1>
+        <h1 id="auditorias_title" class="title">Auditorias/Inspecciones</h1>
         <a
           href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
-          ><button class="btn-start">Comenzar</button></a
+          ><button id="auditorias_btn_start" class="btn-start">
+            Comenzar
+          </button></a
         >
       </div>
       <div class="header-info-container d-flex flex-column p-5 gap-5">
         <div class="row-container row align-items-center m-auto">
           <div class="header-info-container-1 col-md d-flex align-items-center">
-            <p>
+            <p id="auditorias_description">
               Son dos tipos de evaluaciones simples en donde se observa o revisa
               el cumplimiento de prácticas, procesos, normas o estándares de su
               negocio para identificar oportunidades de mejora.
@@ -55,25 +57,33 @@
                   src="assets/img/Crowdsourcing/Vector.png"
                   alt="check-icon"
                 />
-                <h7>Aumenta la estandarización.</h7>
+                <h7 id="auditorias_description_item"
+                  >Aumenta la estandarización.</h7
+                >
               </li>
               <li class="d-flex align-items-center">
                 <img
                   src="assets/img/Crowdsourcing/Vector.png"
                   alt="check-icon"
-                /><h7>Mejora la seguridad.</h7>
+                /><h7 id="auditorias_description_item_1"
+                  >Mejora la seguridad.</h7
+                >
               </li>
               <li class="d-flex align-items-center">
                 <img
                   src="assets/img/Crowdsourcing/Vector.png"
                   alt="check-icon"
-                /><h7>Incrementa la vida útil de equipos.</h7>
+                /><h7 id="auditorias_description_item_2"
+                  >Incrementa la vida útil de equipos.</h7
+                >
               </li>
               <li class="d-flex align-items-center">
                 <img
                   src="assets/img/Crowdsourcing/Vector.png"
                   alt="check-icon"
-                /><h7>Acelera su crecimiento.</h7>
+                /><h7 id="auditorias_description_item_3"
+                  >Acelera su crecimiento.</h7
+                >
               </li>
             </ul>
           </div>
@@ -81,7 +91,7 @@
       </div>
     </div>
     <div class="swiper mySwiper">
-      <h1 class="text-center p-5">
+      <h1 id="auditorias_swiper_title" class="text-center p-5">
         Auditoría e Inspecciones, <br />una garantía de éxito
       </h1>
       <div class="swiper-wrapper">
@@ -131,7 +141,7 @@
     >
       <div class="d-flex flex-column gap-4 gap-md-5 align-items-center">
         <div>
-          <h3 class="empresas-2-title">
+          <h3 id="auditorias_empresas_title" class="empresas-2-title">
             App móvil líder en la industria para Auditar e Inspeccionar
           </h3>
         </div>
@@ -145,7 +155,7 @@
               src="assets/img/Crowdsourcing/Auditorias-inspecciones/Icons/Auditorías/carbon_location.png"
               alt="geo-icon"
             />
-            <p class="span">Geoposicionamiento</p>
+            <p id="auditorias_empresas_item" class="span">Geoposicionamiento</p>
           </div>
           <div
             class="auditar-container d-flex flex-column align-items-center gap-3"
@@ -154,7 +164,9 @@
               src="assets/img/Crowdsourcing/Auditorias-inspecciones/Icons/Auditorías/carbon_location-1.png"
               alt="geo-icon"
             />
-            <p class="span">Trabajo sin Conexión</p>
+            <p id="auditorias_empresas_item_1" class="span">
+              Trabajo sin Conexión
+            </p>
           </div>
           <div
             class="auditar-container d-flex flex-column align-items-center gap-3"
@@ -163,7 +175,9 @@
               src="assets/img/Crowdsourcing/Auditorias-inspecciones/Icons/Auditorías/carbon_location-2.png"
               alt="geo-icon"
             />
-            <p class="span">Respaldo Multimedia</p>
+            <p id="auditorias_empresas_item_2" class="span">
+              Respaldo Multimedia
+            </p>
           </div>
           <div
             class="auditar-container d-flex flex-column align-items-center gap-3"
@@ -172,12 +186,15 @@
               src="assets/img/Crowdsourcing/Auditorias-inspecciones/Icons/Auditorías/carbon_location-3.png"
               alt="geo-icon"
             />
-            <p class="span">Tiempo Real</p>
+            <p id="auditorias_empresas_item_3" class="span">Tiempo Real</p>
           </div>
         </div>
         <a
           href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
-          ><button class="btn-start rounded border-white border">
+          ><button
+            id="auditorias_empresas_btn"
+            class="btn-start rounded border-white border"
+          >
             Comenzar
           </button></a
         >
@@ -190,51 +207,37 @@
       id="mejorar"
       class="d-flex flex-column gap-5 p-5 align-items-center"
     >
-      <h1 class="text-center">Qué necesita para mejorar?</h1>
+      <h1 id="auditorias_mejorar_title" class="text-center">
+        Qué necesita para mejorar?
+      </h1>
       <div class="d-flex flex-column gap-5 flex-md-row gap-md-3">
         <a href="cliente-misterioso.html">
-          <button class="btn-start btn-mejorar rounded fs-6">
+          <button
+            id="auditorias_mejorar_cliente_btn"
+            class="btn btn-mejorar rounded fs-6"
+          >
             CLIENTE MISTERIOSO
           </button>
         </a>
         <a href="auditorias.html">
-          <button class="btn rounded fs-6 btn-mejorar">
+          <button
+            id="auditorias_mejorar_auditoria_btn"
+            class="btn-start rounded fs-6 btn-mejorar"
+          >
             AUDITORIA/INSPECCION
           </button>
         </a>
         <a href="monitoreo.html">
-          <button class="btn rounded fs-6 text-nowrap btn-mejorar">
+          <button
+            id="auditorias_mejorar_monitoreo_btn"
+            class="btn rounded fs-6 text-nowrap btn-mejorar"
+          >
             MONITOREO DE COMPETENCIA
           </button>
         </a>
       </div>
     </section>
-    <section id="help">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 custom-column">
-            <div class="frame">
-              <div class="prompt">
-                <img loading="lazy" alt="" src="assets/img/price.svg" />
-                <div class="body">
-                  <h1 id="capitalize-title" class="capitalize-title">
-                    ¿Listo para capitalizar tus oportunidades?
-                  </h1>
-                </div>
-                <a
-                  id="help1_btn"
-                  href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-info"
-                  >Empezá ahora</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section id="capitalize"></section>
     <footer id="footer"></footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

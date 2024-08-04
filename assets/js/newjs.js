@@ -12,6 +12,19 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) => console.error("Error al cargar el footer:", error));
 
+  // Verificar la existencia del div con id "capitalize" antes de cargar el contenido
+  const capitalizeElement = document.querySelector("#capitalize");
+  if (capitalizeElement) {
+    fetch("capitalize.html")
+      .then((response) => response.text())
+      .then((data) => {
+        capitalizeElement.innerHTML = data;
+      })
+      .catch((error) =>
+        console.error("Error al cargar el archivo capitalize.html:", error)
+      );
+  }
+
   // Inicialización de Swiper para el slider principal
   var swiper = new Swiper(".mySwiper", {
     loop: true,
@@ -43,39 +56,40 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("testimonios.html")
     .then((response) => response.text())
     .then((data) => {
-      document.getElementById("testimonials-2").innerHTML = data;
+      const testimonials2Element = document.getElementById("testimonials-2");
+      if (testimonials2Element) {
+        testimonials2Element.innerHTML = data;
 
-      // Inicializar Swiper para testimonios después de cargar el contenido
-      var swiper2 = new Swiper(".mySwiper2", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 3,
-        pagination: {
-          el: ".swiper-pagination2",
-          clickable: true,
-        },
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        breakpoints: {
-          320: {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
+        var swiper2 = new Swiper(".mySwiper2", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+          pagination: {
+            el: ".swiper-pagination2",
+            clickable: true,
           },
-          768: {
-            slidesPerView: 3,
-            slidesPerGroup: 3,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
           },
-          1024: {
-            slidesPerView: 3,
-            slidesPerGroup: 3,
+          breakpoints: {
+            320: {
+              slidesPerView: 1,
+              slidesPerGroup: 1,
+            },
+            768: {
+              slidesPerView: 3,
+              slidesPerGroup: 3,
+            },
+            1024: {
+              slidesPerView: 3,
+              slidesPerGroup: 3,
+            },
           },
-        },
-      });
+        });
 
-      // Inicialización de AOS
-      AOS.init();
+        AOS.init();
+      }
     })
     .catch((error) => console.error("Error al cargar testimonios:", error));
 
@@ -83,37 +97,40 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("testimonios-ciomers.html")
     .then((response) => response.text())
     .then((data) => {
-      document.getElementById("testimonials-3").innerHTML = data;
+      const testimonials3Element = document.getElementById("testimonials-3");
+      if (testimonials3Element) {
+        testimonials3Element.innerHTML = data;
 
-      var swiper3 = new Swiper(".mySwiper3", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 3,
-        pagination: {
-          el: ".swiper-pagination2",
-          clickable: true,
-        },
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        breakpoints: {
-          320: {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
+        var swiper3 = new Swiper(".mySwiper3", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+          pagination: {
+            el: ".swiper-pagination3",
+            clickable: true,
           },
-          768: {
-            slidesPerView: 3,
-            slidesPerGroup: 3,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
           },
-          1024: {
-            slidesPerView: 3,
-            slidesPerGroup: 3,
+          breakpoints: {
+            320: {
+              slidesPerView: 1,
+              slidesPerGroup: 1,
+            },
+            768: {
+              slidesPerView: 3,
+              slidesPerGroup: 3,
+            },
+            1024: {
+              slidesPerView: 3,
+              slidesPerGroup: 3,
+            },
           },
-        },
-      });
+        });
 
-      AOS.init();
+        AOS.init();
+      }
     })
     .catch((error) =>
       console.error("Error al cargar testimonios de clientes:", error)
