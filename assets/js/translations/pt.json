@@ -30,7 +30,7 @@
   "webApp1_item_3_title": "Como alcançar a melhoria?",
   "webApp1_item_3_text": "Suas equipes começarão a identificar objetivamente as oportunidades e poderão rastrear a melhoria.",
 
-  "fortune500": "Usado por empresas do Fortune 500empresas familiares",
+  "fortune500": "Usado por empresas do <span style=\"font-weight: 600;\">Fortune 500</span> empresas familiares",
 
   "webApp2_title": "O app que sua equipe e fornecedores vão adorar",
   "webApp2_item_1_title": "Aja em tempo real",
@@ -56,6 +56,9 @@
   "statistics_item_1": "de seus clientes não voltarão após uma má experiência",
   "statistics_item_2": "de clientes escolherão outra marca se seu produto não estiver disponível",
   "statistics_item_3": "dos consumidores preferem uma marca bem padronizada",
+  "statistics_item_4": "dos clientes escolherão outra marca por uma oferta melhor",
+  "statistics_item_5": "dos produtos não encontrados foram devido a problemas operacionais no ponto de venda",
+  "statistics_btn": "Iniciar",
 
   "measures_title_sub": "TOP 5",
   "measures_title": "Tipos de Medição para Melhorar Sua Rentabilidade",

@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function getLanguageFromLocalStorage() {
-    return localStorage.getItem("language") || "sp"; // Idioma por defecto si no hay ninguno guardado
+    return localStorage.getItem("language") || "sp";
   }
 
   function initializeI18n() {
@@ -48,13 +48,11 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateContent() {
     document.querySelectorAll("[id]").forEach(function (el) {
       const id = el.getAttribute("id");
-      // Solo actualiza el contenido si el ID existe en las traducciones
       if (i18next.exists(id)) {
         el.innerHTML = i18next.t(id);
       }
     });
 
-    // Actualizar el contenido del navbar después de actualizar el contenido
     updateNavbarContent();
   }
 
@@ -75,11 +73,9 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((response) => response.text())
       .then((data) => {
         document.querySelector("body").insertAdjacentHTML("afterbegin", data);
-        // Asegurarse de que el script del navbar se ejecute después de cargar el HTML
         const script = document.createElement("script");
         script.src = "assets/js/navbar.js";
         document.body.appendChild(script);
-        // Actualizar el contenido del navbar después de cargarlo
         script.onload = function () {
           updateNavbarContent();
         };
@@ -91,11 +87,28 @@ document.addEventListener("DOMContentLoaded", function () {
     i18next.changeLanguage(lng, function (err) {
       if (err) return console.error("Error changing language", err);
       updateContent();
-      saveLanguageToLocalStorage(lng); // Guardar el idioma en localStorage
+      saveLanguageToLocalStorage(lng);
+
+      const languageSelector = document.querySelector(".language-selector");
+      if (languageSelector) {
+        languageSelector.classList.remove("active");
+      }
     });
   };
 
-  // Inicializar i18next y cargar el navbar al cargar la página
+  document.addEventListener("click", function (event) {
+    const languageSelector = document.querySelector(".language-selector");
+    const dropbtn = document.querySelector(".dropbtn");
+
+    if (languageSelector && dropbtn) {
+      if (event.target === dropbtn) {
+        languageSelector.classList.toggle("active");
+      } else if (!languageSelector.contains(event.target)) {
+        languageSelector.classList.remove("active");
+      }
+    }
+  });
+
   initializeI18n();
   loadNavbar();
 });

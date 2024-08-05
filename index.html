@@ -11,25 +11,13 @@
   
   <link rel="icon" type="image/x-icon" href="assets/img/ciom_tiny.png">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> 
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/css/global.css" rel="stylesheet" />
+  <link href="assets/css/global.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
- 
-  <script src="assets/js/i18n-config.js"></script>
-  <script src="assets/js/navbar.js"></script>
-  <script src="assets/js/newjs.js"></script>
+  
   
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -192,56 +180,56 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
 
   <main id="main">
 
-      <section id="home" >
+    <section id="home" >
 
-        <div class="container">
+      <div class="container">
+          
+        <div class="row"  data-aos="fade-up">
+          
+          <div class="col-md-6 order-md-1">
             
-          <div class="row"  data-aos="fade-up">
-            
-            <div class="col-md-6 order-md-1">
-              
-              <h2 id="home_title_sub">MIDA | CORRIJA | MEJORE</h2>
-              <h1 id="home_title">La plataforma para medir y mejorar en tiempo real</h1>
+            <h2 id="home_title_sub">MIDA | CORRIJA | MEJORE</h2>
+            <h1 id="home_title">La plataforma para medir y mejorar en tiempo real</h1>
 
-              <ul>
-                <li>
-                  <i class="bi bi-check-lg"></i>          
-                  <span id="home_item_1">Mejora la ejecución de sus estrategias en campo</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-lg"></i>        
-                    <span id="home_item_2">Aumentar el cumplimiento de sus procesos internos</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-lg"></i>  
-                    <span id="home_item_3">Elevar la satisfacción de sus clientes</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-lg"></i>  
-                    <span id="home_item_4">Afinar estrategias de precios, promociones y ofertas
-                </li>                
-              </ul>
+            <ul>
+              <li>
+                <i class="bi bi-check-lg"></i>          
+                <span id="home_item_1">Mejora la ejecución de sus estrategias en campo</span>
+              </li>
+              <li>
+                <i class="bi bi-check-lg"></i>        
+                  <span id="home_item_2">Aumenta el cumplimiento de sus procesos internos</span>
+              </li>
+              <li>
+                <i class="bi bi-check-lg"></i>  
+                  <span id="home_item_3">Eleva la satisfacción de sus clientes</span>
+              </li>
+              <li>
+                <i class="bi bi-check-lg"></i>  
+                  <span id="home_item_4">Afina estrategias de precios, promociones y ofertas</span>
+              </li>                
+            </ul>
 
-              <a href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
-                 target="_blank" 
-                 rel="noopener noreferrer" 
-                 class="btn btn-primary"
-                 id="home_btn"
-              >Comenzar ahora</a>
-            
-            </div>
-
-            <div class="col-md-6 order-md-2 d-flex justify-content-end align-items-center">
-              <div data-aos="zoom-out" data-aos-delay="200">
-                 <img src="assets/img/Crowdsourcing/prueb 1.png" alt="Mediciones CIOM" class="image-slide"> 
-              </div>
-            </div>
-        
+            <a href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-primary"
+               id="home_btn"
+            >Comenzar</a>
+          
           </div>
 
+          <div class="col-md-6 order-md-2 d-flex justify-content-end align-items-center">
+            <div data-aos="zoom-out" data-aos-delay="200">
+               <img src="assets/img/home_img.png" alt="Mediciones CIOM" class="image-slide"> 
+            </div>
+          </div>
+      
         </div>
 
-      </section>
+      </div>
+
+    </section>
       
       <section id="logos">
         <div class="container opacity">
@@ -311,327 +299,342 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
           <h1 id="fortune500">Usado desde compañías del <span style="font-weight: 600;">fortune 500</span> hasta empresas familiares</h1>          
         </div>
       </div>
-      </section>
+    </section>
 
-      <section id="webApp" class="background">
-          <div class="container" data-aos="fade-up">
+    <section id="webApp" class="background">
+      <div class="container" data-aos="fade-up">
+    
+        <h1 id="webApp2_title">La app que su equipo y proveedores amaran</h1>
         
-            <h1 id="webApp2_title" >La app que su equipo y proveedores amaran</h1>
-            
-            <div class="row row-eq-height justify-content-center" style="margin-top: 65px;">
-          
-              <div class="col-md-4 order-md-2 d-flex align-items-center">
-                <img src="assets/img/Aplicación Móvil.png" class="img-fluid mx-auto" style="margin: 0 0 15px -15px !important;" alt="GPS, Multimedia, Trazabilidad, Nativa, Android, IOs, Iphone, Simple, Personalizada, Customizada">
-              </div>
+        <div class="row row-eq-height justify-content-center" style="margin-top: 65px;">
+      
+          <div class="col-md-4 order-md-2 d-flex align-items-center">
+            <img src="assets/img/Aplicación Móvil.png" class="img-fluid mx-auto" style="margin: 0 0 15px -15px !important;" alt="GPS, Multimedia, Trazabilidad, Nativa, Android, IOs, Iphone, Simple, Personalizada, Customizada">
+          </div>
 
-              <div class="col-md-4 order-md-1 d-flex flex-column justify-content-center">
-              <div class="card">
-                  <h4 id="webApp2_item_1_title">Acciona en tiempo real</h4>
-                  <p id="webApp2_item_1_description">Diseñada para procesar e informar al instante</p>
-                </div>
-                <div class="card">
-                  <h4 id="webApp2_item_2_title">Consolida toda su información</h4>
-                  <p id="webApp2_item_2_description">Para ser usada por su equipo y proveedores</p>
-                </div>
-              </div>
-              
-              <div class="col-md-4 order-md-3 d-flex flex-column justify-content-center">
-                <div class="card">
-                  <h4 id="webApp2_item_3_title">Gana tranquilidad y seguridad</h4>
-                  <p id="webApp2_item_3_description">Fecha, hora, gps y una multimedia respaldan cada dato</p>
-                </div>
-                <div class="card">
-                  <h4 id="webApp2_item_4_title">Ahorra horas de trabajo</h4>
-                  <p id="webApp2_item_4_description">Pensada para simplificar el trabajo de medición en el PDV</p>
-                </div>
-              </div>
-
+          <div class="col-md-4 order-md-1 d-flex flex-column justify-content-center">
+          <div class="card">
+              <h4 id="webApp2_item_1_title">Acciona en tiempo real</h4>
+              <p id="webApp2_item_1_description">Diseñada para procesar e informar al instante</p>
             </div>
+            <div class="card">
+              <h4 id="webApp2_item_2_title">Consolida toda su información</h4>
+              <p id="webApp2_item_2_description">Para ser usada por su equipo y proveedores</p>
+            </div>
+          </div>
+          
+          <div class="col-md-4 order-md-3 d-flex flex-column justify-content-center">
+            <div class="card">
+              <h4 id="webApp2_item_3_title">Gana tranquilidad y seguridad</h4>
+              <p id="webApp2_item_3_description">Fecha, hora, gps y una multimedia respaldan cada dato</p>
+            </div>
+            <div class="card">
+              <h4 id="webApp2_item_4_title">Ahorra horas de trabajo</h4>
+              <p id="webApp2_item_4_description">Pensada para simplificar el trabajo de medición en el PDV</p>
+            </div>
+          </div>
 
         </div>
-      </section>
 
-      <section id="webApp">
-        <div class="container" data-aos="fade-up">
+    </div>
+  </section>
+
+  <section id="webApp">
+    <div class="container" data-aos="fade-up">
+  
+      <h1 id="webApp3_title">Simplicidad y poder en una sola aplicación web</h1>
       
-          <h1 id="webApp3_title">Simplicidad y poder en una sola aplicación web</h1>
-          
-          <div class="row row-eq-height justify-content-center margin-img">
-         
-            <div class="col-md-4 order-md-2 d-flex align-items-center">
-              <img src="assets/img/Plataforma Web.png" class="img-fluid mx-auto" alt="Visualización, Dashboard, Indicadores, Personalizada, Customizada" style="margin: 80px 0px;">               
-            </div>
+      <div class="row row-eq-height justify-content-center margin-img">
+     
+        <div class="col-md-4 order-md-2 d-flex align-items-center">
+          <img src="assets/img/Plataforma Web.png" class="img-fluid mx-auto" alt="Visualización, Dashboard, Indicadores, Personalizada, Customizada" style="margin: 80px 0px;">               
+        </div>
 
-            <div class="col-md-4 order-md-1 d-flex flex-column justify-content-center">
-             <div class="card">
-                <h4 id="webApp3_item_1_title">Mejorará su negocio</h4>
-                <p id="webApp3_item_1_description">Se automatiza la gestion de sus equipos</p>
-              </div>
-              <div class="card">
-                <h4 id="webApp3_item_2_title">Contará con mas ayuda</h4>
-                <p id="webApp3_item_2_description">Informará customizadamente a toda la organización</p></br>
-              </div>
-            </div>
-            
-            <div class="col-md-4 order-md-3 d-flex flex-column justify-content-center">
-              <div class="card">
-                <h4 id="webApp3_item_3_title">Se independizará por completo</h4>
-                <p  id="webApp3_item_3_description">Podrá crear y administrar sus indicadores facilmente</p>
-              </div>
-              <div class="card">
-                <h4 id="webApp3_item_4_title">Acelerará su camino al crecimiento</h4>
-                <p id="webApp3_item_4_description">Será muy simple identificar más y mejores oportunidades</p>
-              </div>
-            </div>
-
+        <div class="col-md-4 order-md-1 d-flex flex-column justify-content-center">
+         <div class="card">
+            <h4 id="webApp3_item_1_title">Mejora su negocio</h4>
+            <p id="webApp3_item_1_description">Se automatiza la gestion de sus equipos</p>
           </div>
+          <div class="card">
+            <h4 id="webApp3_item_2_title">Cuenta con mas ayuda</h4>
+            <p id="webApp3_item_2_description">Informará customizadamente a toda la organización</p></br>
+          </div>
+        </div>
+        
+        <div class="col-md-4 order-md-3 d-flex flex-column justify-content-center">
+          <div class="card">
+            <h4 id="webApp3_item_3_title">Independiza por completo</h4>
+            <p  id="webApp3_item_3_description">Podrá crear y administrar sus indicadores facilmente</p>
+          </div>
+          <div class="card">
+            <h4 id="webApp3_item_4_title">Acelera su camino al crecimiento</h4>
+            <p id="webApp3_item_4_description">Será muy simple identificar mas y mejores oportunidades</p>
+          </div>
+        </div>
 
       </div>
-     </section>
+
+  </div>
+ </section>
+
     
-     <section id="statistics">
-        <div class="container d-flex flex-column align-items-center">
-          
-          <div class="content">
-            <h1 id="statistics_title">Los riesgos que podría evitar con buenos indicadores</h1>          
-          </div>
+ <section id="statistics">
+  <div class="container">
+    
+    <div class="content">
+      <h1 id="statistics_title">Los riesgos que podría evitar con buenos indicadores</h1>          
+    </div>
+  
+    <div class="row justify-content-center" style="padding-top: 30px;">
         
-          <div class="statistics-data-container d-flex flex-column flex-md-row align-items-center">
-              
-              <div class="statistics-data d-flex flex-column align-items-center">  
-                <div>
-                  <h1>69%</h1>
-                </div>
-                <p id="statistics_item_1">de sus clientes no regresarán luego de una mala experiencia</p>
-              </div>
-
-
-              <div class="statistics-data d-flex flex-column align-items-center">  
-                <div>
-                  <h1>77%</h1>
-                </div>
-                <p id="statistics_item_2">de clientes elegirán otra marca si su producto no está</p>
-              </div>
-
-              <div class="statistics-data d-flex flex-column align-items-center">  
-                <div>
-                  <h1>65%</h1>
-                </div>
-                <p id="statistics_item_3">de los consumidores prefieren una marca bien estandarizada</p>
-              </div>      
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
+          <div>
+            <span>69%</span>
           </div>
+          <p id="statistics_item_1">de sus clientes no regresarán luego de una mala experiencia</p>
+        </div>
+
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
+          <div>
+            <span>77%</span>
+          </div>
+          <p id="statistics_item_2">de clientes elegirán otra marca si su producto no está</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
+          <div>
+            <span>65%</span>
+          </div>
+          <p id="statistics_item_3">de los consumidores prefieren una marca bien estandarizada</p>
+        </div>
+
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
+          <div>
+            <span>72%</span>
+          </div>
+          <p id="statistics_item_4">de clientes elegirán otra marca ante un mejor ofrecimiento</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
+          <div>
+            <span>97%</span>
+          </div>
+          <p id="statistics_item_5">de productos no encontrados fue por problemas operativos en el PDV</p>
+        </div>
+        
+    </div>
+      
+    <div class="row justify-content-center" style="padding-top: 30px;">
+      <a
+      id="statistics_btn"
+      href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="btn btn-info"
+      >Comenzar</a>
+  </div> 
+
+  </div> 
+
+  </div>
+</section> 
+
+<section id="measures">
+      
+  <div class="container" data-aos="fade-up">
+    <div>
+        <h1 id="measures_title_sub" style="font-weight: 600;">TOP 5</h1>
+        <h1 id="measures_title">Tipos de Medición para mejorar su rentabilidad</h1>
+      </div>         
+  </div>
+
+</section>
+
+<section id="measuresItem">
+
+  <div class="container" data-aos="fade-up">
             
-          <div class="row justify-content-center" style="padding-top: 30px;">
-            <a
-            id="statistics_btn"
-            href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
+    <div class="row justify-content-center" style="padding-top: 30px;">
+      
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
+        <div class="card-body">
+          <h1>1</h1>
+          <div class="body">
+            <div id="measures_item_1_title" class="title">CLIENTE MISTERIOSO</div>
+            <ul>
+              <li id="measures_item_1_1">Servicio</li>
+              <li id="measures_item_1_2">Ventas</li>
+              <li id="measures_item_1_3">Conocimientos</li>
+            </ul>
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
+        <div class="card-body">
+          <h1>2</h1>
+          <div class="body">
+            <div id="measures_item_2_title" class="title">AUDITORIAS</div>
+            <ul>
+              <li id="measures_item_2_1">Imagen</li>
+              <li id="measures_item_2_2">Ejecución</li>
+              <li id="measures_item_2_3">Disponibilidad</li>
+            </ul>
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
+        <div class="card-body">
+          <h1>3</h1>
+          <div class="body">
+            <div id="measures_item_3_title" class="title">INSPECCIONES</div>
+            <ul>
+              <li id="measures_item_3_1">Seguridad</li>
+              <li id="measures_item_3_2">Mantenimiento</li>
+              <li id="measures_item_3_3">Limpieza</li>
+            </ul>
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
+        <div class="card-body">
+          <h1>4</h1>
+          <div class="body">
+            <div id="measures_item_4_title" class="title">ENCUESTAS</div>
+            <ul>
+              <li id="measures_item_4_1">Satisfacción</li>
+              <li id="measures_item_4_2">Oferta de Valor</li>
+              <li id="measures_item_4_3">Clima Laboral</li>
+            </ul>
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
+        <div class="card-body">
+          <h1>5</h1>
+          <div class="body">
+            <div id="measures_item_5_title" class="title">BENCHMARKETING</div>
+            <ul>
+              <li id="measures_item_5_1">Precios</li>
+              <li id="measures_item_5_2">Ofertas</li>
+              <li id="measures_item_5_3">Servicio</li>
+            </ul>
+          </div> 
+        </div>
+      </div>
+      
+    </div>
+  
+  </div>
+
+  <div class="row justify-content-center" style="padding-top: 55px;">
+    <div class="col-sm-10 col-md-10 col-lg-4">
+      <video width="100%" controls>
+        <source src="assets/img/Principales Servicios.mp4" type="video/mp4" alt="Cliente Misteriosos, Relevamiento de Precios, Inspecciones, Auditorías, Encuestas">
+        Tu navegador no soporta la etiqueta de video.
+      </video>
+    </div>
+  </div>
+
+
+</section>
+      
+<section id="methodology" >
+
+  <div class="container">
+      
+    <div class="row"  data-aos="fade-up">
+      
+      <div class="col-md-6 order-md-1" s>
+        
+      <div class="body">
+        <h1 id="methodology_title">La metodología empleada por las empresas exitosas</h1>
+
+        <ul>
+          <li id="methodology_item_1"> Al enfocar a su compañía a procesos de mejora continua usted va a conseguir Resultados Tangibles.</li>
+          <li id="methodology_item_2"> Al medir y corregir evita desperdicios y optimiza sus recursos, lo que lo hace más ágil y competitivo.</li>
+          <li id="methodology_item_3"> El éxito es la habilidad de ir de un fracaso en otro sin perder el entusiasmo.  Henry Ford</li>                
+        </ul>
+
+        <a href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn btn-link"
+           id="methodology_btn"
+        >Comenzar</a>
+      
+      </div>
+    </div>
+      <div class="col-md-6 order-md-2 d-flex justify-content-end">
+        <div data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/methodology_ciom.png" alt="methodology" class="image-slide">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="additional-service" >
+
+  <div class="container">
+      
+    <div class="row" data-aos="fade-up">
+      
+      <div class="col-md-6 order-md-1 order-2">
+        <div data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/additional_service.png" alt="metodologia CIOM" class="image-slide">
+        </div>
+      </div>
+      
+      <div class="col-md-6 order-md-2 order-1">
+        
+        <div class="body">
+          <h1 id="additional_title">Un equipo especializado listo para facilitarle el proceso de mejora</h1>
+          <ul>
+            <li>
+              <i class="bi bi-check-lg"></i>          
+              <span id="additional_item_1">Ayudarlos a definir indicadores simples y efectivos para que mejore su negocio</span>
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>          
+              <span id="additional_item_2">Apoyarlos con la configuración inicial del sistema para que ahorren tiempo</span>
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>          
+              <span id="additional_item_3">Acompañarlos en su proceso de mejora por el tiempo que lo necesiten</span>
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>          
+              <span id="additional_item_4"> Adaptar y Ejecutar el Programa Integral de Mejora by</span>
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>          
+              <span id="additional_item_5"> CIOMERS (Modelo Uber, independientes que le hacen sus tareas de campo)</span>
+            </li>
+          </ul>
+          <a href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
             target="_blank" 
             rel="noopener noreferrer" 
-            class="btn btn-info"
-            >Comenzar</a>
-        </div> 
-
-        </div> 
-
-        </div>
-      </section> 
-
-      <section id="measures">
-      
-        <div class="container" data-aos="fade-up">
-          <div>
-              <h1 id="measures_title_sub" style="font-weight: 600;">TOP 5</h1>
-              <h1 id="measures_title">Tipos de Medición para mejorar su rentabilidad</h1>
-            </div>         
-        </div>
-      
-      </section>
-
-      <section id="measuresItem">
-      
-        <div class="container" data-aos="fade-up">
-                  
-          <div class="row justify-content-center" style="padding-top: 30px;">
-            
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
-              <div class="card-body">
-                <h1>1</h1>
-                <div class="body">
-                  <div id="measures_item_1_title" class="title">EVALUACIONES</div>
-                  <ul>
-                    <li id="measures_item_1_1">Servicio</li>
-                    <li id="measures_item_1_2">Ventas</li>
-                    <li id="measures_item_1_3">Conocimientos</li>
-                  </ul>
-                </div> 
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
-              <div class="card-body">
-                <h1>2</h1>
-                <div class="body">
-                  <div id="measures_item_2_title" class="title">AUDITORIAS</div>
-                  <ul>
-                    <li id="measures_item_2_1">Imagen</li>
-                    <li id="measures_item_2_2">Ejecución</li>
-                    <li id="measures_item_2_3">Disponibilidad</li>
-                  </ul>
-                </div> 
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
-              <div class="card-body">
-                <h1>3</h1>
-                <div class="body">
-                  <div id="measures_item_3_title" class="title">INSPECCIONES</div>
-                  <ul>
-                    <li id="measures_item_3_1">Seguridad</li>
-                    <li id="measures_item_3_2">Mantenimiento</li>
-                    <li id="measures_item_3_3">Limpieza</li>
-                  </ul>
-                </div> 
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
-              <div class="card-body">
-                <h1>4</h1>
-                <div class="body">
-                  <div id="measures_item_4_title" class="title">ENCUESTAS</div>
-                  <ul>
-                    <li id="measures_item_4_1">Satisfacción</li>
-                    <li id="measures_item_4_2">Oferta de Valor</li>
-                    <li id="measures_item_4_3">Clima Laboral</li>
-                  </ul>
-                </div> 
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">  
-              <div class="card-body">
-                <h1>5</h1>
-                <div class="body">
-                  <div id="measures_item_5_title" class="title">BENCHMARKETING</div>
-                  <ul>
-                    <li id="measures_item_5_1">Precios</li>
-                    <li id="measures_item_5_2">Ofertas</li>
-                    <li id="measures_item_5_3">Servicio</li>
-                  </ul>
-                </div> 
-              </div>
-            </div>
-            
-          </div>
-        
-        </div>
-      
-        <div class="row justify-content-center" style="padding-top: 55px;">
-          <div class="col-sm-10 col-md-10 col-lg-4">
-            <video width="100%" controls>
-              <source src="assets/img/Principales Servicios.mp4" type="video/mp4" alt="Cliente Misteriosos, Relevamiento de Precios, Inspecciones, Auditorías, Encuestas">
-              Tu navegador no soporta la etiqueta de video.
-            </video>
-          </div>
+            class="btn btn-link"
+            id="additional_btn"
+          >Contactar con ventas</a>            
         </div>
 
+      </div>
 
-      </section>
-      
-      <section id="methodology" >
+    </div>
 
-        <div class="container">
-            
-          <div class="row"  data-aos="fade-up">
-            
-            <div class="col-md-6 order-md-1" s>
-              
-            <div class="body">
-              <h1 id="methodology_title">La metodología empleada por las empresas exitosas</h1>
-
-              
-                <div class="methodology-group">
-                  <p id="methodology_item_1" class="methodology">Al enfocar a su compañía a <strong>procesos de mejora continua</strong> a través de indicadores de gestión usted va a conseguir <strong>Resultados Tangibles.</strong></p>
-                  <p id="methodology_item_2" class="methodology"> Al medir y corregir evita desperdicios y optimiza sus recursos, lo que lo hace más ágil y competitivo.</p>
-                  <p id="methodology_item_3" class="methodology"> <strong>El éxito es la habipdad de ir de un fracaso en otro sin perder el entusiasmo. </strong> Henry Ford</p>
-                </div>
-              
-
-              <a href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
-                 target="_blank" 
-                 rel="noopener noreferrer" 
-                 class="btn btn-link"
-                 id="methodology_btn"
-              >Comenzar</a>
-            
-            </div>
-          </div>
-            <div class="col-md-6 order-md-2 d-flex justify-content-end">
-              <div data-aos="zoom-out" data-aos-delay="200">
-                <img src="assets/img/methodology_ciom.png" alt="methodology" class="image-slide">
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      <section id="additional-service" >
-
-        <div class="container">
-            
-          <div class="row" data-aos="fade-up">
-            
-            <div class="col-md-6 order-md-1 order-2">
-              <div data-aos="zoom-out" data-aos-delay="200">
-                <img src="assets/img/additional_service.png" alt="metodologia CIOM" class="image-slide">
-              </div>
-            </div>
-            
-            <div class="col-md-6 order-md-2 order-1">
-              
-              <div class="body">
-                <h1 id="additional_title">Un equipo especializado listo para facilitarle el proceso de mejora</h1>
-                <ul>
-                  <li>
-                    <i class="bi bi-check-lg"></i>          
-                    <span id="additional_item_1">Ayudarlos a definir indicadores simples y efectivos para que mejore su negocio</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check-lg"></i>          
-                    <span id="additional_item_2">Apoyarlos con la configuración inicial del sistema para que ahorren tiempo</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check-lg"></i>          
-                    <span id="additional_item_3">Acompañarlos en su proceso de mejora por el tiempo que lo necesiten</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check-lg"></i>          
-                    <span id="additional_item_4"> Adaptar y Ejecutar el Programa Integral de Mejora by CIOM</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-check-lg"></i>          
-                    <span id="additional_item_5"> CIOMERS (Modelo Uber, independientes que le hacen sus tareas de campo)</span>
-                  </li>
-                </ul>
-                <a href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  class="btn btn-link"
-                  id="additional_btn"
-                >Contactar con ventas</a>            
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-       
-      </section>
+  </div>
+ 
+</section>
   
       
       
@@ -976,9 +979,18 @@ document.querySelector('.slider-track-company').innerHTML = generateLogos("COMPA
    
     <i class="bi bi-whatsapp my-float"></i>
     </a> -->
-
-
-  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+    <script src="assets/js/i18n-config.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/newjs.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>

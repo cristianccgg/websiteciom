@@ -30,7 +30,7 @@
   "webApp1_item_3_title": "¿Cómo logra la mejora?",
   "webApp1_item_3_text": "Sus equipos comenzarán a evidenciar objetivamente las oportunidades y podrán dar trazabilidad a la mejora.",
 
-  "fortune500": "Usado desde compañías del fortune 500 hasta empresas familiares",
+  "fortune500": "Usado por empresas del <span style=\"font-weight: 600;\">Fortune 500</span> empresas familiares",
 
   "webApp2_title": "La aplicación que tu equipo y proveedores adorarán",
   "webApp2_item_1_title": "Actúa en tiempo real",
@@ -56,6 +56,9 @@
   "statistics_item_1": "de tus clientes no volverán después de una mala experiencia",
   "statistics_item_2": "de los clientes elegirán otra marca si tu producto no está disponible",
   "statistics_item_3": "de los consumidores prefieren una marca bien estandarizada",
+  "statistics_item_4": "de clientes elegirán otra marca ante un mejor ofrecimiento",
+  "statistics_item_5": "de productos no encontrados fue por problemas operativos en el PDV",
+  "statistics_btn": "Comenzar",
 
   "measures_title_sub": "TOP 5",
   "measures_title": "Tipos de Medición para mejorar su rentabilidad",

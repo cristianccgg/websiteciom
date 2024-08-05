@@ -30,7 +30,7 @@
   "webApp1_item_3_title": "How do you achieve improvement?",
   "webApp1_item_3_text": "Your teams will start to objectively identify opportunities and will be able to trace the improvement.",
 
-  "fortune500": "Used by companies from Fortune 500 to family businesses",
+  "fortune500": "Used by <span style=\"font-weight: 600;\">Fortune 500</span>  companies and family-owned businesses",
 
   "webApp2_title": "The app your team and suppliers will love",
   "webApp2_item_1_title": "Act in real time",
@@ -56,6 +56,9 @@
   "statistics_item_1": "of your customers will not return after a bad experience",
   "statistics_item_2": "of customers will choose another brand if your product is not available",
   "statistics_item_3": "of consumers prefer a well-standardized brand",
+  "statistics_item_4": "of customers will choose another brand for a better offering",
+  "statistics_item_5": "of products not found were due to operational issues at the point of sale",
+  "statistics_btn": "Start",
 
   "measures_title_sub": "TOP 5",
   "measures_title": "Types of Measurement to Improve Your Profitability",
