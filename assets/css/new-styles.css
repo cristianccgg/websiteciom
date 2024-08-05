@@ -25,6 +25,10 @@ body {
   margin-top: 90px;
 }
 
+.nav-text {
+  font-size: 180px !important;
+}
+
 #cliente-misterioso {
   background-image: url("/assets/img/Crowdsourcing/cliente-misterioso/woman-surrounded-by-bags-pile 1.png");
   background-size: cover;

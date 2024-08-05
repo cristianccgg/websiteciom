@@ -61,6 +61,7 @@ li {
   justify-content: flex-start;
   gap: var(--gap-xs);
   padding-block: 10px;
+
   /* font-weight: 500; */
 }
 
@@ -273,6 +274,41 @@ li {
   display: contents;
 } */
 
+.nav2-item {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.navbar-toggler {
+  background-color: #f00; /* Cambia el color de fondo para verificar */
+}
+
+.navbar-toggler-icon {
+  background-color: #fff; /* Cambia el color del icono para verificar */
+}
+
+/* Oculta los textos en dispositivos móviles y muestra el botón de hamburguesa */
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: block;
+  }
+  .navbar-nav .nav-link {
+    display: block;
+  }
+}
+
+/* Muestra el menú horizontal en pantallas grandes */
+@media (min-width: 769px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar-nav .nav-link {
+    display: inline-block;
+  }
+}
+
 .navbar ul {
   margin: 0;
   padding: 0px;
@@ -292,11 +328,10 @@ li {
 .navbar a:focus .navbar a:hover {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 0px;
   color: var(--color-font-principal);
   font-weight: 500;
-  font-size: 1rem !important;
+  font-size: 18px !important;
   white-space: nowrap;
   transition: 0.3s;
 
@@ -539,6 +574,7 @@ li {
 
 .iniciar-sesion {
   font-size: 16px;
+  color: black;
   font-weight: 600 !important;
 }
 
@@ -643,7 +679,7 @@ li {
 #header .container {
   display: flex;
   justify-content: space-between;
-  gap: 36px;
+  gap: 40px !important;
   max-width: 100% !important;
   padding-left: 87px;
   padding-right: 42px;
@@ -657,10 +693,14 @@ li {
   height: 80px;
 }
 
+.login-icon {
+  width: 27px !important;
+}
+
 .navbar-right-icons {
   display: flex;
   align-items: center;
-  gap: 8px; /* Ajusta el espacio entre los elementos si es necesario */
+  gap: 8px;
 }
 
 .language-selector,
@@ -671,15 +711,7 @@ li {
 
 .iniciar-sesion {
   text-wrap: nowrap;
-  margin: 0; /* Asegúrate de que no haya márgenes que desalineen el elemento */
-}
-
-/* #header a {
-  font-size: var(--fs-sm); 
-} */
-
-.login-icon {
-  color: var(--color-font-principal);
+  margin: 0;
 }
 
 .btn-header {
@@ -688,11 +720,11 @@ li {
 
 @media (max-width: 1000px) {
   .navbar {
-    margin-left: -10px;
+    margin-left: -30px;
   }
 
   #header .container {
-    gap: 0px;
+    gap: 0px !important;
     padding-left: 15px;
     padding-right: 15px;
   }
