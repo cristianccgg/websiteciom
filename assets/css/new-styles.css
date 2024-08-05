@@ -574,7 +574,7 @@ body {
 
 @media (max-width: 768px) {
   #ciomers-header {
-    background-position: left;
+    background-position: 20% center; /* Ajusta el valor según lo necesario */
   }
 }
 
