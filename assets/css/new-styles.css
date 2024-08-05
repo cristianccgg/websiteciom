@@ -572,6 +572,12 @@ body {
   padding-top: 150px !important;
 }
 
+@media (max-width: 768px) {
+  #ciomers-header {
+    background-position: left;
+  }
+}
+
 #ciomers-header h1 {
   z-index: 2;
 }
