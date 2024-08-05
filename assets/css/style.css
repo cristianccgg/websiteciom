@@ -274,41 +274,6 @@ li {
   display: contents;
 } */
 
-.nav2-item {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 32px;
-}
-
-.navbar-toggler {
-  background-color: #f00; /* Cambia el color de fondo para verificar */
-}
-
-.navbar-toggler-icon {
-  background-color: #fff; /* Cambia el color del icono para verificar */
-}
-
-/* Oculta los textos en dispositivos móviles y muestra el botón de hamburguesa */
-@media (max-width: 768px) {
-  .navbar-nav {
-    display: block;
-  }
-  .navbar-nav .nav-link {
-    display: block;
-  }
-}
-
-/* Muestra el menú horizontal en pantallas grandes */
-@media (min-width: 769px) {
-  .navbar-nav {
-    display: flex;
-    flex-direction: row;
-  }
-  .navbar-nav .nav-link {
-    display: inline-block;
-  }
-}
-
 .navbar ul {
   margin: 0;
   padding: 0px;
@@ -331,7 +296,7 @@ li {
   padding: 0px;
   color: var(--color-font-principal);
   font-weight: 500;
-  font-size: 18px !important;
+  font-size: 16px !important;
   white-space: nowrap;
   transition: 0.3s;
 
@@ -432,7 +397,7 @@ li {
   color: var(--blanco);
 }
 
-@media (max-width: 1325px) {
+@media (max-width: 1428px) {
   .mobile-nav-toggle {
     display: block;
     z-index: 1000;
@@ -679,7 +644,7 @@ li {
 #header .container {
   display: flex;
   justify-content: space-between;
-  gap: 40px !important;
+  gap: 36px !important;
   max-width: 100% !important;
   padding-left: 87px;
   padding-right: 42px;
@@ -715,7 +680,11 @@ li {
 }
 
 .btn-header {
-  margin-left: 16px;
+}
+
+.navbar-right-icons {
+  gap: 8px !important;
+  align-items: center !important;
 }
 
 @media (max-width: 1000px) {
@@ -727,11 +696,6 @@ li {
     gap: 0px !important;
     padding-left: 15px;
     padding-right: 15px;
-  }
-
-  .navbar-right-icons {
-    gap: 5px !important;
-    align-items: center !important;
   }
 
   #header img {
