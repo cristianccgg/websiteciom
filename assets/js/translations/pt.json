@@ -360,5 +360,14 @@
   "capitalize_btn": "Comece agora",
 
   "help_title": "Precisa de ajuda?",
-  "help_description": "Estamos aqui para resolver suas dúvidas."
+  "help_description": "Estamos aqui para resolver suas dúvidas.",
+  "hover_text_1": "Fast Food",
+  "hover_text_2": "Supermarkets",
+  "hover_text_3": "Ice Cream Shops",
+  "hover_text_4": "Hair Salons",
+  "hover_text_5": "Gas Stations",
+  "hover_text_6": "Dietary Stores",
+  "hover_text_7": "Perfumeries",
+  "hover_text_8": "Dealerships",
+  "hover_text_9": "Transportation"
 }

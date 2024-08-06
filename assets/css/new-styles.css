@@ -112,13 +112,13 @@ body {
   background-color: #f7faff;
 }
 
-#swiper-cliente-misterioso .swiper-slide {
+.swiper2 .swiper-slide {
   text-align: center;
   font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 295px;
+  height: 395px !important;
 }
 
 .swiper-slide img {
@@ -152,24 +152,20 @@ body {
 
 /* ------Hover carousel---- */
 
-.swiper-slide {
+.cliente-misterioso .swiper-slide {
   position: relative;
   overflow: hidden;
 }
 
-.img1,
-.img2,
-.img3,
-.img4,
-.img5,
-.img6 {
+.cliente-misterioso .swiper-slide img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%; /* Asegúrate de que la altura sea 100% del contenedor */
+  object-fit: cover; /* Ajusta el contenido de la imagen */
   transition: transform 0.3s ease;
 }
 
-.swiper-slide::before {
+.cliente-misterioso .swiper-slide::before {
   content: "";
   position: absolute;
   top: 0;
@@ -182,11 +178,11 @@ body {
   z-index: 1;
 }
 
-.swiper-slide:hover::before {
+.cliente-misterioso .swiper-slide:hover::before {
   opacity: 0.53;
 }
 
-.swiper-slide::after {
+.cliente-misterioso .swiper-slide::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -203,44 +199,43 @@ body {
   padding: 0 10px;
 }
 
-/* Textos específicos para cada imagen */
-.swiper-slide.swiper-hover-1::after {
+.cliente-misterioso .swiper-slide.swiper-hover-1::after {
   content: "Comida Rápida";
 }
 
-.swiper-slide.swiper-hover-2::after {
+.cliente-misterioso .swiper-slide.swiper-hover-2::after {
   content: "Supermercados";
 }
 
-.swiper-slide.swiper-hover-3::after {
+.cliente-misterioso .swiper-slide.swiper-hover-3::after {
   content: "Heladerías";
 }
 
-.swiper-slide.swiper-hover-4::after {
+.cliente-misterioso .swiper-slide.swiper-hover-4::after {
   content: "Peluquerías";
 }
 
-.swiper-slide.swiper-hover-5::after {
+.cliente-misterioso .swiper-slide.swiper-hover-5::after {
   content: "Estaciónes de Servicio";
 }
 
-.swiper-slide.swiper-hover-6::after {
+.cliente-misterioso .swiper-slide.swiper-hover-6::after {
   content: "Dietéticas";
 }
 
-.swiper-slide.swiper-hover-7::after {
+.cliente-misterioso .swiper-slide.swiper-hover-7::after {
   content: "Perfumerías";
 }
 
-.swiper-slide.swiper-hover-8::after {
+.cliente-misterioso .swiper-slide.swiper-hover-8::after {
   content: "Concesionarios";
 }
 
-.swiper-slide.swiper-hover-9::after {
+.cliente-misterioso .swiper-slide.swiper-hover-9::after {
   content: "Transporte";
 }
 
-.swiper-slide:hover::after {
+.cliente-misterioso .swiper-slide:hover::after {
   opacity: 1;
 }
 
