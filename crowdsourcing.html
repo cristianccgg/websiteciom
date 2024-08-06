@@ -47,11 +47,14 @@
         >
       </div>
       <div
-        class="header-info-container d-flex flex-column p-5 gap-5"
+        id="crowdsourcing-description"
+        class="header-info-container d-flex flex-column py-5 gap-5"
         data-aos="zoom-out"
         data-aos-delay="200"
       >
-        <div class="header-row-container row align-items-center m-auto">
+        <div
+          class="header-row-container d-flex flex-column flex-md-row align-items-center mx-auto"
+        >
           <div class="header-info-container-1 col-md d-flex align-items-center">
             <p id="crowdsourcing_description" class="text-start">
               Son personas independientes que están dispuestas a realizar sus
@@ -59,7 +62,9 @@
               Usted no tendrá que gestionarlos, la app se encarga de todo.
             </p>
           </div>
-          <div class="header-info-container-2 col-md d-flex flex-column">
+          <div
+            class="header-info-container-2 d-flex flex-column justify-content-center"
+          >
             <ul class="list-unstyled">
               <li class="d-flex align-items-center">
                 <img
@@ -95,42 +100,44 @@
         </div>
       </div>
     </div>
-    <div class="swiper mySwiper" data-aos="fade-up">
-      <h1 id="crowdsourcing_swiper_title" class="text-center p-5">
-        Obtenga las manos que siempre quizo tener
-      </h1>
-      <div class="swiper-wrapper swiper-wrapper-imgs">
-        <div class="swiper-slide">
-          <img
-            src="assets/img/Crowdsourcing/image 89.png"
-            alt="adults-eating-img"
-          />
+    <div id="swiper-cliente-misterioso" class="swiper-container-wrapper">
+      <div class="swiper mySwiper" data-aos="fade-up">
+        <h1 id="crowdsourcing_swiper_title" class="text-center p-5 p-md-0">
+          Obtenga las manos que siempre quizo tener
+        </h1>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="assets/img/Crowdsourcing/image 89.png"
+              alt="adults-eating-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/img/Crowdsourcing/image 90.png"
+              alt="supermaket-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/img/Crowdsourcing/two-young-pretty-girls-looking-dresses-try-it-while-choosing-shop 2.png"
+              alt="kid-icecream-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/img/Crowdsourcing/image 91.png"
+              alt="woman-hairdresser-img"
+            />
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img
-            src="assets/img/Crowdsourcing/image 90.png"
-            alt="supermaket-img"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="assets/img/Crowdsourcing/two-young-pretty-girls-looking-dresses-try-it-while-choosing-shop 2.png"
-            alt="kid-icecream-img"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="assets/img/Crowdsourcing/image 91.png"
-            alt="woman-hairdresser-img"
-          />
-        </div>
+        <div class="swiper-pagination mb-5"></div>
       </div>
-      <div class="swiper-pagination mb-5"></div>
     </div>
 
     <section
       id="delegue"
-      class="d-flex flex-column p-5 align-items-center gap-5"
+      class="d-flex flex-column p-5 align-items-center gap-5 gap-md-0"
       data-aos="fade-up"
     >
       <h1 id="crowdsourcing_delegue_title" class="text-center">
@@ -140,22 +147,22 @@
       <a
         href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
         target="_blank"
-        ><button class="btn text-white border border-white">Comenzar</button></a
+        ><button class="btn-start text-white border border-white">
+          Comenzar
+        </button></a
       >
     </section>
 
     <section
       id="crowdsourcing-capacidad"
-      class="p-5 d-flex flex-column gap-5"
+      class="p-5 d-flex flex-column gap-5 gap-md-0"
       data-aos="fade-up"
     >
       <h1 id="crowdsourcing_capacidad_title" class="text-center">
         La capacidad operativa que cualquier negocio soñaría con tener
       </h1>
       <div>
-        <div
-          class="row row-cols-1 row-cols-md-2 g-4 cols-container justify-content-md-between"
-        >
+        <div id="cols-container" class="row row-cols-1 row-cols-md-2">
           <div class="col col-crowd">
             <div class="container-grid">
               <h3 class="crowdsourcing-titles">Alcance</h3>
@@ -214,108 +221,92 @@
 
     <section
       id="empresas-crowdsourcing"
-      class="d-flex align-items-center flex-column text-center p-5 mb-5"
+      class="d-flex align-items-center flex-column text-center p-5 p-md-0 mb-5"
       data-aos="fade-up"
     >
       <div
-        class="empresas-crowdsourcing-inner d-flex flex-column justify-content-evenly gap-md-5 align-items-center"
+        class="empresas-crowdsourcing-inner d-flex flex-column align-items-center"
       >
         <div class="empresas-2-title mb-5 mb-md-0">
           <h1 id="crowdsourcing_empresas_title">Sky is the limit</h1>
         </div>
         <div
-          class="icons-container-crowdsourcing d-flex flex-column gap-3 my-5 my-md-0 flex-md-row"
+          class="icons-container-crowdsourcing d-flex flex-column gap-3 gap-md-0 my-5 my-md-0 flex-md-row"
         >
           <div
-            class="sky-container d-flex flex-column align-items-center gap-3"
+            class="sky-container d-flex flex-column align-items-center gap-3 gap-md-0"
           >
             <img
               src="assets/img/Crowdsourcing/Icons/carbon_location-1.png"
               alt="geo-icon"
             />
-            <p
-              id="crowdsourcing_empresas_item"
-              class="d-flex flex-column fw-bold"
-            >
-              5X VECES
-              <span id="crowdsourcing_empresas_item_lower" class="fw-light"
-                >mas dinamico<br />y veloz</span
-              >
-            </p>
+            <div class="d-flex flex-column">
+              <h1 id="crowdsourcing_empresas_item">5X VECES</h1>
+              <h2 id="crowdsourcing_empresas_item_lower">
+                mas dinamico y veloz
+              </h2>
+            </div>
           </div>
           <div
-            class="sky-container d-flex flex-column align-items-center gap-3"
+            class="sky-container d-flex flex-column align-items-center gap-3 gap-md-0"
           >
             <img
               src="assets/img/Crowdsourcing/Icons/carbon_location-1.png"
               alt="geo-icon"
             />
-            <span
-              id="crowdsourcing_empresas_item_1"
-              class="d-flex flex-column fw-bold"
-            >
-              10X VECES
-              <p id="crowdsourcing_empresas_item_1_lower" class="fw-light">
+            <div class="d-flex flex-column">
+              <h1 id="crowdsourcing_empresas_item_1">10X VECES</h1>
+              <h2 id="crowdsourcing_empresas_item_1_lower">
                 mas simple y <br />
                 eficiente
-              </p>
-            </span>
+              </h2>
+            </div>
           </div>
           <div
-            class="sky-container d-flex flex-column align-items-center gap-3"
+            class="sky-container d-flex flex-column align-items-center gap-3 gap-md-0"
           >
             <img
               src="assets/img/Crowdsourcing/Icons/carbon_location-2.png"
               alt="geo-icon"
             />
-            <p
-              id="crowdsourcing_empresas_item_2"
-              class="d-flex flex-column fw-bold"
-            >
-              19 PAISES<span
-                id="crowdsourcing_empresas_item_2_lower"
-                class="fw-light"
-                >con cobertura y creciendo</span
-              >
-            </p>
+            <div class="d-flex flex-column">
+              <h1 id="crowdsourcing_empresas_item_2">19 PAISES</h1>
+              <h2 id="crowdsourcing_empresas_item_2_lower" class="fw-light">
+                con cobertura y creciendo
+              </h2>
+            </div>
           </div>
           <div
-            class="sky-container d-flex flex-column align-items-center gap-3"
+            class="sky-container d-flex flex-column align-items-center gap-3 gap-md-0"
           >
             <img
               src="assets/img/Crowdsourcing/Icons/carbon_location-3.png"
               alt="geo-icon"
             />
-            <p
-              id="crowdsourcing_empresas_item_3"
-              class="d-flex flex-column fw-bold"
-            >
-              27k CIOMERS<span
-                id="crowdsourcing_empresas_item_3_lower"
-                class="fw-light"
-                >listos para <br />
-                ayudarle</span
-              >
-            </p>
+            <div class="d-flex flex-column">
+              <h1 id="crowdsourcing_empresas_item_3">27k CIOMERS</h1>
+              <h2 id="crowdsourcing_empresas_item_3_lower" class="fw-light">
+                listos para <br />
+                ayudarle
+              </h2>
+            </div>
           </div>
           <div
-            class="sky-container d-flex flex-column align-items-center gap-3"
+            class="sky-container d-flex flex-column align-items-center gap-3 gap-md-0"
           >
             <img
               src="assets/img/Crowdsourcing/Icons/carbon_location-3.png"
               alt="geo-icon"
             />
-            <p
-              id="crowdsourcing_empresas_item_4"
-              class="d-flex flex-column fw-bold"
-            >
-              100% CUSTOMIZABLE<span
-                id="crowdsourcing_empresas_item_4_lower"
-                class="fw-light"
-                >para su compañía y<br />
-                necesidad</span
-              >
-            </p>
+            <div class="d-flex flex-column">
+              <h1 id="crowdsourcing_empresas_item_4" class="text-nowrap">
+                100% CUSTOMIZABLE
+              </h1>
+              <h2 id="crowdsourcing_empresas_item_4_lower" class="fw-light">
+                para su compañía y<br />
+                necesidad
+              </h2>
+            </div>
           </div>
         </div>
       </div>

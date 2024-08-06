@@ -49,12 +49,14 @@
         >
       </div>
       <div
-        id="cliente-misterioso-description"
-        class="header-info-container d-flex flex-column p-5 gap-5"
+        id="monitoreo-description"
+        class="header-info-container d-flex flex-column py-5 gap-5"
         data-aos="zoom-out"
         data-aos-delay="200"
       >
-        <div class="header-row-container row align-items-center m-auto">
+        <div
+          class="header-row-container d-flex flex-column flex-md-row align-items-center mx-auto"
+        >
           <div class="header-info-container-1 col-md d-flex align-items-center">
             <p id="monitoreo_description" class="text-start">
               Consiste en observar las actividades, estrategias y desempeño de
@@ -62,7 +64,9 @@
               servicios, precios, ofertas, tácticas de marketing, etc.
             </p>
           </div>
-          <div class="header-info-container-2 col-md d-flex flex-column">
+          <div
+            class="header-info-container-2 d-flex flex-column justify-content-center"
+          >
             <ul class="list-unstyled">
               <li class="d-flex align-items-center">
                 <img
@@ -102,43 +106,45 @@
         </div>
       </div>
     </div>
-    <div class="swiper mySwiper" data-aos="fade-up">
-      <h1 id="monitoreo_swiper_title" class="text-center p-5">
-        Obtenga la ventaja que necesita
-      </h1>
-      <div class="swiper-wrapper swiper-wrapper-imgs">
-        <div class="swiper-slide">
-          <img
-            src="assets/img/Crowdsourcing/Monitoreo/medium-shot-man-eating 1.png"
-            alt="adults-eating-img"
-          />
+    <div id="swiper-cliente-misterioso" class="swiper-container-wrapper">
+      <div class="swiper mySwiper" data-aos="fade-up">
+        <h1 id="monitoreo_swiper_title" class="text-center p-5 p-md-0">
+          Obtenga la ventaja que necesita
+        </h1>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="assets/img/Crowdsourcing/Monitoreo/medium-shot-man-eating 1.png"
+              alt="adults-eating-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/img/Crowdsourcing/Monitoreo/woman-looking-different-goodies-local-producer 1.png"
+              alt="supermaket-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/img/Crowdsourcing/Monitoreo/medium-shot-woman-checking-product 1.png"
+              alt="kid-icecream-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/img/Crowdsourcing/Monitoreo/young-woman-chooses-towel-home-goods-store 1.png"
+              alt="woman-hairdresser-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/img/Crowdsourcing/Monitoreo/woman-taking-picture-dress 1.png"
+              alt="gas-stations-img"
+            />
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img
-            src="assets/img/Crowdsourcing/Monitoreo/woman-looking-different-goodies-local-producer 1.png"
-            alt="supermaket-img"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="assets/img/Crowdsourcing/Monitoreo/medium-shot-woman-checking-product 1.png"
-            alt="kid-icecream-img"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="assets/img/Crowdsourcing/Monitoreo/young-woman-chooses-towel-home-goods-store 1.png"
-            alt="woman-hairdresser-img"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="assets/img/Crowdsourcing/Monitoreo/woman-taking-picture-dress 1.png"
-            alt="gas-stations-img"
-          />
-        </div>
+        <div class="swiper-pagination mb-5"></div>
       </div>
-      <div class="swiper-pagination mb-5"></div>
     </div>
 
     <section
@@ -204,30 +210,24 @@
       class="d-flex flex-column gap-5 p-5 align-items-center"
       data-aos="fade-up"
     >
-      <h1 id="monitoreo_mejorar_title" class="text-center">
+      <h1 id="auditorias_mejorar_title" class="text-center">
         Qué necesita para mejorar?
       </h1>
       <div class="d-flex flex-column gap-5 flex-md-row gap-md-3">
         <a href="cliente-misterioso.html">
-          <button
-            id="monitoreo_mejorar_cliente_btn"
-            class="btn btn-mejorar rounded fs-6"
-          >
+          <button id="mejorar_cliente_btn" class="btn-mejorar rounded fs-6">
             CLIENTE MISTERIOSO
           </button>
         </a>
         <a href="auditorias.html">
-          <button
-            id="monitoreo_mejorar_auditoria_btn"
-            class="btn rounded fs-6 btn-mejorar"
-          >
+          <button id="mejorar_auditoria_btn" class="rounded fs-6 btn-mejorar">
             AUDITORIA/INSPECCION
           </button>
         </a>
         <a href="monitoreo.html">
           <button
-            id="monitoreo_mejorar_monitoreo_btn"
-            class="btn-start rounded fs-6 text-nowrap btn-mejorar"
+            id="mejorar_monitoreo_btn"
+            class="btn-mejorar-active rounded fs-6 text-nowrap"
           >
             MONITOREO DE COMPETENCIA
           </button>
