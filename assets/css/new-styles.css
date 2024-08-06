@@ -29,12 +29,15 @@ body {
   font-size: 180px !important;
 }
 
+/* -----Cliente misterioso-------- */
+
 #cliente-misterioso {
   background-image: url("/assets/img/Crowdsourcing/cliente-misterioso/woman-surrounded-by-bags-pile 1.png");
-  background-size: cover;
+  background-size: 1440 401px !important; /* Ajusta el tamaño a las dimensiones deseadas */
   background-position: center;
   background-repeat: no-repeat;
   height: 401px;
+  max-height: 401px;
 }
 
 #cliente-misterioso h1 {
@@ -42,9 +45,168 @@ body {
   font-weight: 600;
 }
 
-#empresas-cliente-misterioso .datos,
+#cliente-misterioso-description .header-row-container {
+  padding: 15px;
+}
+
+#cliente-misterioso-description .header-info-container-1 {
+  color: var(--azul-primario);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 38px;
+  max-width: 530px;
+}
+
+#cliente-misterioso-description .header-info-container-2 {
+  color: var(--azul-primario);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
+}
+
 #empresas-monitoreo .datos {
   gap: 50px !important;
+}
+
+@media screen and (min-width: 768px) {
+  #cliente-misterioso h1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  #cliente-misterioso-description {
+    height: 460px !important;
+    padding-top: 149px !important;
+  }
+
+  #cliente-misterioso-description .header-row-container {
+    gap: 120px;
+    padding: 0px;
+    height: 162px;
+  }
+
+  #cliente-misterioso-description .header-info-container-1 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 38px;
+  }
+
+  #cliente-misterioso-description .header-info-container-2 {
+    height: 162px;
+  }
+}
+
+/* -----------Carrusel imagenes Cliente Misterioso-------- */
+#swiper-cliente-misterioso {
+  background-color: #f7faff;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+#swiper-cliente-misterioso .swiper {
+  position: relative;
+  width: 100%;
+  height: 739px !important;
+  background-color: #f7faff;
+}
+
+#swiper-cliente-misterioso .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 295px;
+}
+
+.swiper-slide img {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 295px;
+  max-height: 295px;
+  object-fit: cover;
+}
+
+#swiper-cliente-misterioso .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0px;
+}
+
+.swiper-pagination-bullet {
+  background: var(--grey);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0.7;
+  margin: 0 4px;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--blue-light);
+}
+
+@media screen and (min-width: 768px) {
+  #swiper-cliente-misterioso .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 92px;
+  }
+
+  .swiper h1 {
+    margin-right: 92px;
+    font-size: 36px;
+  }
+  .swiper {
+    margin-left: 92px;
+    height: 739px !important;
+  }
+
+  .swiper-pagination {
+    margin-right: 92px !important;
+    margin-bottom: 107px !important;
+  }
+
+  .swiper-wrapper-imgs {
+    padding-left: 92px;
+  }
+  .swiper-ciomers {
+    height: 690px !important;
+  }
+}
+
+/* ------------Empresas-cliente-misterioso-------- */
+#empresas-cliente-misterioso .title {
+  font-size: 36px !important;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+#empresas-cliente-misterioso .datos {
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 1000px) {
+  #empresas-cliente-misterioso {
+    height: 470px;
+    padding-top: 79px !important;
+  }
+
+  #empresas-cliente-misterioso .title {
+    font-size: 36px !important;
+    font-weight: 600;
+    line-height: 50px;
+    margin-bottom: 71px;
+  }
+
+  #empresas-cliente-misterioso .datos {
+    margin-bottom: 21px !important;
+  }
 }
 
 .header {
@@ -63,20 +225,124 @@ body {
   font-size: 18px;
   font-weight: 400;
 }
-
-.btn-start {
-  padding: 10px 50px;
-  color: white !important;
-  width: 100%;
+.btn {
+  padding: 10px 24px;
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: center;
+  padding: var(--padding-5xs) var(--padding-5xl);
+  border-radius: var(--br-9xs);
+  font-size: var(--fs-btn);
+  /* font-size: 18px; */
   border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 24px;
+  box-shadow: 0 0 0 0 !important;
+  width: 180px !important;
 }
 
-.btn {
-  padding: 10px 50px;
-  color: var(--blue-light);
-  width: 100%;
-  border: #175fe2 1px solid;
+.btn-header,
+.btn-header:focus,
+.btn-header:active,
+.btn-header:hover {
+  color: var(--blanco);
+  background-color: var(--green);
+  border-color: var(--green);
+  height: 44px;
+  width: 151px !important;
+  padding: 10px 24px;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .btn-header,
+  .btn-header:focus,
+  .btn-header:active,
+  .btn-header:hover {
+    color: var(--blanco);
+    background-color: var(--green);
+    border-color: var(--green);
+    height: 44px;
+    width: 100px !important;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+.btn-start {
+  background-color: #175fe2;
+  padding: 10px 24px;
+  color: white !important;
+  width: 180px !important;
+  height: 52px;
   border-radius: 4px;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+  font-weight: normal;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.btn-start:hover,
+.btn-start:focus {
+  background-color: #154ab6;
+}
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:hover,
+.btn-primary:active {
+  color: var(--blanco);
+  background-color: var(--blue-light);
+  border-color: var(--blue-light);
+  width: 180px !important;
+}
+
+.btn-mejorar-active,
+.btn-mejorar-active:focus,
+.btn-mejorar-active:hover,
+.btn-mejorar-active:active {
+  color: var(--blanco);
+  background-color: var(--blue-light);
+  border: none;
+  border-radius: 4px !important;
+  width: 336px;
+  height: 60px;
+  padding: 18px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.btn-mejorar,
+.btn-mejorar:focus,
+.btn-mejorar:hover,
+.btn-mejorar:active {
+  color: #175fe2;
+  background-color: white;
+  border: 2px #175fe2 solid;
+  border-radius: 4px !important;
+  width: 336px;
+  height: 60px;
+  padding: 18px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  box-shadow: none;
+  text-shadow: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -87,11 +353,33 @@ body {
     padding-top: 167px;
     justify-content: unset;
   }
+
+  .btn-primary {
+    width: 180px !important;
+  }
   .btn-start {
-    padding: 10px 50px;
+    background-color: #175fe2;
+    padding: 10px 24px;
     color: white !important;
-    width: fit-content;
+    width: 180px !important;
+    height: 52px;
     border-radius: 4px;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+    font-weight: normal;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+  .btn-start:hover,
+  .btn-start:focus {
+    background-color: #154ab6;
   }
 
   .btn {
@@ -108,114 +396,21 @@ body {
   }
 }
 
-.header-info-container {
+/* .header-info-container {
   padding-left: 15px;
   padding-right: 15px;
-  font-size: 22px;
-  line-height: 38px;
-}
-
-.header-info-container-1 {
-  line-height: 38px;
-  border: red;
-  padding-left: -10px;
-  padding-right: -10px;
-  max-width: 536px !important;
+  color: var(--azul-primario);
 }
 
 .header-info-container-2 {
   gap: 22px;
   border: red;
-}
-
-@media screen and (min-width: 768px) {
-  #cliente-misterioso h1 {
-    font-size: 40px;
-    font-weight: 600;
-  }
-  .header-info-container {
-    height: 460px;
-    max-height: 460px;
-    padding: 150px 187px;
-  }
-
-  .header-row-container {
-    gap: 120px;
-  }
-
-  .header-info-container {
-    padding: 0px;
-  }
-
-  .header-info-container-1 {
-    padding: 0px;
-  }
-}
+} */
 
 #empresas,
 #x5 {
   background-color: var(--blue-light);
   color: white;
-}
-
-.swiper {
-  width: 100%;
-  height: 680px !important;
-  position: relative;
-  background-color: #f7faff;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 295px;
-}
-
-.swiper-slide img {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 295px;
-  max-height: 295px;
-  object-fit: cover;
-}
-
-.swiper-pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-pagination-bullet {
-  background: var(--grey);
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  opacity: 0.7;
-  margin: 0 4px;
-}
-
-.swiper-pagination-bullet-active {
-  background: var(--blue-light); /* Color del punto activo */
-}
-
-@media screen and (min-width: 768px) {
-  .swiper {
-    height: 739px !important;
-  }
-  .swiper-pagination {
-    margin-bottom: 107px !important;
-  }
-  .swiper-wrapper-imgs {
-    padding-left: 92px;
-  }
-  .swiper-ciomers {
-    height: 690px !important;
-  }
 }
 
 #empresas-cliente-misterioso,
@@ -333,6 +528,10 @@ body {
   }
   .testimonials-title {
     margin-bottom: 42px;
+    color: var(--azul-primario);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 50px;
   }
   .swiper2 {
     margin-top: 0px !important;
@@ -378,23 +577,72 @@ body {
 
 #auditorias {
   background-image: url("/assets/img/Crowdsourcing/Auditorias-inspecciones/Auditorías/indian-man-customer-buyer-mobile-phone-store-choose-his-new-smartphone-south-asian-peoples-technologies-concept-cellphone-shop 1.png");
-  background-size: cover;
+  background-size: 1440 401px !important;
   background-position: center;
   background-repeat: no-repeat;
   height: 401px;
+  max-height: 401px;
+}
+
+.header-auditorias {
+  gap: 36px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 148px;
 }
 
 #auditorias .title {
   font-size: 28px;
+  font-weight: 600;
 }
 
-.swiper h1 {
-  font-size: 36px;
+#auditorias-description .header-row-container {
+  padding: 15px;
+}
+
+#auditorias-description .header-info-container-1 {
+  color: var(--azul-primario);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 38px;
+  max-width: 530px;
+}
+
+#auditorias-description .header-info-container-2 {
+  color: var(--azul-primario);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: black;
 }
 
 @media screen and (min-width: 768px) {
   #auditorias .title {
     font-size: 40px;
+    font-weight: 600;
+    line-height: 55px;
+  }
+
+  #auditorias-description {
+    height: 460px !important;
+    padding-top: 154px !important;
+  }
+
+  #auditorias-description .header-row-container {
+    gap: 120px;
+    padding: 0px;
+    height: 162px;
+  }
+
+  #auditorias-description .header-info-container-1 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 38px;
+    height: 152px;
+  }
+
+  #auditorias-description .header-info-container-2 {
+    height: 162px;
   }
 }
 

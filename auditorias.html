@@ -34,32 +34,35 @@
     <div id="top-section">
       <div
         id="auditorias"
-        class="header align-items-center text-white px-5"
+        class="header-auditorias align-items-center text-white px-5"
         data-aos="fade-up"
       >
         <h1 id="auditorias_title" class="title">Auditorias/Inspecciones</h1>
         <a
           href="https://webforms.pipedrive.com/f/30YqJt7XOHWVVgpV6PQ0slsRUfJPyhQ0q3sjCIIFQixFH7NUDGQRuXUIulaYofsqL"
           target="_blank"
-          ><button id="auditorias_btn_start" class="btn-start">
-            Comenzar
-          </button></a
+          ><button id="btn_start" class="btn-start">Comenzar</button></a
         >
       </div>
       <div
-        class="header-info-container d-flex flex-column p-5 gap-5"
+        id="auditorias-description"
+        class="header-info-container d-flex flex-column py-5 gap-5"
         data-aos="zoom-out"
         data-aos-delay="200"
       >
-        <div class="row-container row align-items-center m-auto">
+        <div
+          class="header-row-container d-flex flex-column flex-md-row align-items-center mx-auto"
+        >
           <div class="header-info-container-1 col-md d-flex align-items-center">
-            <p id="auditorias_description">
+            <p id="auditorias_description" class="text-start">
               Son dos tipos de evaluaciones simples en donde se observa o revisa
               el cumplimiento de prácticas, procesos, normas o estándares de su
               negocio para identificar oportunidades de mejora.
             </p>
           </div>
-          <div class="header-info-container-2 col-md d-flex flex-column">
+          <div
+            class="header-info-container-2 d-flex flex-column justify-content-center"
+          >
             <ul class="list-unstyled">
               <li class="d-flex align-items-center">
                 <img
@@ -99,49 +102,52 @@
         </div>
       </div>
     </div>
-    <div class="swiper mySwiper" data-aos="fade-up">
-      <h1 id="auditorias_swiper_title" class="text-center p-5">
-        Auditoría e Inspecciones, <br />una garantía de éxito
-      </h1>
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img
-            src="assets/img/Crowdsourcing/Auditorias-inspecciones/interior-large-distribution-warehouse-with-shelves-stacked-with-palettes-goods-ready-market 1.png"
-            alt="adults-eating-img"
-          />
+    <div id="swiper-cliente-misterioso" class="swiper-container-wrapper">
+      <div class="swiper mySwiper" data-aos="fade-up">
+        <h1 id="auditorias_swiper_title" class="text-center fs-2 p-5">
+          La felicidad del cliente es el verdadero <br />
+          activo de su empresa
+        </h1>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="assets/img/Crowdsourcing/Auditorias-inspecciones/interior-large-distribution-warehouse-with-shelves-stacked-with-palettes-goods-ready-market 1.png"
+              alt="adults-eating-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/img/Crowdsourcing/Auditorias-inspecciones/mihaly-koles-gccbrmlXZ7g-unsplash 1.png"
+              alt="supermaket-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/img/Crowdsourcing/Auditorias-inspecciones/nathalia-rosa-rWMIbqmOxrY-unsplash 1.png"
+              alt="kid-icecream-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/img/Crowdsourcing/Auditorias-inspecciones/prithiviraj-a-vDlt9BQND-o-unsplash 1.png"
+              alt="woman-hairdresser-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/img/Crowdsourcing/Auditorias-inspecciones/image 84.png"
+              alt="gas-stations-img"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="assets/img/Crowdsourcing/Auditorias-inspecciones/image 85.png"
+              alt="asian-woman-market-img"
+            />
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img
-            src="assets/img/Crowdsourcing/Auditorias-inspecciones/mihaly-koles-gccbrmlXZ7g-unsplash 1.png"
-            alt="supermaket-img"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="assets/img/Crowdsourcing/Auditorias-inspecciones/nathalia-rosa-rWMIbqmOxrY-unsplash 1.png"
-            alt="kid-icecream-img"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="assets/img/Crowdsourcing/Auditorias-inspecciones/prithiviraj-a-vDlt9BQND-o-unsplash 1.png"
-            alt="woman-hairdresser-img"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="assets/img/Crowdsourcing/Auditorias-inspecciones/image 84.png"
-            alt="gas-stations-img"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="assets/img/Crowdsourcing/Auditorias-inspecciones/image 85.png"
-            alt="asian-woman-market-img"
-          />
-        </div>
+        <div class="swiper-pagination mb-5"></div>
       </div>
-      <div class="swiper-pagination mb-5"></div>
     </div>
 
     <section
@@ -224,25 +230,22 @@
       </h1>
       <div class="d-flex flex-column gap-5 flex-md-row gap-md-3">
         <a href="cliente-misterioso.html">
-          <button
-            id="auditorias_mejorar_cliente_btn"
-            class="btn btn-mejorar rounded fs-6"
-          >
+          <button id="mejorar_cliente_btn" class="btn-mejorar rounded fs-6">
             CLIENTE MISTERIOSO
           </button>
         </a>
         <a href="auditorias.html">
           <button
-            id="auditorias_mejorar_auditoria_btn"
-            class="btn-start rounded fs-6 btn-mejorar"
+            id="mejorar_auditoria_btn"
+            class="rounded fs-6 btn-mejorar-active"
           >
             AUDITORIA/INSPECCION
           </button>
         </a>
         <a href="monitoreo.html">
           <button
-            id="auditorias_mejorar_monitoreo_btn"
-            class="btn rounded fs-6 text-nowrap btn-mejorar"
+            id="mejorar_monitoreo_btn"
+            class="btn-mejorar rounded fs-6 text-nowrap btn-mejorar"
           >
             MONITOREO DE COMPETENCIA
           </button>
