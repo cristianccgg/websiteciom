@@ -2118,6 +2118,7 @@ section {
   height: 1px;
   border-top: 1px solid #eff5ff;
   box-sizing: border-box;
+  margin-bottom: 35px !important;
 }
 
 #footer .bottom {
@@ -2372,7 +2373,7 @@ section {
     height: 739px;
   }
   .swiper-pagination {
-    margin-bottom: 107px !important;
+    margin-bottom: 87px !important;
   }
   .swiper-wrapper-imgs {
     padding-left: 92px;
