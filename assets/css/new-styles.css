@@ -33,7 +33,7 @@ body {
 
 #cliente-misterioso {
   background-image: url("/assets/img/Crowdsourcing/cliente-misterioso/woman-surrounded-by-bags-pile 1.png");
-  background-size: 1440 401px !important;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 401px;
@@ -697,7 +697,7 @@ body {
 
 #auditorias {
   background-image: url("/assets/img/Crowdsourcing/Auditorias-inspecciones/Auditorías/indian-man-customer-buyer-mobile-phone-store-choose-his-new-smartphone-south-asian-peoples-technologies-concept-cellphone-shop 1.png");
-  background-size: 1440 401px !important;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 401px;
@@ -783,7 +783,7 @@ body {
 
 #monitoreo {
   background-image: url("/assets/img/Crowdsourcing/Monitoreo/team-stockbrokers-are-having-conversation-dark-office-with-display-screens-analyzing-data-graphs-reports-investment-purposes-creative-teamwork-traders 2.png");
-  background-size: 1440 401px !important;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 401px;
@@ -895,7 +895,7 @@ body {
 
 #crowdsourcing {
   background-image: url("/assets/img/Crowdsourcing/hero-crowd.png");
-  background-size: 1440 401px !important;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 401px;
@@ -1119,7 +1119,7 @@ body {
 
 #ciomers-header {
   background-image: url("/assets/img/Crowdsourcing/Ciomers/hero.png");
-  background-size: 1440 401px !important;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 401px;
@@ -1367,7 +1367,7 @@ header-info-container-apps {
 
 #nosotros {
   background-image: url("/assets/img/Crowdsourcing/Nosotros/close-up-detail-team-working-o-new-project-coworking-space-writing-ideas-looking-through-graphics-tablet-laptop-teamwork-business-concept 1.png");
-  background-size: 1440 401px !important;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 401px;
@@ -1485,7 +1485,7 @@ header-info-container-apps {
 
 #inversionistas {
   background-image: url("/assets/img/Crowdsourcing/Inversionistas/hero inversionistas.png");
-  background-size: 1440 401px !important;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 401px;
@@ -1563,7 +1563,7 @@ header-info-container-apps {
 
   #inversionistas {
     background-image: url("/assets/img/Crowdsourcing/Inversionistas/hero inversionistas.png");
-    background-size: 1440 401px !important;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 401px;

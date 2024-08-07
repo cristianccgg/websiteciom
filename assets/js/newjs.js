@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) => console.error("Error al cargar el footer:", error));
 
-  // Verificar la existencia del div con id "capitalize" antes de cargar el contenido
   const capitalizeElement = document.querySelector("#capitalize");
   if (capitalizeElement) {
     fetch("capitalize.html")
@@ -37,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
       );
   }
 
-  // Inicialización de Swiper para el slider principal
   var swiper = new Swiper(".mySwiper", {
     loop: true,
     pagination: {
@@ -64,7 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  // Cargar el primer bloque de testimonios y inicializar Swiper
   fetch("testimonios.html")
     .then((response) => response.text())
     .then((data) => {
@@ -105,7 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) => console.error("Error al cargar testimonios:", error));
 
-  // Cargar el segundo bloque de testimonios y inicializar Swiper
   fetch("testimonios-ciomers.html")
     .then((response) => response.text())
     .then((data) => {
@@ -148,7 +144,6 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error("Error al cargar testimonios de clientes:", error)
     );
 
-  // Inicialización del acordeón
   const accordionButtons = document.querySelectorAll(
     ".custom-accordion-button"
   );
