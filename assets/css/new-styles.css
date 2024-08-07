@@ -1521,6 +1521,10 @@ header-info-container-apps {
   padding-top: 47px !important;
 }
 
+#maximiza-text {
+  max-width: 1260px;
+}
+
 .ciom-text {
   font-size: 32px !important;
   font-weight: 700 !important;

@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Cargar el footer
   fetch("footer.html")
     .then((response) => response.text())
     .then((data) => {
