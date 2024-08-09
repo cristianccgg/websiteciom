@@ -207,5 +207,10 @@
       once: true,
       mirror: false,
     });
+    // At the end of your navbar.js file
+    window.addEventListener("load", () => {
+      // ... (existing code)
+      updateNavbarContent();
+    });
   });
 })();
